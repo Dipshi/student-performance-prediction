@@ -5,7 +5,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <strong>Ionic 3</strong> Start Theme
+      <strong>Dashboard</strong> 
     </ion-title>
     <ion-buttons end>
       <button ion-button tappable (click)="presentNotifications($event)">
@@ -21,18 +21,99 @@
 <ion-content padding class="animated fadeIn common-bg">
 
   <ion-card no-margin margin-bottom class="full-width">
-    <ion-item tappable (click)="choosePlace('from')" class="border-bottom">
-      <ion-icon name="search" color="primary" item-left></ion-icon>
-      <span>{{ search.name }}</span>
+    <ion-item  class="border-bottom">
+      <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
+      <p>Personal details</p>
+      <span></span>
     </ion-item>
     <ion-item>
-      <ion-icon name="md-calendar" color="primary" item-left></ion-icon>
-      <ion-datetime class="no-pl" displayFormat="DD/MM/YYYY" pickerFormat="DD/MM/YYYY" [(ngModel)]="search.date"></ion-datetime>
+     
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+          <ion-card>
+              <ion-card-content>
+                  <ion-card-title>
+                    Profile
+                  </ion-card-title>
+                  <ion-icon name="person">
+
+                  </ion-icon>
+            
+                  
+                </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card>
+                <ion-card-content center>
+                    <ion-card-title>
+                      Update
+                    </ion-card-title>
+              
+                    <ion-icon name="create" item-center></ion-icon>
+  
+                  </ion-card-content>
+            </ion-card>
+        </ion-col>
+        </ion-row>
+
+      </ion-grid>
     </ion-item>
+    
+  </ion-card>
+  <ion-card>
+      <ion-item  class="border-bottom">
+          <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
+          <p>Academic details</p>
+          <span></span>
+        </ion-item>
+        <ion-item>
+         
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+              <ion-card>
+                  <ion-card-content>
+                      <ion-card-title>
+                        See Educational Details
+                      </ion-card-title>
+                      <ion-icon name="information-circle"></ion-icon>
+                      
+                    </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content center>
+                        <ion-card-title>
+                          Update educational details
+                        </ion-card-title>
+                  
+                        <ion-icon name="create" item-center></ion-icon>
+      
+                      </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content center>
+                        <ion-card-title>
+                          See prediction 
+                        </ion-card-title>
+                  
+                        <ion-icon name="eye" item-center></ion-icon>
+      
+                      </ion-card-content>
+                </ion-card>
+            </ion-col>
+            
+            </ion-row>
+    
+          </ion-grid>
+        </ion-item>
+    
   </ion-card>
 
-  <button ion-button icon-start block no-margin color="primary" class="round" tappable (click)="doSearch()">
-    <ion-icon name="search"></ion-icon> Search
-  </button>
-
+ 
 </ion-content>
