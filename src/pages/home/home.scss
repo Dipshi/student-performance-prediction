@@ -9,24 +9,20 @@ page-home,
     .item:last-child {
       border: none;
     }
-    .profile_button
-    {
-      display: block;
-      width:50%;
-      color:blue;
-    }
-    ion-icon
-    {
-      font-size:20em;
-    }
-  .v1
-  {
-    border-left: 6px solid green;
-    height: 500px;
-  }
+    
     ion-datetime {
       padding-left: 0;
     }
   }
+  icon-card , 
+  .icons
+    {
+      font-size:5em;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(40%, 10%);
+    }
+  
+  
 }
 
