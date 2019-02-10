@@ -60,7 +60,7 @@ export class HomePage {
     });
   }
   goTo(){
-      this.nav.push(TripDetailPage);
+      this.nav.setRoot(TripDetailPage);
   }
 
 }
