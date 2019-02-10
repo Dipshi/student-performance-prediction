@@ -12,11 +12,19 @@
 
 <ion-content class="common-bg">
   <!--slides-->
-  <ion-slides class="to-top" pager>
+  <!--<ion-slides class="to-top" pager>
     <ion-slide *ngFor="let image of trip.images">
       <img [src]="image" alt="">
     </ion-slide>
-  </ion-slides>
+  </ion-slides>-->
+  <ion-card>
+      <ion-card-header>
+        Bar Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
 
   <!--services-->
   <ion-grid class="border-bottom dark-bg">
@@ -38,7 +46,7 @@
 
   <!--high light-->
   <div class="border-bottom" padding>
-    <span ion-text color="dark" class="bold">HIGHLIGHT</span>
+    <span ion-text color="dark" class="bold">Remarks</span>
     <ul class="highlight">
       <li *ngFor="let highlight of trip.highlights">
         <ion-icon name="checkmark" class="text-green"></ion-icon>
@@ -56,18 +64,19 @@
       <ion-grid class="filters" no-padding margin-top>
         <ion-row>
           <ion-col class="adult" width-70>
-            <span ion-text color="primary"><strong>{{ trip.price_adult | currency:'USD':true }}</strong> Adults</span>
+            <!--<span ion-text color="primary"><strong>{{ trip.price_adult | currency:'USD':true }}</strong> Adults</span>-->
+            <span ion-text color="primary"><strong></strong> </span>
           </ion-col>
-          <ion-col width-10 text-center>
+          <!--<ion-col width-10 text-center>
             <ion-icon name="remove-circle" class="text-2x" tappable (click)="minusAdult()" [hidden]="adults < 2"
                       color="secondary"></ion-icon>
-          </ion-col>
-          <ion-col width-10 text-center>{{ adults }}</ion-col>
+          </ion-col>-->
+          <!--<ion-col width-10 text-center>{{ adults }}</ion-col>
           <ion-col width-10 text-center>
             <ion-icon name="add-circle" class="text-2x" tappable (click)="plusAdult()" color="secondary"></ion-icon>
-          </ion-col>
+          </ion-col>-->
         </ion-row>
-        <ion-row margin-top>
+        <!--<ion-row margin-top>
           <ion-col width-70>
             <span ion-text color="primary"><strong>{{ trip.price_child | currency:'USD':true }}</strong> Child (0-12 years)</span>
           </ion-col>
@@ -79,28 +88,27 @@
           <ion-col width-10 text-center>
             <ion-icon name="add-circle" class="text-2x" tappable (click)="plusChildren()" color="secondary"></ion-icon>
           </ion-col>
-        </ion-row>
+        </ion-row>-->
       </ion-grid>
     </div>
     <div padding class="form-bottom">
 <!--       <span ion-text color="dark" class="bold">{{ adults }} Adults</span> -->
       <!--booking button-->
-      <button ion-button class="pull-right" color="secondary" tappable (click)="checkout()">Book Now {{ adults * trip.price_adult +
-        children * trip.price_child | currency:'USD':true }}
+      <button ion-button class="pull-right" color="secondary" tappable (click)="checkout()">Submit
       </button>
       <div class="clear"></div>
     </div>
   </div>
 
   <!--description-->
-  <div class="border-bottom" padding>
+  <!--<div class="border-bottom" padding>
     <span ion-text color="primary" class="bold">DESCRIPTION</span>
     <p ion-text>{{ trip.description }}</p>
-  </div>
+  </div>-->
 
   <!--address-->
   <div class="border-bottom" padding>
-    <span ion-text color="primary" class="bold">LOCATION</span>
-    <p ion-text>{{ trip.location }}</p>
+    <span ion-text color="primary" class="bold">COLLEGE</span>
+    <p ion-text>{{ trip.college }}</p>
   </div>
 </ion-content>
