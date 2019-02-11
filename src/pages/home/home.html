@@ -11,7 +11,7 @@
       <button ion-button tappable (click)="presentNotifications($event)">
         <ion-icon name="notifications"></ion-icon>
       </button>
-      <button ion-button tappable (click)="goToAccount()">
+      <button ion-button tappable (click)="logout()">
         <ion-icon name="cog"></ion-icon>
       </button>
     </ion-buttons>
@@ -27,20 +27,18 @@
       <span></span>
     </ion-item>
     <ion-item>
-     
       <ion-grid>
         <ion-row>
           <ion-col>
-          <ion-card>
+          <ion-card tappable >
               <ion-card-content>
-                  <ion-card-title>
+                  <ion-card-title tappable (click)="goToProfilepage()">
                     Profile
                   </ion-card-title>
-                  <ion-icon class='icons' name="person">
+                  <ion-icon  class='icons full-width' name="person" tappable (click)="goToProfilepage()">
 
                   </ion-icon>
-            
-                  
+                           
                 </ion-card-content>
           </ion-card>
         </ion-col>
