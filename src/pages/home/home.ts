@@ -7,7 +7,11 @@ import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 import {TripDetailPage} from "../trip-detail/trip-detail";
-import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
+import {LoginPage} from "../login/login";
+import {ProfilePage} from "../profile/profile";
+
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -51,6 +55,11 @@ export class HomePage {
   goToAccount() {
     this.nav.push(SettingsPage);
   }
+  //go to profile page 
+  goToProfilepage()
+    {
+      this.nav.setRoot(ProfilePage);
+    }
 
   presentNotifications(myEvent) {
     console.log(myEvent);
@@ -60,10 +69,7 @@ export class HomePage {
     });
   }
   goTo(){
-      this.nav.push(TripDetailPage);
-  }
-  seeEducation(){
-      this.nav.push(SeeEducationalDetailsPage);
+      this.nav.setRoot(TripDetailPage);
   }
 
 }

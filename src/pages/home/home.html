@@ -11,7 +11,7 @@
       <button ion-button tappable (click)="presentNotifications($event)">
         <ion-icon name="notifications"></ion-icon>
       </button>
-      <button ion-button tappable (click)="goToAccount()">
+      <button ion-button tappable (click)="logout()">
         <ion-icon name="cog"></ion-icon>
       </button>
     </ion-buttons>
@@ -21,26 +21,24 @@
 <ion-content padding class="animated fadeIn common-bg">
 
   <ion-card no-margin margin-bottom class="full-width">
-    <ion-item  class="border-bottom">
+    <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
       <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
       <p>Personal details</p>
       <span></span>
     </ion-item>
     <ion-item>
-     
       <ion-grid>
         <ion-row>
           <ion-col>
-          <ion-card>
+          <ion-card tappable >
               <ion-card-content>
-                  <ion-card-title>
+                  <ion-card-title tappable (click)="goToProfilepage()">
                     Profile
                   </ion-card-title>
-                  <ion-icon name="person">
+                  <ion-icon  class='icons full-width' name="person" tappable (click)="goToProfilepage()">
 
                   </ion-icon>
-            
-                  
+                           
                 </ion-card-content>
           </ion-card>
         </ion-col>
@@ -51,7 +49,7 @@
                       Update
                     </ion-card-title>
               
-                    <ion-icon name="create" item-center></ion-icon>
+                    <ion-icon class='icons' name="create" item-center></ion-icon>
   
                   </ion-card-content>
             </ion-card>
@@ -62,8 +60,8 @@
     </ion-item>
     
   </ion-card>
-  <ion-card>
-      <ion-item  class="border-bottom">
+  <ion-card no-margin margin-bottom class="full-width">
+      <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
           <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
           <p>Academic details</p>
           <span></span>
@@ -78,34 +76,42 @@
                       <ion-card-title tappable (click)="seeEducation()" >
                         See Educational Details
                       </ion-card-title>
-                      <ion-icon name="information-circle"></ion-icon>
-                      
+                      <ion-icon class='icons' name="information-circle"></ion-icon>
                     </ion-card-content>
-              </ion-card>
+                  </ion-card>
+                </ion-item>
+           
             </ion-col>
             <ion-col>
+              <ion-item>
                 <ion-card>
                     <ion-card-content center>
                         <ion-card-title>
                           Update educational details
                         </ion-card-title>
-                  
-                        <ion-icon name="create" item-center></ion-icon>
-      
+                        <!-- <button ion-button icon-only clear tappable (click)="goTo()" > -->
+                           <ion-icon class='icons' name="create" item-center></ion-icon>
+                         <!-- </button> -->
                       </ion-card-content>
                 </ion-card>
+              </ion-item>
             </ion-col>
             <ion-col>
-                <ion-card>
+              <ion-item>
+                <ion-card tappable >
                     <ion-card-content center>
-                        <ion-card-title tappable (click)="goTo()">
+                        <ion-card-title  tappable (click)="goTo()">
                           See prediction 
                         </ion-card-title>
-                  
-                        <ion-icon name="eye" item-center></ion-icon>
+                  <!-- <button ion-button icon-only clear tappable (click)="goTo()" > -->
+                      <ion-icon class='icons full-width' name="eye" tappable (click)="goTo()"></ion-icon>
+                  <!-- </button> -->
       
                       </ion-card-content>
                 </ion-card>
+
+              </ion-item>
+              
             </ion-col>
             
             </ion-row>

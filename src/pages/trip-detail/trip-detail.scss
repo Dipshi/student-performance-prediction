@@ -44,9 +44,9 @@ page-trip-detail,
 
     page-home {
 
-        .scroll-content {
-            background-color: map-get($colors, light);
-        }
+        // .scroll-content {
+        //     background-color: map-get($colors, light);
+        // }
 
         ion-card-header {
             font-weight: bold;
