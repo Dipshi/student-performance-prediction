@@ -7,7 +7,7 @@ import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 import {TripDetailPage} from "../trip-detail/trip-detail";
-// import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
+import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
 import {LoginPage} from "../login/login";
 import {ProfilePage} from "../profile/profile";
 
@@ -70,11 +70,14 @@ export class HomePage {
     });
   }
   goTo(){
-      this.nav.setRoot(TripDetailPage);
+      this.nav.push(TripDetailPage);
   }
-  // seeEducation(){
-  //     this.nav.push(SeeEducationalDetailsPage);
-  // }
+  see(){
+      this.nav.push(SearchLocationPage);
+  }
+  seeEducation(){
+      this.nav.push(SeeEducationalDetailsPage);
+  }
 
   logout() {
     this.nav.setRoot(LoginPage);

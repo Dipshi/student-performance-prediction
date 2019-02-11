@@ -38,7 +38,7 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
+      {title: 'Log Out', component: LoginPage, icon: 'person'}
     ];
   }
 
