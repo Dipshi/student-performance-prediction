@@ -21,5 +21,8 @@ export class SeeEducationalDetailsPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad SeeEducationalDetailsPage');
   // }
+  goBack() {
+    this.navCtrl.pop();
+  }
 
 }
