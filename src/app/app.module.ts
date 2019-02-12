@@ -8,6 +8,8 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
+// import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/trip-service";
 import {WeatherProvider} from "../services/weather";
@@ -25,7 +27,7 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
-
+import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-educational-details";
 
 // import services
 // end import services
@@ -47,11 +49,14 @@ import {ProfilePage} from "../pages/profile/profile";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    ProfilePage
+    ProfilePage,
+    SeeEducationalDetailsPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    // NgxDatatableModule,
+
     IonicModule.forRoot(MyApp, {
       scrollPadding: false,
       scrollAssist: true,
@@ -75,7 +80,8 @@ import {ProfilePage} from "../pages/profile/profile";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    ProfilePage
+    ProfilePage,
+    SeeEducationalDetailsPage
   ],
   providers: [
     StatusBar,

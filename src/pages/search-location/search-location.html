@@ -2,22 +2,90 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-input placeholder="Enter Destination" padding-left autofocus></ion-input>
+     <ion-title>
+      <span ion-text>Update Eduational Details</span>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content>
+  
   <div class="list-no-border">
-    <!--nearby places-->
-    <ion-item *ngFor="let item of places.nearby" tappable (click)="searchBy(item)">
+    <ion-item>
+        <ion-label floating>
+          Enter SSC Marks
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter Gap in Education(years)
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter HSC Marks/Diploma Marks
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM 1 pointer 
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 2 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 3 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 4 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 5 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 6 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM 7 pointer
+        </ion-label>
+        <ion-input type="numeric"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button default  color="light" tappable (click)="clickUpdate()">
+            Update 
+      </button>
+   </ion-item>
+    <!--<ion-item *ngFor="let item of places.nearby" tappable (click)="searchBy(item)">
       <ion-icon name="md-locate" item-left color="primary"></ion-icon>
       <span ion-text color="primary">{{ item.name }}</span>
     </ion-item>
-    <!--recent places-->
+    
     <ion-item *ngFor="let item of places.recent" tappable (click)="searchBy(item)">
       <ion-icon name="md-time" item-left color="primary"></ion-icon>
       <span ion-text color="primary">{{ item.name }}</span>
-    </ion-item>
+    </ion-item>-->
   </div>
 </ion-content>
