@@ -10,6 +10,7 @@ import {TripDetailPage} from "../trip-detail/trip-detail";
 import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
 import {LoginPage} from "../login/login";
 import {ProfilePage} from "../profile/profile";
+import {UpdateprofilePage} from "../updateprofile/updateprofile";
 
 
 
@@ -59,7 +60,7 @@ export class HomePage {
   //go to profile page 
   goToProfilepage()
     {
-      this.nav.setRoot(ProfilePage);
+      this.nav.push(ProfilePage);
     }
 
   presentNotifications(myEvent) {
@@ -68,6 +69,10 @@ export class HomePage {
     popover.present({
       ev: myEvent
     });
+  }
+  goToUpdateprofile()
+  {
+    this.nav.push(UpdateprofilePage);
   }
   goTo(){
       this.nav.push(TripDetailPage);

@@ -9,6 +9,8 @@ import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
+import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
+
 
 
 export interface MenuItem {

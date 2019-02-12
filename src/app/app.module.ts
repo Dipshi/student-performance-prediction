@@ -28,6 +28,8 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
 import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-educational-details";
+import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
+
 
 // import services
 // end import services
@@ -50,7 +52,8 @@ import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-ed
     TripDetailPage,
     TripsPage,
     ProfilePage,
-    SeeEducationalDetailsPage
+    SeeEducationalDetailsPage,
+    UpdateprofilePage
   ],
   imports: [
     BrowserModule,
@@ -81,7 +84,8 @@ import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-ed
     TripDetailPage,
     TripsPage,
     ProfilePage,
-    SeeEducationalDetailsPage
+    SeeEducationalDetailsPage,
+    UpdateprofilePage
   ],
   providers: [
     StatusBar,
