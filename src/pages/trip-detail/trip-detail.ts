@@ -5,6 +5,8 @@ import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 import { ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
 
+import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
+
 @Component({
   selector: 'page-trip-detail',
   templateUrl: 'trip-detail.html'
@@ -21,10 +23,17 @@ export class TripDetailPage {
 
     barChart: any;
 
-  constructor(public nav: NavController, public tripService: TripService) {
+  constructor(public nav: NavController, public tripService: TripService, private msgService: ApiconnectProvider) {
     // set sample data
     this.trip = tripService.getItem(1);
+    this.getDetails();
   }
+
+  getDetails(){
+    this.msgService.getMessage().subscribe(data=>console.log(data));
+       
+  }
+
   ionViewDidLoad() {
 
         this.barChart = new Chart(this.barCanvas.nativeElement, {

@@ -43,13 +43,13 @@
           </ion-card>
         </ion-col>
         <ion-col>
-            <ion-card>
-                <ion-card-content center>
-                    <ion-card-title>
+            <ion-card tappable>
+                <ion-card-content center >
+                    <ion-card-title tappable (click)="goToUpdateprofile()">
                       Update
                     </ion-card-title>
               
-                    <ion-icon class='icons' name="create" item-center></ion-icon>
+                    <ion-icon class='icons' name="create" item-center tappable (click)="goToUpdateprofile()"></ion-icon>
   
                   </ion-card-content>
             </ion-card>
@@ -71,26 +71,28 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-              <ion-card>
-                  <ion-card-content>
-                      <ion-card-title tappable (click)="seeEducation()" >
-                        See Educational Details
-                      </ion-card-title>
-                      <ion-icon class='icons' name="information-circle"></ion-icon>
-                    </ion-card-content>
+                <ion-item>
+                  <ion-card tappable>
+                    <ion-card-content>
+                        <ion-card-title tappable (click)="seeEducation()" >
+                          See Educational Details
+                        </ion-card-title>
+                        <ion-icon class='icons' name="information-circle" tappable (click)="seeEducation()"></ion-icon>
+                      </ion-card-content>
                   </ion-card>
-                <!--</ion-item>-->
+                </ion-item>
+                             <!--</ion-item>-->
            
             </ion-col>
             <ion-col>
               <ion-item>
-                <ion-card >
-                    <ion-card-content center>
-                        <ion-card-title tappable (click)="see()">
-                          Update educational details
+                <ion-card  tappable>
+                    <ion-card-content>
+                        <ion-card-title tappable (click)="see()" >
+                          Update details
                         </ion-card-title>
                         <!-- <button ion-button icon-only clear tappable (click)="goTo()" > -->
-                           <ion-icon class='icons' name="create" item-center  ></ion-icon>
+                           <ion-icon class='icons' name="create" item-center  tappable (click)="see()"></ion-icon>
                          <!-- </button> -->
                       </ion-card-content>
                 </ion-card>

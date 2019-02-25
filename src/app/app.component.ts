@@ -9,6 +9,8 @@ import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
+import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
+import {TeacherDashboardPage} from "../pages/teacher-dashboard/teacher-dashboard";
 
 
 export interface MenuItem {
@@ -38,6 +40,7 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
+      {title: 'Teacher Dashboard', component: TeacherDashboardPage, icon: 'person'},
       {title: 'Log Out', component: LoginPage, icon: 'person'}
     ];
   }
@@ -63,6 +66,11 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+    showteacher_dashboard(page) {
+    // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
+    this.nav.setRoot(TeacherDashboardPage);
   }
 
   logout() {

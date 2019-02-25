@@ -3,7 +3,7 @@ import {IonicApp, IonicModule} from "ionic-angular";
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {IonicStorageModule} from '@ionic/storage';
-
+import {HttpModule} from '@angular/http'
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
@@ -28,6 +28,9 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
 import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-educational-details";
+import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
+import { ApiconnectProvider } from '../providers/apiconnect/apiconnect';
+
 
 // import services
 // end import services
@@ -50,12 +53,14 @@ import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-ed
     TripDetailPage,
     TripsPage,
     ProfilePage,
-    SeeEducationalDetailsPage
+    SeeEducationalDetailsPage,
+    UpdateprofilePage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     // NgxDatatableModule,
+    HttpModule,
 
     IonicModule.forRoot(MyApp, {
       scrollPadding: false,
@@ -81,7 +86,8 @@ import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-ed
     TripDetailPage,
     TripsPage,
     ProfilePage,
-    SeeEducationalDetailsPage
+    SeeEducationalDetailsPage,
+    UpdateprofilePage
   ],
   providers: [
     StatusBar,
@@ -89,7 +95,8 @@ import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-ed
     Keyboard,
     ActivityService,
     TripService,
-    WeatherProvider
+    WeatherProvider,
+    ApiconnectProvider
   ]
 })
 

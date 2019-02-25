@@ -27,7 +27,7 @@
     "@ionic/storage": "2.0.1",
     "@swimlane/ngx-datatable": "^14.0.0",
     "chart.js": "^2.7.3",
-    "cordova-android": "^6.3.0",
+    "cordova-android": "6.3.0",
     "cordova-ios": "^4.4.0",
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-device": "^1.1.6",
@@ -67,7 +67,5 @@
   },
   "config": {
     "ionic_sass": "./sass.js"
-}
-
   }
-
+}
