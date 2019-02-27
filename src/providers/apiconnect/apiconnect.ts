@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http,Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
+import {Observable} from 'rxjs/Observable';
 
 /*
   Generated class for the ApiconnectProvider provider.
@@ -19,9 +21,38 @@ export class ApiconnectProvider {
     console.log('Hello ApiconnectProvider Provider');
   }
 
+  //map the response to an array or object 
 getMessage(){
   return this.http.get(this.url)
-  .do(res=>console.log(res));
+  .do((res:Response)=>console.log(res))
+  .map((res:Response)=>res.json())
+  .catch(this.catchError);
  
 }
+private catchError(error:Response | any){
+  console.log(error);
+  return Observable.throw(error.json() || "Server Error.");
+}
+
+private Responseval(res: Response){
+  console.log(res);
+}
+private extractData(res:Response){
+  res.json();
+}
+}
+export  class  Product {
+
+id: number;
+
+name: string;
+
+cost: number;
+
+quantity: number;
+
+constructor(values: Object = {}) {
+
+Object.assign(this, values);
+
 }

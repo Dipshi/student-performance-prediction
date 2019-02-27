@@ -4,6 +4,8 @@ import {TripService} from "../../services/trip-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 import { ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
+import { Observable } from 'rxjs/Observable';
+
 
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 
@@ -18,9 +20,10 @@ export class TripDetailPage {
   public adults = 2;
   // number of children
   public children = 0;
+  stuDataList :any;
   //bar chart drawing
   @ViewChild('barCanvas') barCanvas;
-
+    
     barChart: any;
 
   constructor(public nav: NavController, public tripService: TripService, private msgService: ApiconnectProvider) {
@@ -30,7 +33,9 @@ export class TripDetailPage {
   }
 
   getDetails(){
-    this.msgService.getMessage().subscribe(data=>console.log(data));
+    this.msgService.getMessage().subscribe(data=>(this.stuDataList=data.data.children));
+    // console.log(this.stuDataList);
+  
        
   }
 
