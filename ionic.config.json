@@ -7,7 +7,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "http://localhost:8000/api/studentPersonalData/"
+      "proxyUrl": "http://localhost:8000/api/studentPersonalData/?format=json"
     }
   ]
 }

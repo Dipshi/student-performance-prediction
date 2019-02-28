@@ -16,7 +16,6 @@ export class ApiconnectProvider {
    
    private url: string="http://localhost:8100/api";
 
-
   constructor(public http: Http) {
     console.log('Hello ApiconnectProvider Provider');
   }
@@ -25,7 +24,7 @@ export class ApiconnectProvider {
 getMessage(){
   return this.http.get(this.url)
   .do((res:Response)=>console.log(res))
-  .map((res:Response)=>res.json())
+  .map((res:Response)=>(res.json()))
   .catch(this.catchError);
  
 }
@@ -41,18 +40,19 @@ private extractData(res:Response){
   res.json();
 }
 }
-export  class  Product {
+// export  class  Product {
 
-id: number;
+// id: number;
 
-name: string;
+// FirstName: string;
 
-cost: number;
+// // cost: number;
 
-quantity: number;
+// // quantity: number;
 
-constructor(values: Object = {}) {
+// constructor(values: Object = {}) {
 
-Object.assign(this, values);
+// Object.assign(this, values);
 
-}
+// }
+// }

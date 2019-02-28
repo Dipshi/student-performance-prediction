@@ -7,4 +7,4 @@ class studentDataResource(ModelResource):
         queryset = studentData.objects.all()
         resource_name = 'studentPersonalData'
         # excludes= ["product", "price"]
-        allowed_methods = ['get']
+        allowed_methods = ['get','post','put']
