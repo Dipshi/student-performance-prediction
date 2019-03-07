@@ -14,10 +14,13 @@ import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class ApiconnectProvider {
    
-   private url: string="http://localhost:8100/api";
+   private url: string="http://localhost:8000/api/";
 
   constructor(public http: Http) {
     console.log('Hello ApiconnectProvider Provider');
+  }
+  registerUser(data){
+    console.log(data);
   }
 
   //map the response to an array or object 
@@ -28,6 +31,9 @@ getMessage(){
   .catch(this.catchError);
  
 }
+
+ 
+
 private catchError(error:Response | any){
   console.log(error);
   return Observable.throw(error.json() || "Server Error.");

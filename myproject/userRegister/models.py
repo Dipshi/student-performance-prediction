@@ -1,9 +1,13 @@
 from django.db import models
-from userRegister.models import userRegister
 
 # Create your models here.
+class userRegister(models.Model):
+    FirstName = models.CharField(max_length= 250)
+    Email=models.CharField(max_length= 250)
+    Password=models.CharField(max_length= 250)
+
 class studentData(models.Model):
-    sid=models.ForeignKey(userRegister, on_delete=models.CASCADE)
+    sid=models.ForeignKey(userRegister, on_delete=models.CASCADE,related_name='sid')
     Year     = models.CharField(max_length= 250)
     FirstName = models.CharField(max_length= 250)
     FatherName = models.CharField(max_length= 250)
@@ -16,11 +20,3 @@ class studentData(models.Model):
     Caste = models.CharField(max_length= 250)
     Gap = models.CharField(max_length= 250)
     Select_your_Current_Graduation= models.CharField(max_length= 250)
-
-
-
-
-
-
-
-

@@ -2,14 +2,20 @@ import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
 import {HomePage} from "../home/home";
 import {RegisterPage} from "../register/register";
+// import { GooglePlus } from '@ionic-native/google-plus/ngx';
+import { ViewChild } from '@angular/core';
+import {RegisterUserProvider} from  "../../providers/register-user/register-user";
 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
 })
-export class LoginPage {
+export class LoginPage  {
+  @ViewChild('username') uname;
+  @ViewChild('password') password;
+  credentials;
 
-  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,private regUser: RegisterUserProvider) {
     this.menu.swipeEnable(false);
   }
 
@@ -20,8 +26,33 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    this.nav.setRoot(HomePage);
+    this.credentials={
+      email:this.uname.value,
+      password:this.password.value,
+    };
+   
+    
+    this.regUser.loginUser(this.credentials).subscribe(
+      response=>{
+       
+        this.nav.setRoot(LoginPage);
+      },
+      error=>{
+        console.log('error',error)
+        alert('Type in correct credentials')
+      }
+   
+    );
+    // this.nav.setRoot(HomePage);
   }
+  
+  // refreshToken() {
+  //   this.regUser.refreshToken();
+  // }
+ 
+  // logout() {
+  //   this._userService.logout();
+  // }
 
   forgotPass() {
     let forgot = this.forgotCtrl.create({
@@ -46,7 +77,7 @@ export class LoginPage {
           handler: data => {
             console.log('Send clicked');
             let toast = this.toastCtrl.create({
-              message: 'Email was sended successfully',
+              message: 'Email was send successfully',
               duration: 3000,
               position: 'top',
               cssClass: 'dark-trans',

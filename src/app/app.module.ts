@@ -7,7 +7,7 @@ import {HttpModule} from '@angular/http'
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
-
+import {FormsModule} from '@angular/forms';
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import {ActivityService} from "../services/activity-service";
@@ -30,6 +30,7 @@ import {ProfilePage} from "../pages/profile/profile";
 import {SeeEducationalDetailsPage} from "../pages/see-educational-details/see-educational-details";
 import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
 import { ApiconnectProvider } from '../providers/apiconnect/apiconnect';
+import { RegisterUserProvider } from '../providers/register-user/register-user';
 
 
 // import services
@@ -96,7 +97,8 @@ import { ApiconnectProvider } from '../providers/apiconnect/apiconnect';
     ActivityService,
     TripService,
     WeatherProvider,
-    ApiconnectProvider
+    ApiconnectProvider,
+    RegisterUserProvider
   ]
 })
 

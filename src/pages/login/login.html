@@ -19,7 +19,7 @@
           <ion-icon name="mail" item-start class="text-primary"></ion-icon>
           Email
         </ion-label>
-        <ion-input type="email"></ion-input>
+        <ion-input type="email" #username></ion-input>
       </ion-item>
 
       <ion-item>
@@ -27,7 +27,7 @@
           <ion-icon name="lock" item-start class="text-primary"></ion-icon>
           Password
         </ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" #password></ion-input>
       </ion-item>
     </form>
 
@@ -39,9 +39,9 @@
         SIGN IN
       </button>
 
-      <!-- <p text-center ion-text color="secondary">Or Sign in with:</p>
+     <p text-right ion-text color="primary" tappable (click)="register()"><strong>Sign Up</strong></p>
 
-      <ion-grid>
+      <!--<ion-grid>
         <ion-row>
           <ion-col col-4>
             <button ion-button icon-only block class="btn-facebook">
@@ -54,7 +54,7 @@
             </button>
           </ion-col>
           <ion-col col-4>
-            <button ion-button icon-only block class="btn-gplus">
+            <button ion-button icon-only block class="btn-gplus" >
               <ion-icon name="logo-googleplus"></ion-icon>
             </button>
           </ion-col>

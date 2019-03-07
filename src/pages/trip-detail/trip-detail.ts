@@ -22,7 +22,6 @@ export class TripDetailPage {
   public children = 0;
   //bar chart drawing
   //  requests: Observable<any>;
-   private url: string="http://localhost:8100/api";
    public requests:any=[];
   @ViewChild('barCanvas') barCanvas;
     
@@ -40,7 +39,7 @@ export class TripDetailPage {
     this.msgService.getMessage()
     .subscribe(data => 
    // Object.keys(values
-     (this.requests=((data["objects"]))));
+     (this.requests=(data)));
     console.log(this.requests);
   }
   
