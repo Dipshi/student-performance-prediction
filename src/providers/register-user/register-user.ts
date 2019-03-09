@@ -35,7 +35,7 @@ private httpOptions: any;
 
   registerUser(userData):Observable<any>{
     //  const body={username:userData.username,email:userData.email,password:userData.password};
-     return this.http.post(this.url+'/userRegister/',userData,this.httpOptions);
+     return this.http.post(this.url+'/userRegister/',userData);
  
 }
 private updateData(token) {
@@ -49,6 +49,7 @@ private updateData(token) {
     this.username = token_decoded.username;
   }
   loginUser(userData):Observable<any>{
+    console.log(userData);
     //  const body={FirstName:userData.FirstName,Email:userData.Email,Password:userData.Password};
      return this.http.post(this.url+'/userLogin/',userData);
     // this.http.post(this.url+'/api-token-auth/', JSON.stringify(userData), this.httpOptions).subscribe(
@@ -72,4 +73,8 @@ private updateData(token) {
       }
     );
   }
+
+  // public logout(uid):Observable<any>{
+  //   this.http.post('/api-token-refresh/',uid);
+  // }
 }

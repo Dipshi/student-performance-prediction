@@ -14,6 +14,7 @@ export class LoginPage  {
   @ViewChild('username') uname;
   @ViewChild('password') password;
   credentials;
+  public requests:any=[];
 
   constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,private regUser: RegisterUserProvider) {
     this.menu.swipeEnable(false);
@@ -27,15 +28,14 @@ export class LoginPage  {
   // login and go to home page
   login() {
     this.credentials={
-      email:this.uname.value,
+      username:this.uname.value,
       password:this.password.value,
     };
-   
-    
     this.regUser.loginUser(this.credentials).subscribe(
       response=>{
-       
-        this.nav.setRoot(LoginPage);
+         data =>(this.requests=(data))
+         console.log(this.requests)
+        this.nav.setRoot(HomePage);
       },
       error=>{
         console.log('error',error)

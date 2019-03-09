@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
+from rest_framework.authtoken.views import ObtainAuthToken
 # from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
-
+from rest_framework.authtoken import views
 # from rest_framework import router
 # from userRegister.views import UserRegViewSet
 # from userRegister import views
@@ -32,7 +33,9 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('userRegister.urls')),
-    url(r'^api-auth/', include('rest_framework.urls')),
+    url(r'^auth/', include('rest_framework.urls')),
+    url(r'^api-token-auth/', views.obtain_auth_token)
+    # url(r'^auth/', include('rest_framework.urls')),
     # path(r'api-token-auth/', obtain_jwt_token),
     # path(r'api-token-refresh/', refresh_jwt_token),
     # url(r'^api/', include(v1_api.urls)),

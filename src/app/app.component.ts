@@ -11,6 +11,7 @@ import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {ProfilePage} from "../pages/profile/profile";
 import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
 import {TeacherDashboardPage} from "../pages/teacher-dashboard/teacher-dashboard";
+import {RegisterUserProvider} from  "../providers/register-user/register-user";
 
 
 export interface MenuItem {
@@ -34,7 +35,8 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public keyboard: Keyboard
+    public keyboard: Keyboard,
+    private userReg:RegisterUserProvider
   ) {
     this.initializeApp();
 
@@ -73,8 +75,19 @@ export class MyApp {
     this.nav.setRoot(TeacherDashboardPage);
   }
 
-  logout() {
-    this.nav.setRoot(LoginPage);
-  }
+  // logout() {
+  //   this.userReg.logout(uid).subscribe(
+  //     response=>{
+  //       alert("Successfully logged out!!!")
+  //       this.nav.setRoot(LoginPage);
+  //     },
+  //     error=>{
+  //       console.log('error',error)
+  //       alert("Something went wrong!!")
+  //     }
+
+  //   );
+    
+  // }
 
 }

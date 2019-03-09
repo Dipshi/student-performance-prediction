@@ -11,7 +11,7 @@
     </div>
 
     <!-- Login form -->
-    <form class="list-form" >
+    <form #myForm="ngForm" class="list-form" >
       <ion-item>
         <ion-label floating>
           <ion-icon name="person" item-start class="text-primary"></ion-icon>
@@ -25,7 +25,16 @@
           <ion-icon name="mail" item-start class="text-primary"></ion-icon>
           Email
         </ion-label>
-        <ion-input type="email" #email></ion-input>
+        <ion-input type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required #email></ion-input>
+        <span *ngIf="email.errors">
+                <span [hidden]="!email.errors.required">
+                    <ion-label style="color: red; margin-left: 16px;"> Email is required </ion-label>
+                </span>
+                <span [hidden]="!email.errors.pattern">
+                    <ion-label style="color: red; margin-left: 16px;"> Please enter a valid email </ion-label>
+                </span>
+            </span>
+
       </ion-item>
 
       <ion-item>
@@ -38,7 +47,7 @@
     </form>
 
     <div margin-top>
-      <button ion-button block color="dark" tappable (click)="register()">
+      <button ion-button block color="dark" [disabled]="!myForm.form.valid" tappable (click)="register()">
         SIGN UP
       </button>
 

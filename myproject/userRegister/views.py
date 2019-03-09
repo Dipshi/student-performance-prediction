@@ -1,30 +1,49 @@
 from rest_framework import routers, serializers, viewsets
 from userRegister.models import userRegister
 from userRegister.serializer import UserRegSerializer
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view,permission_classes
 from rest_framework.response import Response
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+from rest_framework.permissions import IsAuthenticated
 import json
+from rest_framework.authtoken.models import Token
 
+@api_view(['GET', 'POST'])
+@csrf_exempt
+## function responsible for authenticating users
 def userLogin(request):
-    email = request.data.get('email')
-    # password = request.POST['password']
-    print(email)
-    # user = authenticate(request, email=email, password=password)
-    # if user is not None:
-    #     login(request, user)
-    #     # Redirect to a success page.
-    #     return Response(user, status=status.HTTP_400_BAD_REQUEST)
-    #     ...
-    # else:
-    #     return Response(user, status=status.HTTP_400_BAD_REQUEST)
-    #     # Return an 'invalid login' error message.
+    data = request.data
+    try:
+        username = data['username']
+        password = data['password']
+    except:
+        return Response(status=status.HTTP_400_BAD_REQUEST)
+
+    try:
+        user = User.objects.get(username=username, password=password)
+        print(user)
+    except:
+        return Response(usestatus=status.HTTP_401_UNAUTHORIZED)
+    try:
+        user_token = user.auth_token.key
+    except:
+        user_token = Token.objects.create(user=user)
+
+    data = {'token': user_token}
+    return Response(data=(data), status=status.HTTP_200_OK)
+
+##logging user out by deleting tokens
+@api_view(['GET', 'POST'])
+def get(self, request, format=None):
+    request.user.auth_token.delete()
+    return Response(status=status.HTTP_200_OK)
         
 
-@api_view(['GET', 'POST']) ## specification of the allowed methods
+@api_view(['GET', 'POST']) 
+## specification of the allowed methods
 # @csrf_exempt
 def snippet_list(request):
     if request.method == 'GET':
@@ -42,6 +61,7 @@ def snippet_list(request):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
+# @permission_classes(IsAuthenticated,)
 def snippet_detail(request, pk):
    
     try:

@@ -8,6 +8,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 import {FormsModule} from '@angular/forms';
+import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import {ActivityService} from "../services/activity-service";
