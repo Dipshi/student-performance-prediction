@@ -15,68 +15,160 @@
         <ion-label floating>
           Enter SSC Marks
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #ssc required></ion-input>
     </ion-item>
     <ion-item stacked>
         <ion-label floating>
           Enter Gap in Education(years)
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #gap required></ion-input>
+    </ion-item>
+    <ion-item stacked>
+        <ion-label floating>
+          Diploma/HSC
+        </ion-label>
+        <ion-input type="text" #type required></ion-input>
     </ion-item>
     <ion-item stacked>
         <ion-label floating>
           Enter HSC Marks/Diploma Marks
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #hsc required></ion-input>
     </ion-item>
      <ion-item>
         <ion-label floating>
           Enter SEM 1 pointer 
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem1 required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>
           Enter SEM 2 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem2 required></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>
           Enter SEM 3 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem3 required></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>
           Enter SEM 4 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem4 required></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>
           Enter SEM 5 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem5 required></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>
           Enter SEM 6 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem6 required></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>
           Enter SEM 7 pointer
         </ion-label>
-        <ion-input type="numeric"></ion-input>
+        <ion-input type="numeric" #sem7 required></ion-input>
     </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM1 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem1dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM1 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem1live required></ion-input>
+    </ion-item>
+    
+     <ion-item>
+        <ion-label floating>
+          Enter SEM2 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem2dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM2 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem2live required></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Enter SEM3 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem3dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM3 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem3live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM4 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem4dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM4 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem4live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM5 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem5dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM5 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem5live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM6 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem6dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+          Enter SEM6 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem6live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM7 dead KTs
+        </ion-label>
+        <ion-input type="numeric" #sem7dead required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          Enter SEM7 live KTs
+        </ion-label>
+        <ion-input type="numeric" #sem7live required></ion-input>
+    </ion-item>
+    
     <ion-item>
       <button ion-button default  color="light" tappable (click)="clickUpdate()">
             Update 
       </button>
-   </ion-item>-->
+   </ion-item>
     <!--<ion-item *ngFor="let item of places.nearby" tappable (click)="searchBy(item)">
       <ion-icon name="md-locate" item-left color="primary"></ion-icon>
       <span ion-text color="primary">{{ item.name }}</span>

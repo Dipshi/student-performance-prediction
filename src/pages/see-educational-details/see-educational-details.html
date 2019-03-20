@@ -14,26 +14,161 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content *ngIf="flag==1">
+   <ion-list no-lines>
+     <ion-item stacked>
+        <ion-label floating>
+           SSC Marks
+        </ion-label>
+        <ion-input type="numeric"  value={{tenth}} #ssc required></ion-input>
+    </ion-item>
+    <ion-item stacked>
+        <ion-label floating>
+          Diploma/HSC
+        </ion-label>
+        <ion-input type="text" value={{Type}} #type required disabled></ion-input>
+    </ion-item>
+    <ion-item stacked>
+        <ion-label floating>
+           HSC Marks/Diploma Marks
+        </ion-label>
+        <ion-input type="numeric" value={{currScore}} #hsc required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+          SEM 1 pointer 
+        </ion-label>
+        <ion-input type="numeric" value={{Sem1}} #sem1 required></ion-input>
+      </ion-item>
 
-</ion-content>
-<ion-content padding>
-   <ion-list>
-  <ion-item>
-    <ion-label>Pokémon Yellow</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Mega Man X</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>The Legend of Zelda</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Pac-Man</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Super Mario World</ion-label>
-  </ion-item>
-</ion-list>
-  
+      <ion-item>
+        <ion-label floating>
+           SEM 2 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem2}} #sem2 required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+           SEM 3 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem3}} #sem3 required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+           SEM 4 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem4}} #sem4 required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+            SEM 5 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem5}} #sem5 required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+           SEM 6 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem6}} #sem6 required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+           SEM 7 pointer
+        </ion-label>
+        <ion-input type="numeric" value={{Sem7}} #sem7 required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM1 dead KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem1_dead}} #sem1dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM1 live KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem1_live}} #sem1live required></ion-input>
+    </ion-item>
+    
+     <ion-item>
+        <ion-label floating>
+           SEM2 dead KTs
+        </ion-label>
+        <ion-input type="numeric"  value={{Sem2_dead}} #sem2dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM2 live KTs
+        </ion-label>
+        <ion-input type="numeric"  value={{Sem2_live}} #sem2live required></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label floating>
+           SEM3 dead KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem3_dead}}  #sem3dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM3 live KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem3_live}} #sem3live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+           SEM4 dead KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem4_dead}} #sem4dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM4 live KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem4_live}} #sem4live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+           SEM5 dead KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem5_dead}} #sem5dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM5 live KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem5_live}} #sem5live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+           SEM6 dead KTs
+        </ion-label>
+        <ion-input type="numeric"  value={{Sem6_dead}} #sem6dead required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>
+           SEM6 live KTs
+        </ion-label>
+        <ion-input type="numeric" value={{Sem6_live}} #sem6live required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+           SEM7 dead KTs
+        </ion-label>
+        <ion-input type="numeric"  value={{Sem7_dead}} #sem7dead required></ion-input>
+    </ion-item>
+     <ion-item>
+        <ion-label floating>
+           SEM7 live KTs
+        </ion-label>
+        <ion-input type="numeric"  value={{Sem7_live}} #sem7live required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <button ion-button default  color="light" tappable (click)="clickUpdate()">
+            Update 
+      </button>
+   </ion-item>
+</ion-list >
+</ion-content >
+<ion-content *ngIf="flag==0">
 </ion-content>

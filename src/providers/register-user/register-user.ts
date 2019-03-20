@@ -2,17 +2,15 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-/*
-  Generated class for the RegisterUserProvider provider.
+import {Storage} from '@ionic/storage';
+import {BehaviorSubject} from "rxjs/Rx";
 
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class RegisterUserProvider {
 private url: string="http://localhost:8000";
 private httpOptions: any;
- 
+key;
+// userdata1 = new BehaviorSubject<userdata[]>([]);
   // the actual JWT token
   public token: string;
  
@@ -38,6 +36,22 @@ private httpOptions: any;
      return this.http.post(this.url+'/userRegister/',userData);
  
 }
+
+updateDetails(userData):Observable<any>{
+    return this.http.post(this.url+'/userDetails/',userData);
+ }
+    // return this.http.get(`${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${this.apiKey}`).pipe(
+updateEduDetails(userData,pk):Observable<any>{
+     this.key=pk;
+     console.log(userData)
+    return this.http.put(this.url+'/userEduDetails/'+this.key+'/',userData).map(res => res.json());
+}
+getEduDetails(pk):Observable<any>{
+  // console.log("provider",pk);
+  this.key=pk;
+    return this.http.get(this.url+'/userEduDetails/'+this.key+'/').map(res => res.json());
+}
+
 private updateData(token) {
     this.token = token;
     this.errors = [];
@@ -48,13 +62,12 @@ private updateData(token) {
     this.token_expires = new Date(token_decoded.exp * 1000);
     this.username = token_decoded.username;
   }
-  loginUser(userData):Observable<any>{
-    console.log(userData);
+  loginUser(userData){
     //  const body={FirstName:userData.FirstName,Email:userData.Email,Password:userData.Password};
-     return this.http.post(this.url+'/userLogin/',userData);
-    // this.http.post(this.url+'/api-token-auth/', JSON.stringify(userData), this.httpOptions).subscribe(
+     return this.http.post(this.url+'/userLogin/',userData).map(res => res.json());
+    // this.http.post(this.url+'/api-token-auth/', JSON.stringify(userData), this.httpOptions).do(
     //   data => {
-    //     this.updateData(data['token']);
+    //     // this.updateData(data['token']);
     //   },
     //   err => {
     //     this.errors = err['error'];
@@ -74,7 +87,9 @@ private updateData(token) {
     );
   }
 
-  // public logout(uid):Observable<any>{
-  //   this.http.post('/api-token-refresh/',uid);
-  // }
+  public logout(uid):Observable<any>{
+    console.log("Id is",uid);
+    return this.http.delete(this.url+'/userLogout/'+{uid}+'/');
+  }
 }
+

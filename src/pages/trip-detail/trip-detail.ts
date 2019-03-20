@@ -30,18 +30,9 @@ export class TripDetailPage {
   constructor(public nav: NavController, public tripService: TripService, private msgService: ApiconnectProvider,public httpClient:HttpClient) {
     // set sample data
     this.trip = tripService.getItem(1);
-    this.getDetails();
+    // this.getDetails();
   }
 
-  getDetails(){
-    //this.msgService.getMessage().subscribe(data=>console.log(this.stuDataList));
-    //this.studata = this.httpClient.get(this.url);
-    this.msgService.getMessage()
-    .subscribe(data => 
-   // Object.keys(values
-     (this.requests=(data)));
-    console.log(this.requests);
-  }
   
        
 //   ionViewDidLoad() {

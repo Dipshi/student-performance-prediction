@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-class studentData(models.Model):
-    s_id=models.ForeignKey(User, on_delete=models.CASCADE,related_name='s_id')
+class stuData(models.Model):
+    sid=models.ForeignKey(User, on_delete=models.CASCADE,related_name='sid')
     Year     = models.CharField(max_length= 250)
     Branch    = models.CharField(max_length= 250)
     FirstName = models.CharField(max_length= 250)

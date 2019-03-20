@@ -5,7 +5,7 @@ from userRegister import views
 urlpatterns = [
     path('userRegister/', views.snippet_list),
     path('userLogin/', views.userLogin),
-    path('userLogout/',views.get),
-    path('userDetails/<int:pk>/', views.snippet_detail),
+    path('userLogout/<int:pk>/',views.logout),
+    # path('userDetails/<int:pk>/', views.snippet_detail),
     
 ]

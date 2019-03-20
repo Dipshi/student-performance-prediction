@@ -5,6 +5,7 @@ import {RegisterPage} from "../register/register";
 // import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { ViewChild } from '@angular/core';
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
+import {Storage} from '@ionic/storage';
 
 @Component({
   selector: 'page-login',
@@ -15,8 +16,9 @@ export class LoginPage  {
   @ViewChild('password') password;
   credentials;
   public requests:any=[];
+  weathers: any;
 
-  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,private regUser: RegisterUserProvider) {
+  constructor(public storage:Storage,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,private regUser: RegisterUserProvider) {
     this.menu.swipeEnable(false);
   }
 
@@ -31,18 +33,31 @@ export class LoginPage  {
       username:this.uname.value,
       password:this.password.value,
     };
-    this.regUser.loginUser(this.credentials).subscribe(
-      response=>{
-         data =>(this.requests=(data))
-         console.log(this.requests)
-        this.nav.setRoot(HomePage);
-      },
-      error=>{
-        console.log('error',error)
-        alert('Type in correct credentials')
-      }
+    this.regUser.loginUser(this.credentials).subscribe((weather) => {
+         this.weathers = weather
+         this.nav.setRoot(HomePage)
+         this.storage.set('id',this.weathers.id),
+         this.storage.set('username',this.weathers.username),
+         this.storage.set('token',this.weathers.token),
+         
+        //  console.log('logged in user ',this.weathers.id)
+         this.storage.get('username').then((val)=>
+             console.log('logged in user name',val)),
+         this.storage.get('id').then((val1)=>
+             console.log('logged in user id',val1))
+    });
+        //  console.log("This value",this.weathers.id)
+         
+    
+      
+    
+
+      // error=>{
+      //   console.log('error',error)
+      //   alert('Type in correct credentials')
+      // }
    
-    );
+    
     // this.nav.setRoot(HomePage);
   }
   
@@ -53,7 +68,9 @@ export class LoginPage  {
   // logout() {
   //   this._userService.logout();
   // }
-
+  getSessionData(){
+    return this.requests;
+  }
   forgotPass() {
     let forgot = this.forgotCtrl.create({
       title: 'Forgot Password?',

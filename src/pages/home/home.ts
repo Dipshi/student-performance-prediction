@@ -11,6 +11,7 @@ import {SeeEducationalDetailsPage} from "../see-educational-details/see-educatio
 import {LoginPage} from "../login/login";
 import {ProfilePage} from "../profile/profile";
 import {UpdateprofilePage} from "../updateprofile/updateprofile";
+import {RegisterUserProvider} from  "../../providers/register-user/register-user";
 
 
 
@@ -25,8 +26,19 @@ export class HomePage {
     name: "Rio de Janeiro, Brazil",
     date: new Date().toISOString()
   }
+  public uid;
+  public uname;
+  public useDetails:any=[];
 
-  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
+  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController,private userReg:RegisterUserProvider,) {
+      this.storage.get('id').then(val => {
+      if (val != null) {
+        this.uid = val;
+        
+      }
+     
+
+    });
   }
 
   ionViewWillEnter() {
@@ -81,11 +93,36 @@ export class HomePage {
       this.nav.push(SearchLocationPage);
   }
   seeEducation(){
-      this.nav.push(SeeEducationalDetailsPage);
+      this.nav.push(SeeEducationalDetailsPage,{id:this.uid});
   }
 
   logout() {
-    this.nav.setRoot(LoginPage);
+    this.storage.get('id').then(val => {
+      if (val != null) {
+      
+        this.uid = val;
+        
+      }
+     
+
+    });
+    console.log("logout ",this.uid);
+   
+    // this.userReg.logout(this.uid).subscribe(
+    //   response=>{
+      this.storage.clear();
+        alert("Successfully logged out!!!");
+        // this.storage.clear();
+        this.nav.setRoot(LoginPage);
+    //   },
+    //   error=>{
+    //     console.log('error',error)
+    //     alert("Something went wrong!!")
+    //   }
+
+    // );
+    
+    // this.nav.setRoot(LoginPage);
   }
   
 }

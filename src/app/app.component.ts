@@ -12,6 +12,7 @@ import {ProfilePage} from "../pages/profile/profile";
 import {UpdateprofilePage} from "../pages/updateprofile/updateprofile";
 import {TeacherDashboardPage} from "../pages/teacher-dashboard/teacher-dashboard";
 import {RegisterUserProvider} from  "../providers/register-user/register-user";
+import { Storage } from '@ionic/storage';
 
 
 export interface MenuItem {
@@ -28,7 +29,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = LoginPage;
-
+   username;
   appMenuItems: Array<MenuItem>;
 
   constructor(
@@ -36,7 +37,9 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public keyboard: Keyboard,
-    private userReg:RegisterUserProvider
+    private userReg:RegisterUserProvider,
+    private storage:Storage,
+   
   ) {
     this.initializeApp();
 
@@ -45,6 +48,11 @@ export class MyApp {
       {title: 'Teacher Dashboard', component: TeacherDashboardPage, icon: 'person'},
       {title: 'Log Out', component: LoginPage, icon: 'person'}
     ];
+     this.storage.get('username').then((val) => {
+      if (val != null) {
+        this.username = val;
+      }
+    });
   }
 
   initializeApp() {
@@ -61,7 +69,10 @@ export class MyApp {
 
       //*** Control Keyboard
       this.keyboard.disableScroll(true);
+      
     });
+   
+
   }
 
   openPage(page) {

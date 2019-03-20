@@ -33,6 +33,7 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('userRegister.urls')),
+    path('', include('studentAcademics.urls')),
     url(r'^auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', views.obtain_auth_token)
     # url(r'^auth/', include('rest_framework.urls')),

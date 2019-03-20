@@ -24,22 +24,29 @@ def userLogin(request):
 
     try:
         user = User.objects.get(username=username, password=password)
-        print(user)
     except:
         return Response(usestatus=status.HTTP_401_UNAUTHORIZED)
     try:
         user_token = user.auth_token.key
     except:
         user_token = Token.objects.create(user=user)
-
-    data = {'token': user_token}
+    # print(user.id)
+    data = {'token': user_token,'username':username,'id':user.id}
     return Response(data=(data), status=status.HTTP_200_OK)
 
 ##logging user out by deleting tokens
-@api_view(['GET', 'POST'])
-def get(self, request, format=None):
-    request.user.auth_token.delete()
-    return Response(status=status.HTTP_200_OK)
+@api_view(['GET','DELETE'])
+def logout( request, pk):
+    try:
+        snippet = Token.objects.get(user_id=pk)
+    except Token.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    # organization = get_object_or_404(Token, user_id=pk)
+    snippet.delete()
+    return Response(status=status.HTTP_204_NO_CONTENT)
+    # request.user.auth_token.delete(user_id=pk)
+    # return Response(status=status.HTTP_200_OK)
         
 
 @api_view(['GET', 'POST']) 
