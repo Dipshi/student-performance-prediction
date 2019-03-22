@@ -6,8 +6,10 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Update Profile</ion-title>
+  <ion-navbar color="primary">
+     <ion-title>
+      <span ion-text>Add personal Details</span>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,20 +20,99 @@
           <ion-label floating>
             Enter FirstName:
           </ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" #firstname></ion-input>
       </ion-item>
       <ion-item>
           <ion-label floating>
             Enter Last Name:
           </ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text"  #lastname></ion-input>
       </ion-item>
       <ion-item>
           <ion-label floating>
-            Enter Fathers:
+            Enter Father's Name:
           </ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text"  #fathername></ion-input>
       </ion-item>
+       <ion-item>
+          <ion-label floating>
+            Enter Mother's Name:
+          </ion-label>
+          <ion-input type="text"  #mothername></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Branch:
+          </ion-label>
+          <ion-input type="text"  #branch></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Year:
+          </ion-label>
+          <ion-input type="text"  #year></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Date of Birth:
+          </ion-label>
+          <ion-input type="text"  #dob></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Gender:
+          </ion-label>
+          <ion-select #gender>
+            <ion-option >Female</ion-option>
+            <ion-option >Male</ion-option>
+            <ion-option >Transgender</ion-option>
+        </ion-select>
+          
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter College Admission year:
+          </ion-label>
+          <ion-input type="text"  #cay></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Admission category:
+          </ion-label>
+        <ion-select    #admcat>
+            <ion-option >Minority</ion-option>
+            <ion-option >CAP</ion-option>
+            <ion-option >JK</ion-option>
+            <ion-option >TFWS</ion-option>
+        </ion-select>
+        
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Caste:
+          </ion-label>
+          <ion-input type="text"  #caste></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter Gap:
+          </ion-label>
+          <ion-input type="numeric"  #gap></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Enter select your current graduation:
+          </ion-label>
+    <ion-select   #grad>
+      <ion-option >Under Graduation</ion-option>
+      <ion-option >Post Graduation</ion-option>
+    </ion-select>
+      </ion-item>
+       <ion-item>
+      <button ion-button default  color="light" tappable (click)="clickAdd()">
+            Update 
+      </button>
+   </ion-item>
   </ion-list>
 <!-- </ion-item> -->
 </ion-content>

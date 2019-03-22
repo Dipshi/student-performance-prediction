@@ -34,7 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'userRegister.apps.UserregisterConfig',
     'studentAcademics.apps.StudentacademicsConfig',
-    'studentData.apps.StudentdataConfig',
+    'stuData.apps.StudataConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

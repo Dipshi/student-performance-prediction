@@ -40,17 +40,29 @@ key;
 updateDetails(userData):Observable<any>{
     return this.http.post(this.url+'/userDetails/',userData);
  }
-    // return this.http.get(`${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${this.apiKey}`).pipe(
+   
+//function to update education details   
 updateEduDetails(userData,pk):Observable<any>{
      this.key=pk;
      console.log(userData)
     return this.http.put(this.url+'/userEduDetails/'+this.key+'/',userData).map(res => res.json());
 }
+//function to get education details
 getEduDetails(pk):Observable<any>{
-  // console.log("provider",pk);
   this.key=pk;
     return this.http.get(this.url+'/userEduDetails/'+this.key+'/').map(res => res.json());
 }
+
+//function to get user details
+getUserDetails(pk):Observable<any>{
+  this.key=pk;
+    return this.http.get(this.url+'/userPersonalDetails/'+this.key+'/').map(res => res.json());
+
+}
+//This function adds personal details
+updatePersonalDetails(userData):Observable<any>{
+    return this.http.post(this.url+'/personalDetails/',userData).map(res => res.json());;
+ }
 
 private updateData(token) {
     this.token = token;

@@ -33,9 +33,11 @@ export class LoginPage  {
       username:this.uname.value,
       password:this.password.value,
     };
+    
+    // this.nav.setRoot(HomePage);
     this.regUser.loginUser(this.credentials).subscribe((weather) => {
-         this.weathers = weather
-         this.nav.setRoot(HomePage)
+         this.weathers = weather,
+         this.nav.setRoot(HomePage),
          this.storage.set('id',this.weathers.id),
          this.storage.set('username',this.weathers.username),
          this.storage.set('token',this.weathers.token),
@@ -47,6 +49,7 @@ export class LoginPage  {
              console.log('logged in user id',val1))
     });
         //  console.log("This value",this.weathers.id)
+    
          
     
       
@@ -61,13 +64,7 @@ export class LoginPage  {
     // this.nav.setRoot(HomePage);
   }
   
-  // refreshToken() {
-  //   this.regUser.refreshToken();
-  // }
  
-  // logout() {
-  //   this._userService.logout();
-  // }
   getSessionData(){
     return this.requests;
   }

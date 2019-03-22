@@ -72,7 +72,7 @@ export class HomePage {
   //go to profile page 
   goToProfilepage()
     {
-      this.nav.push(ProfilePage);
+      this.nav.push(ProfilePage,{id:this.uid});
     }
 
   presentNotifications(myEvent) {
@@ -84,7 +84,7 @@ export class HomePage {
   }
   goToUpdateprofile()
   {
-    this.nav.push(UpdateprofilePage);
+    this.nav.push(UpdateprofilePage,{id:this.uid});
   }
   goTo(){
       this.nav.push(TripDetailPage);
@@ -106,7 +106,7 @@ export class HomePage {
      
 
     });
-    console.log("logout ",this.uid);
+
    
     // this.userReg.logout(this.uid).subscribe(
     //   response=>{
