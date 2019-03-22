@@ -21,6 +21,10 @@ def userLogin(request):
         password = data['password']
     except:
         return Response(status=status.HTTP_400_BAD_REQUEST)
+    
+    if username is None or password is None:
+        return Response({'error': 'Please provide both username and password'},
+                        status=HTTP_400_BAD_REQUEST)
 
     try:
         user = User.objects.get(username=username, password=password)

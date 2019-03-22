@@ -29,15 +29,18 @@ export class HomePage {
   public uid;
   public uname;
   public useDetails:any=[];
+  public token;
 
   constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController,private userReg:RegisterUserProvider,) {
       this.storage.get('id').then(val => {
       if (val != null) {
-        this.uid = val;
-        
+        this.uid = val; 
       }
-     
-
+    });
+    this.storage.get('token').then(val => {
+      if (val != null) {
+        this.token = val; 
+      }
     });
   }
 

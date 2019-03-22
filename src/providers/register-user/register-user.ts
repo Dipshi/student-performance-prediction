@@ -22,6 +22,7 @@ key;
  
   // error messages received from the login attempt
   public errors: any = [];
+  public userdata:any;
  
 
   constructor(public http: Http) {
@@ -48,7 +49,8 @@ updateEduDetails(userData,pk):Observable<any>{
     return this.http.put(this.url+'/userEduDetails/'+this.key+'/',userData).map(res => res.json());
 }
 //function to get education details
-getEduDetails(pk):Observable<any>{
+getEduDetails(pk,token):Observable<any>{
+  this.userdata={token:token};
   this.key=pk;
     return this.http.get(this.url+'/userEduDetails/'+this.key+'/').map(res => res.json());
 }

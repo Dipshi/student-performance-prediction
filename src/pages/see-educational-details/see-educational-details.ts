@@ -75,6 +75,8 @@ export class SeeEducationalDetailsPage {
   
   currScore;
   flag=0;
+  public token;
+  
   constructor(public forgotCtrl: AlertController,public userReg:RegisterUserProvider,public storage:Storage,public navCtrl: NavController, public navParams: NavParams) { 
              this.value = navParams.get('id');
 }
@@ -88,6 +90,11 @@ export class SeeEducationalDetailsPage {
          this.uid=val
       }    
     );
+     this.storage.get('token').then(val => {
+      if (val != null) {
+        this.token = val; 
+      }
+    });
     this.getDet();
   }
 

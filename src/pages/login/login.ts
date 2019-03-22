@@ -35,6 +35,7 @@ export class LoginPage  {
     };
     
     // this.nav.setRoot(HomePage);
+    // if(!this.uname.value || !this.password.value ){
     this.regUser.loginUser(this.credentials).subscribe((weather) => {
          this.weathers = weather,
          this.nav.setRoot(HomePage),
@@ -49,19 +50,10 @@ export class LoginPage  {
              console.log('logged in user id',val1))
     });
         //  console.log("This value",this.weathers.id)
-    
-         
-    
-      
-    
-
-      // error=>{
-      //   console.log('error',error)
-      //   alert('Type in correct credentials')
-      // }
-   
-    
-    // this.nav.setRoot(HomePage);
+    // }
+    // else{
+    //   alert("Type in credentials");
+    // }
   }
   
  

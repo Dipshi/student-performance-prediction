@@ -34,11 +34,14 @@ def snippet_list(request):
 @api_view(['GET', 'PUT', 'DELETE'])
 # @permission_classes(IsAuthenticated,)
 def snippet_detail(request,pk):
-    print(pk)
     try:
         snippet = studentAcademics.objects.get(sid_id=pk)
     except  studentAcademics.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
+    try:
+        token = Token.objects.get(user_id=pk)
+    except  Token.DoesNotExist:
+        return Response(status=status.HTTP_403_Forbidden)
 
     if request.method == 'GET':
         serializer = studentAcaSerializer(snippet)
