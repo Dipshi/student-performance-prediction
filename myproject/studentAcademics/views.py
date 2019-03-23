@@ -31,9 +31,47 @@ def snippet_list(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+# @api_view(['GET', 'PUT', 'DELETE'])
+# # @permission_classes(IsAuthenticated,)
+# def snippet_detail(request,pk):
+#     data=request.data
+#     tok=data['token']
+#     flag=0
+#     try:
+#         snippet = studentAcademics.objects.get(sid_id=pk)
+#     except  studentAcademics.DoesNotExist:
+#         return Response(status=status.HTTP_404_NOT_FOUND)
+#     try:
+#         token = Token.objects.get(user_id=pk)
+#         if(token.key==tok):
+#             flag=1
+#     except  Token.DoesNotExist:
+#         return Response(status=status.HTTP_403_Forbidden)
+#     if(flag==1):
+#         if request.method == 'GET':
+#             serializer = studentAcaSerializer(snippet)
+#             # print(serializer.data)
+#             return Response(serializer.data)
+
+#         elif request.method == 'PUT':
+#             serializer = studentAcaSerializer(snippet, data=request.data)
+#             if serializer.is_valid():
+#                 serializer.save()
+#                 return Response(serializer.data)
+#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+#         elif request.method == 'DELETE':
+#             snippet.delete()
+#             return Response(status=status.HTTP_204_NO_CONTENT)
+#     else:
+#         return Response(status=status.HTTP_403_Forbidden)
+
+
 @api_view(['GET', 'PUT', 'DELETE'])
-# @permission_classes(IsAuthenticated,)
 def snippet_detail(request,pk):
+    data=request.data
+    # tok=data['token']
+    flag=0
     try:
         snippet = studentAcademics.objects.get(sid_id=pk)
     except  studentAcademics.DoesNotExist:
@@ -58,3 +96,5 @@ def snippet_detail(request,pk):
     elif request.method == 'DELETE':
         snippet.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+

@@ -18,6 +18,7 @@ import {RegisterUserProvider} from  "../../providers/register-user/register-user
   templateUrl: 'see-educational-details.html',
 })
 export class SeeEducationalDetailsPage {
+   
    weathers:any;
    uid;
    Sem1;
@@ -72,13 +73,16 @@ export class SeeEducationalDetailsPage {
   @ViewChild('sem7dead') sem7dead;
   credentials;
   Type;
-  
+  param;
   currScore;
   flag=0;
   public token;
-  
+  keyval;
+
   constructor(public forgotCtrl: AlertController,public userReg:RegisterUserProvider,public storage:Storage,public navCtrl: NavController, public navParams: NavParams) { 
              this.value = navParams.get('id');
+             this.keyval = navParams.get('token');
+             
 }
 
   ionViewDidLoad(){
@@ -99,7 +103,10 @@ export class SeeEducationalDetailsPage {
   }
 
  getDet(){
-       this.userReg.getEduDetails(this.value).subscribe((weather) => {
+       this.param={
+             token:this.token,
+       };
+       this.userReg.getEduDetails(this.value,this.param).subscribe((weather) => {
          
          this.weathers = weather
         //  this.Sem1=this.weathers.Sem1,
