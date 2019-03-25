@@ -11,37 +11,89 @@
 
 
 <ion-content class="common-bg">
-  <!--slides-->
-  <!--<ion-slides class="to-top" pager>
-    <ion-slide *ngFor="let image of trip.images">
-      <img [src]="image" alt="">
-    </ion-slide>
-  </ion-slides>-->
-  <!--<ion-card>
-      <ion-card-header>
-        Bar Chart
-      </ion-card-header>
-      <ion-card-content>
-        <canvas #barCanvas></canvas>
-      </ion-card-content>
-    </ion-card>-->
-    <!--This is looping through the list element to show up api data-->
-    <ion-list *ngFor="let item of requests  ">
-         <ion-item>{{item.FirstName}}</ion-item>
-    </ion-list>
-
+   
   <!--services-->
-  <ion-grid class="border-bottom dark-bg">
+  <ion-grid class="border-bottom ">
     <ion-row>
       <ion-col text-center>
         <div class="text-sm">
           <div>
-            <!--<ion-icon name="time" class="text-white"></ion-icon>-->
-            <!--<span ion-text color="light">{{ trip.time }}</span>
-            <ion-icon name="checkbox-outline" margin-left class="text-white" *ngIf="trip.free_cancellation"></ion-icon>
-            <span ion-text color="light" *ngIf="trip.free_cancellation">Free cancellation</span>-->
-            <ion-icon name="list-box" margin-left class="text-white" *ngIf="trip.electric_voucher"></ion-icon>
-            <span ion-text color="light" *ngIf="trip.electric_voucher">Prediction for Sem5 is in range of 7-10 </span>
+            <ion-card no-margin margin-bottom class="full-width">
+              <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
+                <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
+                <p>Verify details</p>
+                <span></span>
+              </ion-item>
+              <ion-list no-lines>
+                <ion-item stacked>
+                    <ion-label floating>
+                      Name
+                    </ion-label>
+                    <ion-input type="text"  value={{fistname}}  width="100px"></ion-input>
+                    <ion-icon name="create"></ion-icon>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      Gender
+                    </ion-label>
+                    <ion-input type="text"  value={{gender}}></ion-input>
+                </ion-item>
+                    <ion-item stacked>
+                    <ion-label floating>
+                    Caste
+                    </ion-label>
+                   <ion-input type="text"  value={{caste}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      Gap (in years)
+                    </ion-label>
+                    <ion-input type="text"  value={{gap}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      SSC Result
+                    </ion-label>
+                    <ion-input type="text"  value={{tenth_score}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      HSC Results
+                    </ion-label>
+                    <ion-input type="text"  value={{twelve_score}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      Admission Category 
+                    </ion-label>
+                    <ion-input type="text"  value={{admiss_cat}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                     Sem1
+                    </ion-label>
+                    <ion-input type="text"  value={{Sem1}} ></ion-input>
+                </ion-item> <ion-item stacked>
+                    <ion-label floating>
+                      Sem2
+                    </ion-label>
+                    <ion-input type="text"  value={{Sem2}} ></ion-input>
+                </ion-item>
+                <ion-item stacked>
+                    <ion-label floating>
+                      Sem3
+                    </ion-label>
+                    <ion-input type="text"  value={{Sem3}} ></ion-input>
+                </ion-item> <ion-item stacked>
+                    <ion-label floating>
+                      Sem4
+                    </ion-label>
+                    <ion-input type="text"  value={{Sem4}} ></ion-input>
+                </ion-item>
+            
+              </ion-list>
+              
+            </ion-card>
           </div>
         </div>
       </ion-col>
