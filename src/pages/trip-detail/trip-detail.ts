@@ -111,6 +111,12 @@ export class TripDetailPage {
   {
     this.detailsstore();
     // console.log(this.credentials);
+    this.userReg.seeprediction(this.credentials).subscribe(
+      response => {
+        console.log("hi");
+    }); 
+
   }
   
 }
+

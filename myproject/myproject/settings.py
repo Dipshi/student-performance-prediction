@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'userRegister.apps.UserregisterConfig',
     'studentAcademics.apps.StudentacademicsConfig',
     'stuData.apps.StudataConfig',
+    'webapp.apps.webappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

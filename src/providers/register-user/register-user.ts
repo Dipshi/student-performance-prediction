@@ -103,7 +103,7 @@ private updateData(token) {
   //See prediction
   seeprediction(userdata)
   {
-     return this.http.put();
+     return this.http.put(this.url+'/prediction/',userdata).map(res=> res.json());
   }
 
   public logout(uid):Observable<any>{
