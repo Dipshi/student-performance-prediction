@@ -36,59 +36,59 @@
                     <ion-label floating>
                       Gender
                     </ion-label>
-                    <ion-input type="text"  value={{gender}}  ></ion-input>
+                    <ion-input type="text"   value={{gender}} #Gender ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                     Caste
                     </ion-label>
-                   <ion-input type="text"  value={{caste}} #caste ></ion-input>
+                   <ion-input type="text"  value={{caste}} #Caste ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Gap (in years)
                     </ion-label>
-                    <ion-input type="text"  value={{gap}} #gap ></ion-input>
+                    <ion-input type="text"  value={{gap}} #Gap ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       SSC Result
                     </ion-label>
-                    <ion-input type="numeric"  value={{ssc}}  #ssc></ion-input>
+                    <ion-input type="numeric"  value={{ssc}}  #Ssc required> </ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       HSC Results
                     </ion-label>
-                    <ion-input type="text"  value={{hsc}} #hsc></ion-input>
+                    <ion-input type="text"  value={{hsc}} #Hsc></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Admission Category 
                     </ion-label>
-                    <ion-input type="text"  value={{admiss_cat}} #admiss_cat ></ion-input>
+                    <ion-input type="text"  value={{admiss_cat}} #Admiss_cat ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                      Sem1
                     </ion-label>
-                    <ion-input type="text"  value={{sem1}} #sem1></ion-input>
+                    <ion-input type="text"  value={{sem1}} #Sem1></ion-input>
                 </ion-item> <ion-item stacked>
                     <ion-label floating>
                       Sem2
                     </ion-label>
-                    <ion-input type="text"  value={{sem2}} #sem2></ion-input>
+                    <ion-input type="text"  value={{sem2}} #Sem2></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Sem3
                     </ion-label>
-                    <ion-input type="text"  value={{sem3}} #sem3></ion-input>
+                    <ion-input type="text"  value={{sem3}} #Sem3></ion-input>
                 </ion-item> <ion-item stacked>
                     <ion-label floating>
                       Sem4
                     </ion-label>
-                    <ion-input type="text"  value={{sem4}} #sem4 ></ion-input>
+                    <ion-input type="text"  value={{sem4}} #Sem4 ></ion-input>
                 </ion-item>
             
               </ion-list>
@@ -96,7 +96,7 @@
                 <ion-grid>
                   <ion-row>
                     <ion-col>
-                      <button ion-button class="pull-left" color="secondary" tappable (click)="detailsstore()" > See Prediction</button>
+                      <button ion-button class="pull-left" color="secondary" tappable (click)="seeprediction()" > See Prediction</button>
                     </ion-col>
                     <ion-col>
                       <button ion-button class="pull-right" color="secondary" tappable>Update Details</button>

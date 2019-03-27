@@ -100,6 +100,11 @@ private updateData(token) {
       }
     );
   }
+  //See prediction
+  seeprediction(userdata)
+  {
+     return this.http.put();
+  }
 
   public logout(uid):Observable<any>{
     console.log("Id is",uid);

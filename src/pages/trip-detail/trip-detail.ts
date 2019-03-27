@@ -38,25 +38,17 @@ export class TripDetailPage {
   ssc;
   hsc;
   credentials;
-  // @ViewChild('ssc') ssc;
-  // @ViewChild('hsc') hsc;
-  // @ViewChild('sem1') sem1;
-  // @ViewChild('sem2') sem2;
-  // @ViewChild('sem3') sem3;
-  // @ViewChild('sem4') sem4;
-  // @ViewChild('admiss_cat') admiss_cat;
-  // @ViewChild('caste') caste;
-  // @ViewChild('gap') gap;
-  // @ViewChild('gender') gender;
-  // @ViewChild('hsc') hsc;
-  // @ViewChild('sem1') sem1;
-  // @ViewChild('sem2') sem2;
-  // @ViewChild('sem3') sem3;
-  // @ViewChild('sem4') sem4;
-  // @ViewChild('sem5') sem5;
-  // @ViewChild('sem6') sem6;
-  // @ViewChild('sem7') sem7;
-
+  @ViewChild('Ssc') Ssc;
+  @ViewChild('Hsc') Hsc;
+  @ViewChild('Sem1') Sem1;
+  @ViewChild('Sem2') Sem2;
+  @ViewChild('Sem3') Sem3;
+  @ViewChild('Sem4') Sem4;
+  @ViewChild('Admiss_cat') Admiss_cat;
+  @ViewChild('Caste') Caste;
+  @ViewChild('Gap') Gap;
+  @ViewChild('Gender') Gender;
+  
   public requests:any=[];
   
   constructor(public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
@@ -103,10 +95,22 @@ export class TripDetailPage {
   detailsstore()
   { 
     this.credentials={
-      gap:this.gap.value
-    }
-    console.log(gap);
+      gap:this.Gap.value,
+      gender:this.Gender.value,
+      caste:this.Caste.value,
+      hsc:this.Hsc.value,
+      ssc:this.Ssc.value,
+      sem1:this.Sem1.value,
+      sem2:this.Sem2.value,
+      sem3:this.Sem3.value,
+      sem4:this.Sem4.value,
+    };
 
+  }
+  seeprediction()
+  {
+    this.detailsstore();
+    // console.log(this.credentials);
   }
   
 }
