@@ -106,7 +106,7 @@ export class SeeEducationalDetailsPage {
        this.param={
              token:this.token,
        };
-       this.userReg.getEduDetails(this.value,this.param).subscribe((weather) => {
+       this.userReg.getEduDetails(this.value).subscribe((weather) => {
          
          this.weathers = weather
         //  this.Sem1=this.weathers.Sem1,

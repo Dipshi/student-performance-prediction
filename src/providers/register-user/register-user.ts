@@ -48,9 +48,9 @@ updateEduDetails(userData,pk):Observable<any>{
     return this.http.put(this.url+'/userEduDetails/'+this.key+'/',userData).map(res => res.json());
 }
 //function to get education details
-getEduDetails(pk,param):Observable<any>{
+getEduDetails(pk):Observable<any>{
   // this.userdata={token:token1};
-  console.log(param);
+  // console.log(param);
   this.key=pk;
     return this.http.get(this.url+'/userEduDetails/'+this.key+'/').map(res => res.json());
 }

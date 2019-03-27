@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 import { Response,Http } from '@angular/http';
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
+import { ViewChild } from '@angular/core';
 
 
 @Component({
@@ -32,19 +33,40 @@ export class TripDetailPage {
   sem2;
   sem3;
   sem4;
+  admiss_cat;
+  gender;
+  ssc;
+  hsc;
+  credentials;
+  // @ViewChild('ssc') ssc;
+  // @ViewChild('hsc') hsc;
+  // @ViewChild('sem1') sem1;
+  // @ViewChild('sem2') sem2;
+  // @ViewChild('sem3') sem3;
+  // @ViewChild('sem4') sem4;
+  // @ViewChild('admiss_cat') admiss_cat;
+  // @ViewChild('caste') caste;
+  // @ViewChild('gap') gap;
+  // @ViewChild('gender') gender;
+  // @ViewChild('hsc') hsc;
+  // @ViewChild('sem1') sem1;
+  // @ViewChild('sem2') sem2;
+  // @ViewChild('sem3') sem3;
+  // @ViewChild('sem4') sem4;
+  // @ViewChild('sem5') sem5;
+  // @ViewChild('sem6') sem6;
+  // @ViewChild('sem7') sem7;
 
-   public requests:any=[];
-  @ViewChild('barCanvas') barCanvas;
-    
-    barChart: any;
-
-  constructor(public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient) {
+  public requests:any=[];
+  
+  constructor(public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
+  {
     // set sample data
       this.value=navParams.get('id');
       console.log("current id is ",this.value);    // this.getDetails();
   }
   ionViewDidLoad() {
-    // console.log('ionViewDidLoad ProfilePage');
+    console.log('ionViewDidLoad ProfilePage');
     this.userReg.getUserDetails(this.value).subscribe((weather) => {
       
         this.weathers = weather,
@@ -54,30 +76,37 @@ export class TripDetailPage {
         this.fathername=this.weathers.FatherName,
         this.lastname=this.weathers.LastName,
         this.Dob=this.weathers.Date_of_Birth,
-        this.caste=this.weathers.caste,
+        this.caste=this.weathers.Caste,
         this.admiss_cat=this.weathers.Admission_Category,
-        this.gap=this.weathers.gap,
-        this.gender=this.weathers.gender,
-        //  this.Sem1=thi
+        this.gap=this.weathers.Gap,
+        this.gender=this.weathers.Gender
+        
 
     });
 
      this.userReg.getEduDetails(this.value).subscribe((weather) => {
       
          this.weathers = weather,
-         this.tenth_score=this.weathers.tenth_score,
-         this.twelve_score=this.weathers.twelve_score,
-         this.Sem1=this.weathers.Sem1,
-         this.Sem2=this.weathers.Sem2,
-         this.Sem3=this.weathers.Sem3,
-         this.Sem4=this.weathers.Sem4,
+         this.ssc=this.weathers.tenth_score,
+         this.hsc=this.weathers.twelve_score,
+         this.sem1=this.weathers.Sem1,
+         this.sem2=this.weathers.Sem2,
+         this.sem3=this.weathers.Sem3,
+         this.sem4=this.weathers.Sem4
       
         //  this.Sem1=thi
 
     });
   
-
+  
   } 
-       
+  detailsstore()
+  { 
+    this.credentials={
+      gap:this.gap.value
+    }
+    console.log(gap);
+
+  }
   
 }

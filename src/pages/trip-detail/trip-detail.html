@@ -3,7 +3,7 @@
 
   <ion-navbar  color="primary">
     <ion-title>
-      <span ion-text>{{ trip.name }}</span>
+      <span ion-text>See Prediction</span>
     </ion-title>
   </ion-navbar>
 
@@ -29,70 +29,82 @@
                     <ion-label floating>
                       Name
                     </ion-label>
-                    <ion-input type="text"  value={{fistname}}  width="100px"></ion-input>
-                    <ion-icon name="create"></ion-icon>
+                    <ion-input type="text"  value={{firstname}}  width="100px" disabled></ion-input>
+                    <!-- <ion-icon name="create"></ion-icon> -->
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Gender
                     </ion-label>
-                    <ion-input type="text"  value={{gender}}></ion-input>
+                    <ion-input type="text"  value={{gender}}  ></ion-input>
                 </ion-item>
-                    <ion-item stacked>
+                <ion-item stacked>
                     <ion-label floating>
                     Caste
                     </ion-label>
-                   <ion-input type="text"  value={{caste}} ></ion-input>
+                   <ion-input type="text"  value={{caste}} #caste ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Gap (in years)
                     </ion-label>
-                    <ion-input type="text"  value={{gap}} ></ion-input>
+                    <ion-input type="text"  value={{gap}} #gap ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       SSC Result
                     </ion-label>
-                    <ion-input type="text"  value={{tenth_score}} ></ion-input>
+                    <ion-input type="numeric"  value={{ssc}}  #ssc></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       HSC Results
                     </ion-label>
-                    <ion-input type="text"  value={{twelve_score}} ></ion-input>
+                    <ion-input type="text"  value={{hsc}} #hsc></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Admission Category 
                     </ion-label>
-                    <ion-input type="text"  value={{admiss_cat}} ></ion-input>
+                    <ion-input type="text"  value={{admiss_cat}} #admiss_cat ></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                      Sem1
                     </ion-label>
-                    <ion-input type="text"  value={{Sem1}} ></ion-input>
+                    <ion-input type="text"  value={{sem1}} #sem1></ion-input>
                 </ion-item> <ion-item stacked>
                     <ion-label floating>
                       Sem2
                     </ion-label>
-                    <ion-input type="text"  value={{Sem2}} ></ion-input>
+                    <ion-input type="text"  value={{sem2}} #sem2></ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
                       Sem3
                     </ion-label>
-                    <ion-input type="text"  value={{Sem3}} ></ion-input>
+                    <ion-input type="text"  value={{sem3}} #sem3></ion-input>
                 </ion-item> <ion-item stacked>
                     <ion-label floating>
                       Sem4
                     </ion-label>
-                    <ion-input type="text"  value={{Sem4}} ></ion-input>
+                    <ion-input type="text"  value={{sem4}} #sem4 ></ion-input>
                 </ion-item>
             
               </ion-list>
-              
+              <ion-item>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <button ion-button class="pull-left" color="secondary" tappable (click)="detailsstore()" > See Prediction</button>
+                    </ion-col>
+                    <ion-col>
+                      <button ion-button class="pull-right" color="secondary" tappable>Update Details</button>
+                    </ion-col>
+                  </ion-row>
+
+                </ion-grid>
+              </ion-item>
             </ion-card>
           </div>
         </div>
@@ -103,18 +115,18 @@
   <!--high light-->
   <div class="border-bottom" padding>
     <span ion-text color="dark" class="bold">Remarks</span>
-    <ul class="highlight">
+    <!-- <ul class="highlight">
       <li *ngFor="let highlight of trip.highlights">
         <ion-icon name="checkmark" class="text-green"></ion-icon>
-        <span ion-text color="primary">{{ highlight }}</span>
+        <span ion-text color="primary"></span>
       </li>
-    </ul>
+    </ul> -->
   </div>
 
   <!--booking form-->
   <div class="booking-form card round" margin>
     <div class="border-bottom" padding>
-      <h5>{{ trip.sub_name }}</h5>
+      <h5></h5>
 
       <!--choose guest-->
       <ion-grid class="filters" no-padding margin-top>
@@ -165,6 +177,6 @@
   <!--address-->
   <div class="border-bottom" padding>
     <span ion-text color="primary" class="bold">COLLEGE</span>
-    <p ion-text>{{ trip.college }}</p>
+    <p ion-text></p>
   </div>
 </ion-content>
