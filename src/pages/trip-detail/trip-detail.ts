@@ -38,6 +38,7 @@ export class TripDetailPage {
   ssc;
   hsc;
   credentials;
+  data;
   @ViewChild('Ssc') Ssc;
   @ViewChild('Hsc') Hsc;
   @ViewChild('Sem1') Sem1;
@@ -48,7 +49,7 @@ export class TripDetailPage {
   @ViewChild('Caste') Caste;
   @ViewChild('Gap') Gap;
   @ViewChild('Gender') Gender;
-  
+  test
   public requests:any=[];
   
   constructor(public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
@@ -104,6 +105,7 @@ export class TripDetailPage {
       sem2:this.Sem2.value,
       sem3:this.Sem3.value,
       sem4:this.Sem4.value,
+      admiss_cat:this.Admiss_cat.value
     };
 
   }
@@ -111,11 +113,14 @@ export class TripDetailPage {
   {
     this.detailsstore();
     // console.log(this.credentials);
-    this.userReg.seeprediction(this.credentials).subscribe(
-      response => {
-        console.log("hi");
-    }); 
+    this.userReg.seeprediction(this.credentials).subscribe((app)=>{
+      this.data=app;
+      console.log(this.data);
 
+
+   
+    });
+   
   }
   
 }
