@@ -46,7 +46,7 @@ export class SeeEducationalDetailsPage {
    Sem7_dead;
    Sem7_live;
 
-   value;
+   value;   
   @ViewChild('ssc') ssc;
   @ViewChild('hsc') hsc;
   @ViewChild('sem1') sem1;
@@ -106,10 +106,10 @@ export class SeeEducationalDetailsPage {
   }
 
  getDet(){
-       this.param={
-             token:this.token,
-       };
-       this.userReg.getEduDetails(this.value,this.param).subscribe((weather) => {
+      //  this.param={
+      //        token:this.token,
+      //  };
+       this.userReg.getEduDetails(this.value).subscribe((weather) => {
          
          this.weathers = weather
         //  this.Sem1=this.weathers.Sem1,

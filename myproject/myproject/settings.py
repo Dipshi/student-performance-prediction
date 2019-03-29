@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'userRegister.apps.UserregisterConfig',
     'studentAcademics.apps.StudentacademicsConfig',
     'stuData.apps.StudataConfig',
+    'webapp.apps.WebappConfig',
+    # 'prediction.apps.PredictionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,8 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_mysql',
     'corsheaders',
+
     'rest_framework.authtoken',
     'rest_framework',
+
 ]
 
 MIDDLEWARE = [

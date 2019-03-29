@@ -80,7 +80,7 @@ export class HomePage {
     this.nav.push(UpdateprofilePage,{id:this.uid});
   }
   goTo(){
-      this.nav.push(TripDetailPage);
+      this.nav.push(TripDetailPage,{id:this.uid});
   }
   see(){
       this.nav.push(SearchLocationPage);

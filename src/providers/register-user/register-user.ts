@@ -48,9 +48,9 @@ updateEduDetails(userData,pk):Observable<any>{
     return this.http.put(this.url+'/userEduDetails/'+this.key+'/',userData).map(res => res.json());
 }
 //function to get education details
-getEduDetails(pk,param):Observable<any>{
+getEduDetails(pk):Observable<any>{
   // this.userdata={token:token1};
-  console.log(param);
+  // console.log(param);
   this.key=pk;
     return this.http.get(this.url+'/userEduDetails/'+this.key+'/').map(res => res.json());
 }
@@ -90,6 +90,7 @@ updatePersonalDetails(userData):Observable<any>{
  
 }
 
+<<<<<<< HEAD
 //  public refreshToken() {
 //     this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
 //       data => {
@@ -100,6 +101,24 @@ updatePersonalDetails(userData):Observable<any>{
 //       }
 //     );
 //   }
+=======
+ public refreshToken() {
+    this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
+      data => {
+        this.updateData(data['token']);
+      },
+      err => {
+        this.errors = err['error'];
+      }
+    );
+  }
+  //See prediction
+  seeprediction(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+  }
+>>>>>>> master
 
   public logout(uid):Observable<any>{
     console.log("Id is",uid);

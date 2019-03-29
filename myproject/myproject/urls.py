@@ -35,6 +35,8 @@ urlpatterns = [
     path('', include('userRegister.urls')),
     path('', include('studentAcademics.urls')),
     path('', include('stuData.urls')),
+    path('', include('webapp.urls')),
+
     url(r'^auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', views.obtain_auth_token)
     # url(r'^auth/', include('rest_framework.urls')),
