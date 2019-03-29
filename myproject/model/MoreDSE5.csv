@@ -1,0 +1,1111 @@
+,Gender,Gap,10_Result,12_Result,Sem3,Sem4,Sem5,Caste,admission_category
+10,Male,0,4,3,2.0,4.0,3.0,OPEN,Minority
+11,Male,0,2,3,3.0,2.0,3.0,OPEN,Minority
+13,Female,0,3,3,2.0,3.0,3.0,OPEN,CAP
+25,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+26,Male,0,2,3,1.0,2.0,2.0,OPEN,Minority
+34,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+41,Male,0,2,3,2.0,3.0,2.0,OPEN,Minority
+46,Male,0,3,3,0.0,1.0,3.0,OPEN,Minority
+47,Female,0,3,4,4.0,4.0,3.0,OPEN,Minority
+48,Male,0,4,4,3.0,4.0,3.0,OPEN,Minority
+50,Male,0,2,3,2.0,3.0,3.0,OPEN,Minority
+57,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+64,Male,0,4,4,4.0,4.0,4.0,OPEN,Minority
+71,Female,0,3,4,3.0,4.0,4.0,OPEN,Minority
+87,Female,0,4,4,4.0,4.0,4.0,OPEN,Minority
+89,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+91,Male,0,3,4,3.0,4.0,4.0,OPEN,CAP
+95,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+105,Female,0,4,4,4.0,4.0,4.0,OPEN,Minority
+107,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+113,Female,0,4,4,2.0,3.0,4.0,OPEN,CAP
+114,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+118,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+129,Male,0,4,3,2.0,3.0,3.0,OPEN,Minority
+137,Male,0,3,2,0.0,1.0,1.0,OPEN,CAP
+148,Female,0,3,3,3.0,4.0,4.0,OPEN,Minority
+152,Male,0,4,3,2.0,2.0,3.0,OPEN,Minority
+154,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+162,Female,0,4,3,3.0,4.0,4.0,OPEN,Minority
+169,Male,0,3,4,3.0,3.0,3.0,OPEN,CAP
+170,Female,0,4,4,2.0,3.0,3.0,OPEN,CAP
+174,Female,0,4,4,2.0,3.0,3.0,OPEN,CAP
+179,Male,0,3,2,0.0,0.0,4.0,OPEN,Caste
+180,Male,0,4,4,1.0,3.0,3.0,OPEN,CAP
+185,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+193,Male,0,3,3,1.0,2.0,3.0,OPEN,Minority
+197,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+201,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+212,Female,0,4,4,3.0,3.0,4.0,OBC,CAP
+216,Male,0,4,4,3.0,3.0,3.0,OPEN,CAP
+218,Male,0,4,4,2.0,2.0,2.0,SC,Caste
+219,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+224,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+228,Male,0,4,4,3.0,3.0,4.0,OBC,Caste
+229,Male,0,4,4,3.0,3.0,3.0,OPEN,CAP
+232,Male,0,4,4,2.0,3.0,3.0,OPEN,CAP
+235,Male,0,3,4,2.0,2.0,4.0,OPEN,CAP
+238,Female,0,4,4,2.0,3.0,4.0,OPEN,CAP
+239,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+241,Female,0,4,4,2.0,4.0,4.0,OPEN,CAP
+243,Male,0,3,4,3.0,3.0,4.0,OPEN,CAP
+244,Female,0,4,4,3.0,3.0,3.0,OPEN,CAP
+247,Male,0,4,4,4.0,3.0,4.0,OPEN,CAP
+248,Male,0,3,4,2.0,1.0,4.0,OPEN,CAP
+256,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+263,Female,0,3,4,3.0,4.0,4.0,OPEN,CAP
+268,Male,0,4,4,2.0,2.0,3.0,OPEN,CAP
+277,Female,0,4,4,2.0,2.0,4.0,OBC,CAP
+282,Male,0,4,4,2.0,2.0,4.0,OPEN,CAP
+283,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+287,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+291,Male,0,4,4,3.0,3.0,4.0,SC,CAP
+292,Male,0,4,4,2.0,3.0,4.0,OPEN,CAP
+293,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+294,Male,0,4,4,2.0,4.0,4.0,OPEN,CAP
+302,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+305,Male,0,4,4,3.0,4.0,4.0,OBC,CAP
+307,Female,0,3,4,3.0,4.0,4.0,NT-D,CAP
+308,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+310,Male,0,3,4,2.0,2.0,3.0,OPEN,CAP
+311,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+313,Male,0,4,4,2.0,4.0,4.0,OPEN,CAP
+314,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+315,Female,0,3,4,4.0,4.0,4.0,OBC,CAP
+318,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+323,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+328,Male,0,4,4,2.0,2.0,3.0,OBC,CAP
+329,Male,0,4,4,2.0,2.0,4.0,OPEN,CAP
+334,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+343,Male,0,4,4,4.0,4.0,4.0,SC,Caste
+344,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+347,Female,0,3,3,3.0,3.0,4.0,OPEN,Minority
+353,Male,0,3,3,3.0,3.0,3.0,OPEN,Minority
+358,Male,0,3,3,3.0,4.0,4.0,OPEN,Physically Handicapped (PH)
+366,Male,0,4,3,3.0,4.0,3.0,OPEN,Minority
+372,Male,0,3,3,3.0,4.0,3.0,OPEN,Minority
+373,Male,0,4,3,3.0,4.0,3.0,OPEN,Minority
+377,Female,1,3,4,2.0,3.0,2.0,OPEN,CAP
+378,Female,0,3,3,3.0,4.0,4.0,OPEN,CAP
+380,Female,0,3,4,3.0,4.0,4.0,OPEN,CAP
+384,Female,0,3,3,2.0,4.0,3.0,OPEN,Minority
+386,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+388,Female,0,4,4,4.0,4.0,4.0,VJ,CAP
+405,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+408,Male,0,4,4,3.0,2.0,3.0,OBC,Caste
+411,Male,0,4,4,3.0,3.0,3.0,OPEN,CAP
+418,Female,0,2,3,3.0,2.0,3.0,SC,Caste
+419,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+420,Male,0,4,3,3.0,2.0,3.0,OPEN,CAP
+422,Male,1,4,3,4.0,4.0,4.0,OPEN,CAP
+425,Male,0,4,4,3.0,3.0,3.0,OPEN,CAP
+426,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+428,Male,0,4,4,3.0,3.0,3.0,SC,CAP
+430,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+435,Male,0,2,3,3.0,3.0,2.0,OPEN,CAP
+436,Male,1,4,3,2.0,2.0,2.0,OBC,Caste
+439,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+444,Male,0,2,4,2.0,2.0,2.0,OPEN,CAP
+450,Female,0,4,4,3.0,3.0,3.0,OPEN,CAP
+451,Female,0,4,3,3.0,3.0,3.0,OPEN,CAP
+452,Male,0,4,4,3.0,3.0,4.0,ST,Caste
+453,Male,0,3,4,2.0,2.0,3.0,OPEN,CAP
+455,Male,0,0,0,4.0,4.0,3.0,OPEN,Minority
+456,Female,0,3,3,4.0,4.0,4.0,OPEN,CAP
+460,Female,0,3,0,2.0,2.0,3.0,OPEN,CAP
+463,Male,0,3,3,2.0,2.0,2.0,OPEN,CAP
+468,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+472,Female,0,4,4,4.0,3.0,4.0,OPEN,CAP
+473,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+480,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+492,Female,0,3,4,3.0,2.0,4.0,SC,Caste
+495,Female,0,4,4,4.0,3.0,3.0,NT-B,Caste
+501,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+503,Male,0,4,4,3.0,1.0,4.0,OPEN,CAP
+507,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+514,Female,0,4,4,3.0,2.0,3.0,OBC,Caste
+517,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+521,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+522,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+523,Male,1,4,4,3.0,4.0,4.0,OPEN,CAP
+528,Female,0,4,4,4.0,3.0,3.0,OPEN,CAP
+533,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+539,Male,0,2,2,3.0,4.0,4.0,OPEN,Minority
+554,Female,0,4,4,4.0,3.0,4.0,OPEN,CAP
+555,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+556,Male,0,3,3,2.0,2.0,3.0,OPEN,Minority
+558,Male,0,4,4,4.0,3.0,4.0,OPEN,CAP
+568,Male,0,4,4,4.0,4.0,4.0,OPEN,Minority
+570,Male,0,4,4,3.0,2.0,4.0,OPEN,CAP
+578,Male,0,3,4,3.0,2.0,3.0,OPEN,Minority
+580,Male,0,1,2,3.0,2.0,2.0,OPEN,Minority
+587,Male,0,3,2,2.0,2.0,2.0,OPEN,Minority
+603,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+604,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+605,Female,0,4,4,3.0,3.0,3.0,NT-D,CAP
+606,Male,0,4,4,4.0,3.0,3.0,NT-D,CAP
+607,Male,0,4,4,3.0,3.0,4.0,OBC,CAP
+608,Male,0,4,4,4.0,3.0,4.0,ST,CAP
+609,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+610,Male,0,4,4,3.0,3.0,4.0,SC,CAP
+611,Female,0,3,4,3.0,3.0,4.0,OBC,CAP
+612,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+613,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+614,Male,0,3,4,3.0,1.0,3.0,SC,CAP
+615,Male,0,4,4,3.0,3.0,3.0,OPEN,CAP
+616,Male,0,4,4,4.0,3.0,3.0,OPEN,CAP
+617,Female,0,4,4,3.0,3.0,3.0,OPEN,CAP
+618,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+619,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+620,Male,0,4,4,2.0,1.0,3.0,OBC,CAP
+621,Male,0,3,4,3.0,3.0,4.0,OBC,CAP
+622,Female,0,3,4,2.0,3.0,3.0,OBC,CAP
+623,Male,0,4,4,3.0,2.0,3.0,OPEN,CAP
+624,Female,0,4,4,3.0,2.0,3.0,OPEN,CAP
+625,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+626,Female,0,4,4,2.0,2.0,3.0,OBC,CAP
+627,Female,0,4,4,3.0,4.0,4.0,OBC,CAP
+628,Female,0,4,4,3.0,4.0,4.0,SBC,CAP
+629,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+630,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+631,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+632,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+633,Female,0,4,4,4.0,3.0,3.0,OBC,CAP
+634,Female,0,4,4,2.0,3.0,3.0,OPEN,CAP
+635,Male,0,4,4,3.0,2.0,3.0,OPEN,CAP
+636,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+637,Male,0,4,4,4.0,4.0,4.0,SC,CAP
+638,Female,0,4,4,2.0,2.0,4.0,OPEN,CAP
+639,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+640,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+641,Male,0,3,4,2.0,3.0,4.0,OPEN,CAP
+642,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+643,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+644,Female,0,3,4,3.0,3.0,2.0,OPEN,CAP
+645,Female,0,4,4,3.0,3.0,4.0,SC,Caste
+646,Male,0,4,4,4.0,3.0,4.0,OPEN,CAP
+647,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+648,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+649,Male,0,3,4,4.0,3.0,4.0,OPEN,CAP
+650,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+651,Female,0,4,4,3.0,3.0,3.0,OPEN,CAP
+655,Male,0,4,4,4.0,4.0,4.0,NT-2-C,CAP
+660,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+661,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+667,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+668,Male,0,4,4,2.0,4.0,4.0,OBC,CAP
+673,Male,0,2,1,3.0,3.0,4.0,OPEN,CAP
+674,Male,0,1,4,1.0,3.0,3.0,OPEN,CAP
+675,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+685,Male,0,3,4,3.0,4.0,4.0,OPEN,CAP
+687,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+688,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+692,Male,1,4,4,2.0,3.0,4.0,OBC,CAP
+700,Female,0,2,4,2.0,4.0,4.0,OPEN,CAP
+705,Male,0,2,4,1.0,2.0,3.0,OPEN,CAP
+709,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+711,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+719,Male,0,2,4,3.0,4.0,4.0,SC,CAP
+724,Male,0,4,4,3.0,2.0,4.0,SC,CAP
+725,Male,0,3,4,2.0,2.0,2.0,OPEN,CAP
+735,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+750,Female,0,3,4,2.0,3.0,4.0,OPEN,CAP
+758,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+761,Male,0,2,4,3.0,3.0,4.0,OPEN,CAP
+762,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+764,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+766,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+769,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+770,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+789,Male,0,4,4,3.0,4.0,4.0,Open,CAP
+791,Female,0,3,4,4.0,4.0,4.0,Open,Minority
+794,Female,0,2,4,3.0,4.0,4.0,Open,CAP
+798,Male,0,4,4,4.0,4.0,4.0,Open,CAP
+800,Male,0,4,4,4.0,3.0,4.0,Open,CAP
+801,Male,0,4,4,4.0,4.0,4.0,Open,CAP
+804,Female,0,4,4,3.0,4.0,4.0,Open,Minority
+805,Male,0,4,4,3.0,4.0,4.0,Open,CAP
+813,Female,0,4,4,4.0,4.0,4.0,Open,CAP
+814,Female,0,1,4,2.0,3.0,4.0,Open,Minority
+817,Male,0,2,4,2.0,3.0,3.0,Open,Minority
+826,Male,0,4,3,2.0,2.0,4.0,Open,CAP
+829,Female,0,4,4,4.0,4.0,4.0,Open,CAP
+846,Male,0,4,4,3.0,2.0,2.0,Open,Transferred
+858,Female,0,4,4,3.0,4.0,4.0,Open,CAP
+873,Female,0,4,4,2.0,2.0,3.0,Open,Minority
+882,Female,0,3,4,3.0,3.0,4.0,Open,CAP
+883,Female,0,4,4,3.0,3.0,4.0,Open,CAP
+885,Male,0,3,4,2.0,3.0,4.0,Open,CAP
+890,Female,0,4,4,3.0,4.0,3.0,Open,CAP
+897,Female,0,4,4,4.0,4.0,3.0,NT-C,CAP
+900,Female,0,4,4,3.0,3.0,4.0,Open,CAP
+901,Female,0,4,4,2.0,3.0,4.0,Open,CAP
+903,Female,0,4,4,2.0,3.0,3.0,Open,CAP
+919,Female,0,3,4,3.0,3.0,3.0,SC,CAP
+924,Female,0,3,3,3.0,2.0,4.0,Open,Minority
+927,Female,0,3,4,3.0,4.0,4.0,Open,CAP
+928,Female,0,4,3,3.0,4.0,4.0,NT-C,CAP
+929,Female,0,3,4,1.0,2.0,3.0,Open,CAP
+935,Female,0,4,4,2.0,3.0,3.0,Open,CAP
+940,Female,0,4,3,2.0,3.0,4.0,Open,CAP
+941,Female,0,4,4,3.0,3.0,3.0,Open,CAP
+951,Male,0,4,3,2.0,2.0,3.0,Open,Minority
+958,Female,0,4,3,3.0,3.0,3.0,Open,CAP
+967,Female,0,3,4,2.0,4.0,4.0,SC,CAP
+971,Female,0,4,3,3.0,3.0,3.0,Open,CAP
+972,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+973,Female,0,4,3,2.0,2.0,3.0,Open,CAP
+974,Male,0,2,3,1.0,1.0,3.0,Open,CAP
+976,Female,0,3,3,2.0,3.0,3.0,Open,CAP
+978,Male,0,4,3,2.0,2.0,2.0,OBC,CAP
+984,Female,0,4,4,3.0,3.0,4.0,Open,CAP
+989,Male,0,3,3,1.0,2.0,2.0,Open,CAP
+993,Male,0,4,3,2.0,2.0,3.0,Open,Minority
+994,Female,0,3,3,3.0,3.0,4.0,Open,Minority
+995,Male,0,4,3,4.0,4.0,4.0,Open,Minority
+996,Male,0,4,3,4.0,4.0,4.0,Open,Minority
+998,Male,0,4,4,3.0,2.0,4.0,Open,CAP
+1004,Female,0,4,4,3.0,4.0,4.0,Open,CAP
+1009,Male,1,3,2,1.0,1.0,1.0,Open,CAP
+1012,Male,0,3,1,4.0,4.0,4.0,OPEN,CAP
+1021,Male,0,3,4,4.0,4.0,4.0,OPEN,CAP
+1029,Male,0,3,4,3.0,4.0,3.0,OBC,CAP
+1030,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1031,Male,0,3,4,2.0,3.0,4.0,OPEN,CAP
+1032,Female,0,4,4,3.0,3.0,4.0,SBC,CAP
+1033,Male,0,4,4,4.0,4.0,4.0,SC,CAP
+1035,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1036,Male,0,4,4,4.0,4.0,3.0,OPEN,CAP
+1044,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1045,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1046,Male,0,4,4,3.0,2.0,2.0,OPEN,CAP
+1059,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1060,Male,0,3,4,2.0,2.0,2.0,OPEN,CAP
+1063,Male,2,4,4,4.0,3.0,4.0,OPEN,CAP
+1065,Male,0,2,4,4.0,4.0,4.0,SC,CAP
+1066,Female,0,4,4,3.0,2.0,2.0,OPEN,CAP
+1067,Female,0,4,4,4.0,4.0,3.0,OPEN,CAP
+1075,Male,0,3,4,4.0,4.0,4.0,OPEN,CAP
+1085,Female,4,4,3,2.0,1.0,2.0,OPEN,CAP
+1087,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1089,Female,0,3,4,3.0,4.0,4.0,OPEN,CAP
+1092,Male,0,4,4,3.0,4.0,4.0,OBC,CAP
+1093,Female,0,4,4,4.0,4.0,4.0,SC,CAP
+1094,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1096,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1097,Male,0,3,4,4.0,3.0,4.0,OPEN,CAP
+1101,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1103,Male,0,3,3,2.0,2.0,4.0,OPEN,CAP
+1104,Female,0,2,2,1.0,1.0,4.0,OPEN,CAP
+1106,Female,0,3,4,2.0,4.0,4.0,OPEN,CAP
+1107,Male,0,4,3,2.0,1.0,2.0,OPEN,CAP
+1108,Male,0,4,4,4.0,4.0,4.0,VJNT,CAP
+1110,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1111,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1117,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1129,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1131,Male,0,4,4,2.0,2.0,3.0,OBC,CAP
+1137,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1138,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1140,Male,0,4,3,2.0,2.0,2.0,OPEN,CAP
+1143,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1144,Female,0,4,3,3.0,3.0,3.0,OPEN,CAP
+1149,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1151,Male,3,2,2,1.0,1.0,1.0,OPEN,Minority
+1152,Male,1,2,2,1.0,1.0,2.0,OPEN,Minority
+1155,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1156,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+1160,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1165,Male,0,2,2,1.0,1.0,2.0,OPEN,CAP
+1167,Female,0,4,4,2.0,1.0,4.0,SC,CAP
+1169,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1170,Female,0,4,4,2.0,2.0,3.0,OPEN,CAP
+1172,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1174,Female,0,4,4,2.0,3.0,4.0,OBC,CAP
+1180,Male,0,4,4,3.0,2.0,4.0,OPEN,CAP
+1181,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1183,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1184,female,0,2,3,2.0,1.0,1.0,OPEN,Minority
+1188,Male,0,4,4,4.0,3.0,4.0,OPEN,CAP
+1195,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1201,Female,0,4,4,3.0,3.0,4.0,SC,CAP
+1211,Female,0,4,4,2.0,3.0,4.0,OPEN,CAP
+1213,Female,0,4,4,3.0,3.0,4.0,SC,CAP
+1214,Male,0,2,4,1.0,2.0,3.0,OPEN,CAP
+1215,Female,0,3,4,3.0,2.0,4.0,OPEN,CAP
+1220,Male,0,3,4,4.0,4.0,4.0,OPEN,CAP
+1221,Female,0,4,3,2.0,2.0,4.0,OPEN,CAP
+1222,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1228,Male,0,4,4,4.0,3.0,4.0,OPEN,CAP
+1232,Male,0,3,4,3.0,2.0,3.0,OPEN,CAP
+1233,Male,0,3,4,3.0,3.0,4.0,OBC,CAP
+1234,Male,0,3,3,3.0,3.0,4.0,OPEN,CAP
+1235,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1236,Male,0,2,1,2.0,1.0,4.0,OPEN,CAP
+1237,Female,0,3,3,3.0,1.0,3.0,OPEN,CAP
+1238,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1239,Female,0,3,4,2.0,2.0,3.0,SC,CAP
+1240,Female,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1241,Male,0,3,4,4.0,4.0,4.0,OBC,CAP
+1242,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1243,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1244,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1245,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1246,Male,0,2,4,2.0,3.0,4.0,SC,CAP
+1247,Male,0,2,4,2.0,3.0,3.0,OPEN,CAP
+1248,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1249,Female,0,4,4,3.0,2.0,4.0,SC,CAP
+1250,Female,0,4,4,3.0,2.0,3.0,SC,CAP
+1251,Male,0,4,4,3.0,2.0,2.0,OPEN,CAP
+1252,Male,0,4,4,4.0,4.0,4.0,OBC,CAP
+1253,Male,0,3,4,2.0,2.0,4.0,SC,CAP
+1254,Female,0,4,4,3.0,1.0,2.0,SBC,CAP
+1255,Female,1,4,4,3.0,3.0,4.0,OPEN,CAP
+1256,Female,0,4,4,3.0,1.0,4.0,OPEN,CAP
+1257,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1258,Female,0,4,4,2.0,3.0,4.0,OBC,CAP
+1259,Female,0,3,4,3.0,4.0,4.0,SBC,CAP
+1260,Male,0,3,4,2.0,1.0,4.0,OBC,CAP
+1261,Male,0,3,3,2.0,2.0,4.0,OPEN,CAP
+1262,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1263,Female,0,4,4,4.0,3.0,4.0,OPEN,CAP
+1264,Male,0,3,1,2.0,1.0,4.0,OPEN,CAP
+1265,Female,0,4,4,3.0,4.0,4.0,OBC,CAP
+1266,Male,0,3,4,3.0,3.0,4.0,OPEN,CAP
+1267,Male,0,4,4,3.0,2.0,4.0,OBC,CAP
+1268,Female,0,4,4,3.0,3.0,4.0,NT-2,CAP
+1269,Male,0,4,3,3.0,2.0,4.0,OBC,CAP
+1270,Male,0,4,4,2.0,3.0,4.0,OPEN,CAP
+1271,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1272,Female,0,4,4,4.0,3.0,4.0,OBC,CAP
+1273,Male,0,3,3,3.0,3.0,4.0,OPEN,CAP
+1274,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1275,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1276,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1277,Male,0,2,4,3.0,2.0,4.0,OPEN,CAP
+1278,Male,0,3,3,1.0,3.0,3.0,OPEN,CAP
+1279,Female,0,3,4,2.0,1.0,4.0,OPEN,CAP
+1280,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1281,Male,0,3,4,2.0,1.0,4.0,OPEN,CAP
+1282,Female,0,4,4,4.0,4.0,4.0,NT-D,CAP
+1283,Male,0,4,4,3.0,3.0,4.0,OPEN,CAP
+1284,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1285,Female,0,4,3,3.0,4.0,4.0,OPEN,CAP
+1286,Male,0,4,4,3.0,3.0,4.0,OBC,CAP
+1287,Female,0,4,4,3.0,2.0,4.0,SC,CAP
+1288,Male,0,3,4,3.0,3.0,4.0,OPEN,CAP
+1289,Male,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1290,Male,0,4,4,4.0,3.0,4.0,OBC,CAP
+1291,Male,0,4,3,2.0,1.0,3.0,OPEN,CAP
+1292,Female,0,3,4,2.0,2.0,3.0,NT,CAP
+1293,Male,2,0,1,2.0,1.0,3.0,Open,CAP
+1297,Male,0,4,3,2.0,3.0,3.0,OPEN,CAP
+1319,Male,0,3,3,2.0,3.0,4.0,OPEN,CAP
+1322,Male,0,3,4,2.0,4.0,4.0,OPEN,CAP
+1326,Male,1,3,3,1.0,2.0,3.0,OPEN,Minority
+1337,Female,0,4,4,2.0,4.0,4.0,OPEN,CAP
+1341,Female,0,4,3,3.0,4.0,3.0,OPEN,CAP
+1347,Female,0,3,4,3.0,4.0,3.0,OPEN,CAP
+1349,Male,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1351,Female,0,4,4,3.0,4.0,4.0,OPEN,CAP
+1355,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1361,Female,0,3,4,2.0,3.0,4.0,OPEN,CAP
+1364,Male,0,4,3,1.0,2.0,3.0,SBC,CAP
+1368,Female,0,4,4,4.0,4.0,4.0,OPEN,CAP
+1369,Female,0,4,4,4.0,4.0,4.0,OBC,CAP
+1370,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1374,Female,0,3,4,2.0,4.0,4.0,Minority,General / CAP Based
+1377,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1379,Female,0,0,4,3.0,3.0,3.0,Minority,General / CAP Based
+1380,Female,0,4,3,2.0,4.0,4.0,General,General / CAP Based
+1391,Male,0,4,4,2.0,4.0,4.0,General,General / CAP Based
+1400,Male,0,4,3,2.0,3.0,3.0,Minority,General / CAP Based
+1406,Female,0,0,3,2.0,3.0,3.0,Minority,General / CAP Based
+1409,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1415,Female,0,4,3,2.0,3.0,3.0,General,General / CAP Based
+1431,Male,0,4,4,2.0,3.0,3.0,General,General / CAP Based
+1456,Female,0,0,3,2.0,3.0,3.0,Minority,General / CAP Based
+1457,Male,0,3,4,2.0,2.0,3.0,Minority,General / CAP Based
+1466,Female,0,0,4,2.0,4.0,4.0,General,General / CAP Based
+1473,Female,0,4,4,4.0,4.0,4.0,Minority,General / CAP Based
+1475,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1484,Female,0,4,3,2.0,3.0,4.0,Minority,General / CAP Based
+1496,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1501,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1502,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1509,Male,0,2,2,2.0,1.0,2.0,General,General / CAP Based
+1514,Male,0,4,4,2.0,3.0,4.0,Reserved,General / CAP Based
+1515,Female,0,4,3,2.0,2.0,3.0,General,General / CAP Based
+1522,Female,0,4,4,2.0,2.0,3.0,General,General / CAP Based
+1523,Male,0,3,3,2.0,4.0,3.0,Minority,General / CAP Based
+1533,Male,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1537,Male,0,4,4,3.0,4.0,4.0,Minority,General / CAP Based
+1552,Female,0,3,4,1.0,2.0,3.0,Reserved,General / CAP Based
+1557,Female,0,4,4,1.0,2.0,3.0,Reserved,General / CAP Based
+1558,Male,0,3,4,2.0,3.0,4.0,General,General / CAP Based
+1563,Male,0,4,3,1.0,2.0,2.0,Minority,General / CAP Based
+1574,Male,0,4,4,2.0,3.0,3.0,General,General / CAP Based
+1583,Female,0,3,3,2.0,2.0,3.0,Minority,General / CAP Based
+1584,Male,0,4,3,2.0,2.0,3.0,General,General / CAP Based
+1585,Male,0,4,3,4.0,4.0,4.0,Minority,General / CAP Based
+1586,Female,0,4,3,1.0,1.0,3.0,Minority,General / CAP Based
+1590,Male,0,3,3,2.0,4.0,3.0,Reserved,General / CAP Based
+1592,Male,0,4,4,2.0,3.0,3.0,General,General / CAP Based
+1605,Female,0,3,3,2.0,2.0,3.0,General,General / CAP Based
+1613,Female,0,3,3,1.0,2.0,2.0,General,General / CAP Based
+1617,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1620,Male,0,4,4,2.0,2.0,2.0,General,General / CAP Based
+1621,MALE,0,4,4,4.0,4.0,4.0,OPEN,General / CAP Based
+1622,Female,0,4,4,3.0,3.0,3.0,Reserved,General / CAP Based
+1627,Female,0,4,4,3.0,3.0,3.0,Reserved,General / CAP Based
+1629,Male,0,4,4,2.0,3.0,3.0,Reserved,General / CAP Based
+1631,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1636,Male,0,4,4,3.0,2.0,3.0,General,General / CAP Based
+1637,Female,0,4,4,4.0,4.0,3.0,General,General / CAP Based
+1647,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1648,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1650,Male,0,4,4,1.0,3.0,4.0,General,General / CAP Based
+1651,Female,0,4,4,2.0,4.0,4.0,Reserved,General / CAP Based
+1653,Female,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1655,Male,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1656,Female,0,4,4,2.0,3.0,3.0,Reserved,General / CAP Based
+1658,Male,0,1,3,1.0,1.0,1.0,General,General / CAP Based
+1662,Female,0,4,4,1.0,1.0,2.0,General,General / CAP Based
+1664,Female,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1674,Female,0,4,4,2.0,4.0,3.0,Reserved,General / CAP Based
+1681,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1685,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1687,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1696,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1699,Male,0,4,4,4.0,3.0,4.0,General,General / CAP Based
+1709,Male,0,2,4,2.0,3.0,3.0,General,General / CAP Based
+1712,Female,0,4,4,2.0,2.0,2.0,General,General / CAP Based
+1713,Female,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1714,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1715,Male,0,4,4,2.0,3.0,3.0,General,General / CAP Based
+1723,Female,0,4,4,2.0,2.0,3.0,Reserved,General / CAP Based
+1724,Female,0,0,0,2.0,2.0,3.0,Reserved,General / CAP Based
+1729,Female,0,3,4,2.0,2.0,2.0,Reserved,General / CAP Based
+1730,Female,0,4,4,3.0,1.0,2.0,Reserved,General / CAP Based
+1731,Female,0,4,4,1.0,2.0,3.0,General,General / CAP Based
+1738,Male,0,4,4,2.0,2.0,3.0,Minority,General / CAP Based
+1740,Male,0,3,4,4.0,4.0,4.0,General,General / CAP Based
+1741,Male,0,3,4,4.0,4.0,4.0,General,General / CAP Based
+1752,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1755,Female,0,4,3,2.0,2.0,3.0,Minority,General / CAP Based
+1758,Female,0,4,4,3.0,3.0,4.0,Minority,General / CAP Based
+1759,Female,0,4,4,3.0,3.0,4.0,Reserved,General / CAP Based
+1760,Female,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1763,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1765,Male,0,4,3,2.0,1.0,0.0,General,General / CAP Based
+1769,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1770,Female,0,4,4,2.0,3.0,4.0,General,General / CAP Based
+1773,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1775,Female,0,0,4,3.0,3.0,3.0,Reserved,General / CAP Based
+1776,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1783,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1784,Female,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1785,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1787,Male,0,4,3,3.0,2.0,3.0,Minority,General / CAP Based
+1790,Male,0,4,4,3.0,2.0,3.0,Minority,General / CAP Based
+1795,Male,0,4,4,4.0,4.0,3.0,General,General / CAP Based
+1797,Female,0,4,4,3.0,4.0,4.0,Reserved,General / CAP Based
+1804,Male,0,4,3,3.0,2.0,3.0,Minority,General / CAP Based
+1814,Male,0,3,3,2.0,2.0,2.0,Minority,General / CAP Based
+1820,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1825,Female,0,4,4,3.0,4.0,4.0,Reserved,General / CAP Based
+1826,Male,0,4,3,4.0,2.0,3.0,General,General / CAP Based
+1832,Male,0,4,4,3.0,3.0,3.0,Minority,General / CAP Based
+1836,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1840,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1841,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1842,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1851,Male,0,3,3,1.0,1.0,1.0,General,General / CAP Based
+1859,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1864,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1882,Female,0,4,4,4.0,3.0,4.0,General,General / CAP Based
+1883,Male,0,4,4,4.0,3.0,4.0,General,General / CAP Based
+1884,Male,0,4,4,2.0,2.0,2.0,Reserved,General / CAP Based
+1885,Female,0,4,4,3.0,3.0,3.0,Reserved,General / CAP Based
+1886,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1887,Male,0,4,4,3.0,3.0,2.0,Reserved,General / CAP Based
+1888,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1889,Male,0,4,4,2.0,2.0,3.0,General,General / CAP Based
+1890,Male,0,4,4,2.0,3.0,3.0,Reserved,General / CAP Based
+1891,Male,0,4,4,2.0,2.0,2.0,General,General / CAP Based
+1892,Male,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1893,Female,0,4,4,2.0,3.0,3.0,Reserved,General / CAP Based
+1894,Male,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1895,Male,0,4,2,2.0,1.0,2.0,General,General / CAP Based
+1896,Female,0,4,4,2.0,2.0,2.0,General,General / CAP Based
+1897,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1898,Male,0,2,2,1.0,1.0,2.0,General,General / CAP Based
+1899,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1900,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1901,Female,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1902,Male,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1903,Male,0,4,4,3.0,2.0,3.0,General,General / CAP Based
+1904,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1905,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1906,Female,0,4,4,3.0,2.0,3.0,General,General / CAP Based
+1907,Female,0,4,4,4.0,3.0,4.0,Reserved,General / CAP Based
+1908,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1909,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1910,Male,0,3,4,3.0,4.0,3.0,General,General / CAP Based
+1911,Female,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1912,Male,0,4,4,3.0,2.0,3.0,General,General / CAP Based
+1913,Male,0,4,2,0.0,0.0,0.0,Minority,General / CAP Based
+1914,Female,0,4,4,2.0,3.0,3.0,General,General / CAP Based
+1915,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1916,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1917,Female,0,4,4,2.0,3.0,4.0,Reserved,General / CAP Based
+1918,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1919,Female,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1920,Male,0,3,4,2.0,2.0,2.0,General,General / CAP Based
+1921,Male,0,4,4,4.0,3.0,3.0,General,General / CAP Based
+1922,Male,0,4,2,1.0,1.0,4.0,Minority,General / CAP Based
+1923,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1924,Male,0,3,3,2.0,2.0,2.0,General,General / CAP Based
+1925,Male,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1926,Female,0,4,4,4.0,3.0,3.0,General,General / CAP Based
+1927,Male,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1928,Male,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1929,Female,0,4,4,3.0,3.0,4.0,Reserved,General / CAP Based
+1930,Female,0,4,4,4.0,3.0,4.0,General,General / CAP Based
+1931,Female,0,4,4,3.0,3.0,3.0,General,General / CAP Based
+1932,Male,0,4,4,3.0,3.0,2.0,Reserved,General / CAP Based
+1933,Female,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1934,Male,0,4,4,4.0,3.0,4.0,Reserved,General / CAP Based
+1935,Female,0,4,4,2.0,2.0,3.0,General,General / CAP Based
+1936,Male,0,4,2,1.0,1.0,1.0,Minority,General / CAP Based
+1937,Female,0,4,4,3.0,3.0,3.0,Reserved,General / CAP Based
+1938,Female,0,3,4,2.0,3.0,2.0,General,General / CAP Based
+1940,Male,0,4,3,2.0,3.0,4.0,General,General / CAP Based
+1949,Male,0,4,3,3.0,4.0,3.0,Minority,General / CAP Based
+1954,Female,0,3,3,3.0,4.0,4.0,General,General / CAP Based
+1956,Female,0,4,4,3.0,3.0,4.0,General,General / CAP Based
+1958,Male,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1959,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+1960,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+1973,Female,0,4,3,2.0,3.0,3.0,Minority,General / CAP Based
+1977,Female,0,3,4,4.0,4.0,4.0,General,General / CAP Based
+1983,Male,0,2,4,4.0,4.0,4.0,Reserved,General / CAP Based
+1989,Male,0,3,4,2.0,3.0,3.0,General,General / CAP Based
+1990,Female,0,4,3,2.0,3.0,3.0,Minority,General / CAP Based
+1996,Female,0,4,3,2.0,2.0,3.0,General,General / CAP Based
+1997,Female,0,3,4,3.0,4.0,4.0,General,General / CAP Based
+1999,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+2000,Female,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+2003,Female,0,4,4,4.0,4.0,4.0,Reserved,General / CAP Based
+2006,Male,0,3,4,2.0,3.0,4.0,General,General / CAP Based
+2009,Female,0,4,4,3.0,2.0,3.0,General,General / CAP Based
+2010,Male,0,4,4,3.0,4.0,4.0,General,General / CAP Based
+2016,Male,0,4,4,3.0,4.0,3.0,General,General / CAP Based
+2020,Male,0,3,4,3.0,4.0,4.0,General,General / CAP Based
+2021,Male,0,3,3,2.0,1.0,2.0,Minority,General / CAP Based
+2034,Male,0,3,4,4.0,4.0,4.0,General,General / CAP Based
+2035,Male,0,4,4,1.0,2.0,3.0,General,General / CAP Based
+2047,Male,0,3,4,3.0,4.0,4.0,General,General / CAP Based
+2048,Female,0,4,4,2.0,4.0,4.0,Reserved,General / CAP Based
+2052,Female,0,4,4,4.0,4.0,4.0,General,General / CAP Based
+2056,Male,0,4,4,2.0,4.0,3.0,Reserved,General / CAP Based
+2057,Male,0,3,4,4.0,4.0,4.0,General,General / CAP Based
+2060,Female,0,3,4,2.0,3.0,2.0,General,General / CAP Based
+2085,MALE,0,4,4,4.0,4.0,4.0,OPEN,General / CAP Based
+2089,Male,0,4,4,4.0,4.0,4.0,NT,CAP
+2094,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2096,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2104,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2105,Male,0,4,4,2.0,4.0,4.0,obc,CAP
+2111,Male,0,1,4,1.0,2.0,3.0,open,CAP
+2112,Female,0,4,4,4.0,4.0,4.0,obc,CAP
+2124,Male,0,3,4,3.0,4.0,4.0,open,CAP
+2126,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2127,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2131,Male,1,4,4,2.0,3.0,4.0,obc,CAP
+2148,Male,0,2,4,1.0,2.0,3.0,open,CAP
+2153,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2155,Male,0,2,4,4.0,4.0,4.0,open,CAP
+2159,Male,0,3,4,4.0,4.0,4.0,open,DSE-CAP
+2169,Female,4,4,3,2.0,1.0,2.0,open,DSE-CAP
+2171,Female,0,4,4,4.0,4.0,4.0,open,DSE-CAP
+2173,Female,0,3,4,3.0,4.0,4.0,open,DSE-CAP
+2176,Male,0,4,4,3.0,4.0,4.0,obc,DSE-CAP
+2177,Female,0,4,4,4.0,4.0,4.0,SC,DSE-CAP
+2178,Female,0,4,4,4.0,4.0,4.0,open,DSE-CAP
+2180,Female,0,4,4,3.0,4.0,4.0,open,DSE-CAP
+2181,Male,0,3,4,4.0,3.0,4.0,open,DSE-CAP
+2185,Female,0,4,4,4.0,4.0,4.0,open,DSE-CAP
+2187,Male,0,3,3,2.0,2.0,4.0,open,DSE-CAP
+2188,Female,0,2,2,1.0,1.0,3.0,open,DSE-CAP
+2190,Female,0,3,4,2.0,4.0,4.0,open,DSE-CAP
+2191,Male,0,4,3,2.0,1.0,2.0,open,DSE-CAP
+2192,Male,0,4,4,4.0,4.0,4.0,NT,DSE-CAP
+2194,Male,0,4,4,3.0,4.0,4.0,open,DSE-CAP
+2195,Male,0,4,4,4.0,4.0,4.0,obc,DSE-CAP
+2201,Male,0,3,4,4.0,4.0,4.0,open,DSE-CAP
+2213,Male,0,4,4,4.0,4.0,4.0,obc,DSE-CAP
+2214,Male,0,4,4,2.0,2.0,3.0,obc,DSE-CAP
+2220,Male,0,4,4,4.0,4.0,4.0,open,DSE-CAP
+2221,Male,0,4,4,3.0,4.0,4.0,open,DSE-CAP
+2223,Male,0,4,3,2.0,2.0,2.0,open,DSE-CAP
+2226,Female,0,4,4,4.0,4.0,4.0,open,DSE-CAP
+2232,Female,0,4,4,3.0,4.0,4.0,open,DSE-CAP
+2234,Male,1,4,4,4.0,4.0,4.0,open,CAP
+2245,Male,0,4,4,2.0,2.0,2.0,open,CAP
+2255,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2270,Female,0,4,4,2.0,3.0,4.0,open,CAP
+2278,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2281,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2282,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2284,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2286,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2289,Male,0,3,4,3.0,3.0,4.0,open,CAP
+2290,Male,0,3,4,4.0,4.0,4.0,open,CAP
+2309,Male,0,4,4,4.0,4.0,4.0,obc,CAP
+2310,Female,0,4,4,4.0,4.0,4.0,obc,CAP
+2314,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2319,Male,0,2,4,1.0,1.0,2.0,open,CAP
+2321,Female,0,4,4,2.0,1.0,4.0,SC,CAP
+2323,Male,0,4,4,4.0,4.0,4.0,obc,CAP
+2324,Female,0,4,4,2.0,2.0,3.0,open,CAP
+2326,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2334,Male,0,4,4,3.0,2.0,4.0,open,CAP
+2335,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2337,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2338,female,0,2,3,2.0,1.0,2.0,open,Minority
+2342,Male,0,4,4,4.0,3.0,4.0,open,CAP
+2349,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2356,Female,0,4,4,3.0,3.0,4.0,SC,CAP
+2367,Female,0,4,4,2.0,3.0,4.0,open,CAP
+2369,Female,0,4,4,3.0,3.0,4.0,SC,CAP
+2370,Male,0,2,4,1.0,2.0,3.0,open,CAP
+2371,Female,0,3,4,3.0,2.0,4.0,open,CAP
+2376,Male,0,3,4,4.0,4.0,4.0,open,CAP
+2377,Female,0,4,3,2.0,2.0,4.0,open,CAP
+2378,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2384,Male,0,4,4,4.0,3.0,4.0,open,CAP
+2385,Male,0,3,4,3.0,2.0,3.0,open,CAP
+2386,Male,0,3,4,3.0,3.0,4.0,obc,CAP
+2387,Male,0,3,3,3.0,3.0,4.0,open,CAP
+2388,Male,0,4,4,4.0,4.0,4.0,obc,CAP
+2389,Male,0,2,1,2.0,1.0,2.0,open,CAP
+2390,Female,0,3,3,3.0,1.0,3.0,open,CAP
+2391,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2392,Female,0,3,4,2.0,2.0,3.0,SC,CAP
+2393,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2394,Male,0,3,4,4.0,4.0,4.0,obc,CAP
+2395,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2396,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2397,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2398,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2399,Male,0,2,4,2.0,3.0,4.0,SC,CAP
+2400,Male,0,2,4,2.0,3.0,3.0,open,CAP
+2401,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2402,Female,0,4,4,3.0,2.0,4.0,SC,CAP
+2403,Female,0,4,4,3.0,2.0,3.0,SC,CAP
+2404,Male,0,4,4,3.0,2.0,2.0,open,CAP
+2405,Male,0,4,4,4.0,4.0,4.0,obc,CAP
+2406,Male,0,3,4,2.0,2.0,4.0,SC,CAP
+2407,Female,0,4,4,3.0,1.0,2.0,SBC,CAP
+2408,Female,1,4,4,3.0,3.0,4.0,open,CAP
+2409,Female,0,4,4,3.0,1.0,4.0,open,CAP
+2410,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2411,Female,0,4,4,2.0,3.0,4.0,obc,CAP
+2412,Female,0,3,4,3.0,4.0,4.0,SBC,CAP
+2413,Male,0,3,4,2.0,1.0,2.0,obc,CAP
+2414,Male,0,3,3,2.0,2.0,3.0,open,CAP
+2415,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2416,Female,0,4,4,4.0,3.0,4.0,open,CAP
+2417,Male,0,3,3,2.0,1.0,2.0,open,CAP
+2418,Female,0,4,4,3.0,4.0,4.0,obc,CAP
+2419,Male,0,3,4,3.0,3.0,4.0,open,CAP
+2420,Male,0,4,4,3.0,2.0,4.0,obc,CAP
+2421,Female,0,4,4,3.0,3.0,4.0,NT-2,CAP
+2422,Male,0,4,3,3.0,2.0,4.0,obc,CAP
+2423,Male,0,4,4,2.0,3.0,4.0,open,CAP
+2424,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2425,Female,0,4,4,4.0,3.0,4.0,obc,CAP
+2426,Male,0,3,3,3.0,3.0,4.0,open,CAP
+2427,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2428,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2429,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2430,Male,0,2,4,3.0,2.0,4.0,open,CAP
+2431,Male,0,3,3,1.0,3.0,3.0,open,CAP
+2432,Female,0,3,4,2.0,1.0,3.0,open,CAP
+2433,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2434,Male,0,3,4,2.0,1.0,3.0,open,CAP
+2435,Female,0,4,4,4.0,4.0,4.0,NT-D,CAP
+2436,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2437,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2438,Female,0,4,3,3.0,4.0,4.0,open,CAP
+2439,Male,0,4,4,3.0,3.0,4.0,obc,CAP
+2440,Female,0,4,4,3.0,2.0,3.0,SC,CAP
+2441,Male,0,3,4,3.0,3.0,4.0,open,CAP
+2442,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2443,Male,0,4,4,4.0,3.0,4.0,obc,CAP
+2444,Male,0,4,3,2.0,1.0,3.0,open,CAP
+2445,Female,0,3,4,2.0,2.0,3.0,NT,CAP
+2446,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2450,Female,0,3,3,2.0,4.0,4.0,open,CAP
+2453,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2455,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2456,Female,0,4,3,2.0,4.0,4.0,open,CAP
+2467,Male,0,4,4,2.0,4.0,4.0,open,CAP
+2476,Male,0,4,3,2.0,3.0,3.0,open,CAP
+2482,Female,0,3,3,2.0,3.0,3.0,open,CAP
+2485,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2491,Female,0,4,3,2.0,3.0,3.0,open,CAP
+2507,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2531,Female,0,4,3,2.0,3.0,3.0,open,CAP
+2532,Male,0,3,4,2.0,2.0,3.0,open,CAP
+2541,Female,0,4,4,2.0,4.0,4.0,open,CAP
+2548,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2550,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2559,Female,0,4,3,2.0,3.0,4.0,open,CAP
+2571,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2576,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2577,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2584,Male,0,2,2,2.0,1.0,2.0,open,CAP
+2589,Male,0,4,4,2.0,3.0,4.0,open,CAP
+2590,Female,0,4,3,2.0,2.0,3.0,open,CAP
+2597,Female,0,4,4,2.0,2.0,3.0,open,CAP
+2598,Male,0,3,3,2.0,4.0,3.0,open,CAP
+2608,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2612,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2627,Female,0,3,4,1.0,2.0,3.0,open,CAP
+2632,Female,0,4,4,1.0,2.0,3.0,open,CAP
+2633,Male,0,3,4,2.0,3.0,4.0,open,CAP
+2638,Male,0,4,3,1.0,2.0,2.0,open,CAP
+2649,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2658,Female,0,3,3,2.0,2.0,3.0,open,CAP
+2659,Male,0,4,3,2.0,2.0,3.0,open,CAP
+2660,Male,0,4,3,4.0,4.0,4.0,open,CAP
+2661,Female,0,4,3,1.0,1.0,3.0,open,CAP
+2665,Male,0,3,3,2.0,4.0,3.0,open,CAP
+2667,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2680,Female,0,3,3,2.0,2.0,3.0,open,CAP
+2688,Female,0,3,3,1.0,2.0,2.0,open,CAP
+2692,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2695,Male,0,4,4,2.0,2.0,2.0,open,CAP
+2696,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2701,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2703,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2705,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2710,Male,0,4,4,3.0,2.0,3.0,open,CAP
+2711,Female,0,4,4,4.0,4.0,3.0,open,CAP
+2721,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2722,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2724,Male,0,4,4,1.0,3.0,4.0,open,CAP
+2725,Female,0,4,4,2.0,4.0,4.0,open,CAP
+2727,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2729,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2730,Female,0,4,4,2.0,3.0,3.0,open,CAP
+2732,Male,0,1,3,1.0,1.0,1.0,open,CAP
+2736,Female,0,4,4,1.0,1.0,2.0,open,CAP
+2738,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2748,Female,0,4,4,2.0,4.0,3.0,open,CAP
+2755,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2759,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2761,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2770,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2773,Male,0,4,4,4.0,3.0,4.0,open,CAP
+2783,Male,0,2,4,2.0,3.0,3.0,open,CAP
+2786,Female,0,4,4,2.0,2.0,2.0,open,CAP
+2787,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2788,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2789,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2797,Female,0,4,4,2.0,2.0,3.0,open,CAP
+2798,Female,0,4,4,2.0,2.0,3.0,open,CAP
+2802,Female,0,3,4,2.0,2.0,2.0,open,CAP
+2803,Female,0,4,4,3.0,1.0,2.0,open,CAP
+2804,Female,0,4,4,1.0,2.0,3.0,open,CAP
+2810,Male,0,4,4,2.0,2.0,3.0,open,CAP
+2812,Male,0,3,4,4.0,4.0,4.0,open,CAP
+2813,Male,0,3,4,4.0,4.0,4.0,open,CAP
+2824,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2827,Female,0,4,3,2.0,2.0,3.0,open,CAP
+2830,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2831,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2832,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2835,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2837,Male,0,4,3,2.0,1.0,4.0,open,CAP
+2841,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2842,Female,0,4,4,2.0,3.0,4.0,open,CAP
+2845,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2847,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2848,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2855,Male,0,4,4,3.0,4.0,4.0,open,CAP
+2856,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2857,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2859,Male,0,4,3,3.0,2.0,3.0,open,CAP
+2862,Male,0,4,4,3.0,2.0,3.0,open,CAP
+2867,Male,0,4,4,4.0,4.0,3.0,open,CAP
+2869,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2876,Male,0,4,3,3.0,2.0,3.0,open,CAP
+2886,Male,0,3,3,2.0,2.0,2.0,open,CAP
+2892,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2897,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2898,Male,0,4,3,4.0,2.0,3.0,open,CAP
+2904,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2908,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2912,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2913,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2914,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2923,Male,0,3,3,1.0,1.0,1.0,open,CAP
+2931,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2936,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2954,Female,0,4,4,4.0,3.0,4.0,open,CAP
+2955,Male,0,4,4,4.0,3.0,4.0,open,CAP
+2956,Male,0,4,4,2.0,2.0,2.0,open,CAP
+2957,Female,0,4,4,3.0,3.0,3.0,open,CAP
+2958,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2959,Male,0,4,4,3.0,3.0,2.0,open,CAP
+2960,Female,0,4,4,4.0,4.0,4.0,open,CAP
+2961,Male,0,4,4,2.0,2.0,3.0,open,CAP
+2962,Male,0,4,4,2.0,3.0,3.0,open,CAP
+2963,Male,0,4,4,2.0,2.0,2.0,open,CAP
+2964,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2965,Female,0,4,4,2.0,3.0,3.0,open,CAP
+2966,Male,0,4,4,3.0,3.0,4.0,open,CAP
+2967,Male,0,4,2,2.0,1.0,2.0,open,CAP
+2968,Female,0,4,4,2.0,2.0,2.0,open,CAP
+2969,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2970,Male,0,2,2,1.0,1.0,2.0,open,CAP
+2971,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2972,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2973,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2974,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2975,Male,0,4,4,3.0,2.0,3.0,open,CAP
+2976,Female,0,4,4,3.0,4.0,4.0,open,CAP
+2977,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2978,Female,0,4,4,3.0,2.0,3.0,open,CAP
+2979,Female,0,4,4,4.0,3.0,4.0,open,CAP
+2980,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2981,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2982,Male,0,3,4,3.0,4.0,3.0,open,CAP
+2983,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2984,Male,0,4,4,3.0,2.0,3.0,open,CAP
+2985,Male,0,4,2,0.0,0.0,0.0,open,CAP
+2986,Female,0,4,4,2.0,3.0,3.0,open,CAP
+2987,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2988,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2989,Female,0,4,4,2.0,3.0,4.0,open,CAP
+2990,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2991,Female,0,4,4,3.0,3.0,4.0,open,CAP
+2992,Male,0,3,4,2.0,2.0,2.0,open,CAP
+2993,Male,0,4,4,4.0,3.0,3.0,open,CAP
+2994,Male,0,4,2,1.0,1.0,4.0,open,CAP
+2995,Male,0,4,4,4.0,4.0,4.0,open,CAP
+2996,Male,0,3,3,2.0,2.0,2.0,open,CAP
+2997,Male,0,4,4,3.0,3.0,3.0,open,CAP
+2998,Female,0,4,4,4.0,3.0,3.0,open,CAP
+2999,Male,0,4,4,4.0,4.0,4.0,open,CAP
+3000,Male,0,4,4,3.0,3.0,4.0,open,CAP
+3001,Female,0,4,4,3.0,3.0,4.0,open,CAP
+3002,Female,0,4,4,4.0,3.0,4.0,open,CAP
+3003,Female,0,4,4,3.0,3.0,3.0,open,CAP
+3004,Male,0,4,4,3.0,3.0,2.0,open,CAP
+3005,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3006,Male,0,4,4,4.0,3.0,4.0,open,CAP
+3007,Female,0,4,4,2.0,2.0,3.0,open,CAP
+3008,Male,0,4,2,1.0,1.0,1.0,open,CAP
+3009,Female,0,4,4,3.0,3.0,3.0,open,CAP
+3010,Female,0,3,4,2.0,3.0,2.0,open,CAP
+3012,Male,0,4,3,2.0,3.0,4.0,open,CAP
+3021,Male,0,4,3,3.0,4.0,3.0,open,CAP
+3026,Female,0,3,3,3.0,4.0,4.0,open,CAP
+3028,Female,0,4,4,3.0,3.0,4.0,open,CAP
+3030,Male,0,4,4,4.0,4.0,4.0,open,CAP
+3031,Female,0,4,4,3.0,4.0,4.0,open,CAP
+3032,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3045,Female,0,4,3,2.0,3.0,3.0,open,CAP
+3049,Female,0,3,4,4.0,4.0,4.0,open,CAP
+3055,Male,0,2,4,4.0,4.0,4.0,open,CAP
+3061,Male,0,3,4,2.0,3.0,3.0,open,CAP
+3062,Female,0,4,3,2.0,3.0,3.0,open,CAP
+3068,Female,0,4,3,2.0,2.0,3.0,open,CAP
+3069,Female,0,3,4,3.0,4.0,4.0,open,CAP
+3071,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3072,Female,0,4,4,3.0,4.0,4.0,open,CAP
+3075,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3078,Male,0,3,4,2.0,3.0,4.0,open,CAP
+3081,Female,0,4,4,3.0,2.0,3.0,open,CAP
+3082,Male,0,4,4,3.0,4.0,4.0,open,CAP
+3088,Male,0,4,4,3.0,4.0,3.0,open,CAP
+3092,Male,0,3,4,3.0,4.0,4.0,open,CAP
+3093,Male,0,3,3,2.0,1.0,2.0,open,CAP
+3106,Male,0,3,4,4.0,4.0,4.0,open,CAP
+3107,Male,0,4,4,1.0,2.0,3.0,open,CAP
+3119,Male,0,3,4,3.0,4.0,4.0,open,CAP
+3120,Female,0,4,4,2.0,4.0,4.0,open,CAP
+3124,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3128,Male,0,4,4,2.0,4.0,3.0,open,CAP
+3129,Male,0,3,4,4.0,4.0,4.0,open,CAP
+3132,Female,0,3,4,2.0,3.0,2.0,open,CAP
+3157,FEMALE,0,4,4,4.0,4.0,4.0,open,CAP
+3158,MALE,0,4,4,4.0,4.0,4.0,open,CAP
+3167,FEMALE,0,4,4,4.0,4.0,4.0,open,CAP
+3170,MALE,0,4,4,4.0,4.0,4.0,open,CAP
+3172,MALE,0,4,4,4.0,4.0,4.0,open,CAP
+3173,FEMALE,0,4,4,4.0,4.0,4.0,open,CAP
+3175,MALE,0,4,4,4.0,4.0,4.0,open,CAP
+3181,FEMALE,0,4,4,4.0,4.0,4.0,open,CAP
+3183,MALE,0,4,4,4.0,4.0,4.0,open,CAP
+3186,FEMALE,0,4,4,3.0,4.0,4.0,open,CAP
+3189,FEMALE,0,4,4,4.0,3.0,4.0,open,CAP
+3200,MALE,0,4,4,3.0,3.0,4.0,open,CAP
+3219,MALE,0,4,4,2.0,3.0,3.0,open,CAP
+3221,MALE,0,4,4,2.0,2.0,3.0,open,CAP
+3225,MALE,0,1,2,3.0,3.0,3.0,open,CAP
+3230,MALE,0,3,2,3.0,3.0,4.0,open,CAP
+3241,Male,0,4,3,2.0,2.0,4.0,open,CAP
+3242,Female,0,4,3,3.0,3.0,4.0,open,CAP
+3256,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3261,Male,0,4,4,4.0,4.0,4.0,open,CAP
+3265,Male,0,4,4,4.0,4.0,4.0,open,CAP
+3269,Female,0,4,4,4.0,4.0,4.0,open,CAP
+3280,Male,0,4,3,3.0,3.0,4.0,open,CAP
+3282,Female,0,4,3,3.0,4.0,4.0,open,CAP
+3283,Female,0,3,3,3.0,3.0,4.0,open,CAP
+3284,Female,0,4,3,3.0,3.0,4.0,open,CAP
+3285,Female,0,3,3,4.0,2.0,4.0,open,CAP
+3286,Female,0,2,2,1.0,1.0,1.0,open,CAP
+3295,Female,0,4,4,3.0,4.0,4.0,open,CAP
+3314,Male,0,3,4,3.0,3.0,4.0,obc,CAP
+3320,Female,0,4,4,4.0,3.0,4.0,open,CAP
+3321,Female,0,3,2,3.0,3.0,3.0,open,CAP
+3322,Male,0,1,2,3.0,3.0,1.0,open,CAP
+3328,Male,0,3,2,2.0,2.0,3.0,open,CAP
+3329,Female,0,4,2,3.0,3.0,4.0,open,CAP
+3340,Male,0,4,4,1.0,1.0,2.0,open,CAP
+3347,Male,0,3,2,2.0,3.0,2.0,open,CAP
+3353,Female,0,4,4,2.0,2.0,2.0,open,CAP
+5653,FEMALE,0,2,2,1.0,1.0,2.0,SINDHI,MINORITY
+5654,FEMALE,0,2,2,1.0,1.0,1.0,SINDHI,MINORITY
+5655,FEMALE,0,2,2,2.0,1.0,2.0,SINDHI,MINORITY
+5656,FEMALE,0,2,2,1.0,2.0,2.0,SINDHI,MINORITY
+5657,FEMALE,0,2,2,1.0,2.0,1.0,SINDHI,MINORITY
+5658,FEMALE,0,2,2,2.0,1.0,1.0,SINDHI,MINORITY
+5659,FEMALE,0,2,2,1.0,2.0,2.0,SINDHI,MINORITY
+5660,FEMALE,0,2,1,2.0,2.0,2.0,SINDHI,MINORITY
+5661,FEMALE,0,2,2,2.0,2.0,2.0,SINDHI,MINORITY
+5662,FEMALE,0,2,2,2.0,2.0,2.0,SINDHI,MINORITY
+5663,FEMALE,0,2,1,2.0,2.0,2.0,SINDHI,MINORITY
+5664,FEMALE,0,2,1,1.0,1.0,1.0,SINDHI,MINORITY
+5665,FEMALE,0,2,2,1.0,1.0,1.0,SINDHI,MINORITY
+5666,FEMALE,0,2,2,2.0,1.0,2.0,SINDHI,MINORITY
+5667,FEMALE,0,2,2,2.0,1.0,2.0,SINDHI,MINORITY
+5668,FEMALE,0,2,2,2.0,1.0,1.0,SINDHI,MINORITY
+5669,FEMALE,0,2,2,2.0,1.0,1.0,SINDHI,MINORITY
+5670,FEMALE,0,2,2,2.0,1.0,2.0,SINDHI,MINORITY
+5671,FEMALE,0,2,2,2.0,2.0,1.0,SINDHI,MINORITY
+5672,FEMALE,0,2,1,1.0,1.0,1.0,SINDHI,MINORITY
+5673,FEMALE,0,2,2,2.0,2.0,2.0,SINDHI,MINORITY
+5674,FEMALE,0,2,2,2.0,1.0,2.0,SINDHI,CAP
+5675,FEMALE,0,2,1,2.0,2.0,2.0,SINDHI,CAP
+5676,FEMALE,0,2,2,1.0,2.0,2.0,SINDHI,CAP
+5677,FEMALE,0,4,4,4.0,4.0,4.0,SINDHI,CAP
+5678,FEMALE,0,3,4,2.0,3.0,0.0,SINDHI,CAP
+5679,FEMALE,0,4,4,4.0,4.0,4.0,SINDHI,CAP
+5680,FEMALE,0,4,3,3.0,3.0,3.0,OPEN,CAP
+5681,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5682,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5683,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5684,FEMALE,0,4,3,3.0,4.0,3.0,OPEN,CAP
+5685,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5686,FEMALE,0,4,3,4.0,4.0,3.0,OPEN,CAP
+5697,FEMALE,0,0,4,3.0,4.0,4.0,OPEN,CAP
+5698,FEMALE,0,4,3,3.0,3.0,4.0,OPEN,CAP
+5700,FEMALE,0,4,4,3.0,3.0,3.0,OPEN,CAP
+5724,FEMALE,0,4,4,3.0,2.0,4.0,OPEN,CAP
+5725,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5727,FEMALE,0,4,4,3.0,3.0,4.0,OPEN,CAP
+5728,FEMALE,0,2,3,2.0,1.0,4.0,OPEN,CAP
+5732,FEMALE,0,4,4,4.0,3.0,4.0,OPEN,CAP
+5739,FEMALE,0,4,4,3.0,3.0,4.0,OPEN,CAP
+5746,FEMALE,0,4,4,3.0,3.0,4.0,OPEN,CAP
+5751,FEMALE,0,4,4,3.0,3.0,4.0,OPEN,CAP
+5752,FEMALE,0,4,4,3.0,3.0,4.0,OPEN,CAP
+5882,FEMALE,0,2,2,1.0,1.0,2.0,OBC,CAP
+5883,FEMALE,0,2,2,1.0,1.0,1.0,OBC,CAP
+5884,FEMALE,0,2,2,2.0,1.0,2.0,OBC,CAP
+5885,FEMALE,0,2,2,1.0,2.0,2.0,OBC,CAP
+5886,FEMALE,0,2,2,1.0,2.0,1.0,OBC,CAP
+5887,FEMALE,0,2,2,2.0,1.0,1.0,OBC,CAP
+5888,FEMALE,0,2,2,1.0,2.0,2.0,OBC,CAP
+5889,FEMALE,0,2,1,2.0,2.0,2.0,OBC,CAP
+5890,FEMALE,0,2,2,2.0,2.0,2.0,OBC,CAP
+5891,FEMALE,0,2,2,2.0,2.0,2.0,OBC,CAP
+5892,FEMALE,0,2,1,2.0,2.0,2.0,OBC,CAP
+5893,FEMALE,0,2,1,1.0,1.0,1.0,OBC,CAP
+5894,FEMALE,0,2,2,1.0,1.0,1.0,OBC,CAP
+5895,FEMALE,0,2,2,2.0,1.0,2.0,OBC,CAP
+5896,FEMALE,0,2,2,2.0,1.0,2.0,OBC,CAP
+5897,FEMALE,0,2,2,2.0,1.0,1.0,OBC,CAP
+5898,FEMALE,0,2,2,2.0,1.0,1.0,OBC,CAP
+5899,FEMALE,0,2,2,2.0,1.0,2.0,OPEN,CAP
+5900,FEMALE,0,2,2,2.0,2.0,1.0,OPEN,CAP
+5901,FEMALE,0,2,1,1.0,1.0,1.0,OPEN,CAP
+5902,FEMALE,0,2,2,2.0,2.0,2.0,OPEN,CAP
+5903,FEMALE,0,2,2,2.0,1.0,2.0,OPEN,CAP
+5909,FEMALE,0,2,2,2.0,1.0,2.0,OPEN,CAP
+5926,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5927,FEMALE,0,4,3,3.0,3.0,4.0,OPEN,CAP
+5928,FEMALE,0,4,3,4.0,4.0,4.0,OPEN,CAP
+5929,FEMALE,0,4,4,3.0,4.0,3.0,OPEN,CAP
+5930,FEMALE,0,3,3,4.0,4.0,4.0,OPEN,CAP
+5931,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5937,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5951,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5959,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5964,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5965,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+5975,FEMALE,0,4,4,4.0,3.0,3.0,OPEN,CAP
+5986,FEMALE,0,4,4,4.0,4.0,3.0,OPEN,CAP
+5994,FEMALE,0,3,4,4.0,4.0,4.0,OPEN,CAP
+6004,FEMALE,0,4,3,2.0,1.0,2.0,OPEN,CAP
+6006,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6008,FEMALE,0,3,4,3.0,4.0,4.0,OPEN,CAP
+6080,FEMALE,0,4,2,3.0,2.0,3.0,OPEN,CAP
+6081,FEMALE,0,3,1,1.0,1.0,2.0,OPEN,CAP
+6083,FEMALE,0,4,2,2.0,2.0,3.0,OPEN,CAP
+6095,FEMALE,0,4,4,2.0,2.0,3.0,OPEN,CAP
+6096,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6104,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6111,FEMALE,0,4,4,4.0,1.0,0.0,OPEN,CAP
+6126,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6127,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6129,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6153,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6154,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6156,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6157,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6165,FEMALE,0,4,4,4.0,3.0,4.0,OPEN,CAP
+6172,FEMALE,0,4,1,4.0,4.0,4.0,OPEN,CAP
+6187,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6188,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6203,FEMALE,0,4,4,2.0,3.0,4.0,OPEN,CAP
+6211,FEMALE,0,4,4,4.0,4.0,4.0,OPEN,CAP
+6291,FEMALE,0,4,4,2.0,3.0,3.0,OPEN,CAP
+6299,FEMALE,0,4,3,4.0,3.0,4.0,OPEN,CAP
+6441,FEMALE,0,3,3,3.0,2.0,3.0,OPEN,Minority
+6770,FEMALE,0,3,4,4.0,4.0,4.0,Open,CAP
+6774,FEMALE,0,3,2,3.0,3.0,3.0,Open,CAP
+6778,FEMALE,0,4,4,4.0,4.0,4.0,Open,CAP
+6787,FEMALE,0,4,4,4.0,4.0,4.0,Open,CAP
+6790,FEMALE,0,4,4,4.0,4.0,4.0,Open,CAP
+6800,FEMALE,0,4,4,4.0,4.0,4.0,Open,CAP
+6801,FEMALE,0,3,4,4.0,4.0,4.0,Open,CAP
+6804,FEMALE,0,4,2,3.0,3.0,3.0,Open,CAP
+6814,FEMALE,0,3,2,1.0,1.0,1.0,Open,CAP
+6817,FEMALE,0,4,4,4.0,4.0,4.0,Open,CAP
+6820,FEMALE,0,4,3,1.0,1.0,1.0,Open,CAP
+6824,FEMALE,0,4,4,3.0,3.0,3.0,Open,CAP
+6827,FEMALE,0,3,4,4.0,4.0,4.0,Open,CAP
+6828,FEMALE,0,3,3,3.0,3.0,3.0,Open,CAP
+6830,FEMALE,0,3,2,3.0,3.0,3.0,Open,CAP
+6832,FEMALE,0,4,3,4.0,4.0,4.0,Open,CAP
+6836,FEMALE,0,3,2,3.0,3.0,3.0,Open,CAP
+6837,FEMALE,0,0,0,0,0,0,Open,Minority

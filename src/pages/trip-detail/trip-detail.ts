@@ -115,19 +115,27 @@ export class TripDetailPage {
   {
     this.detailsstore();
     // console.log(this.credentials);
-    this.userReg.seeprediction(this.credentials).subscribe((app)=>{
-      this.data=app.prediction;
+      if(this.sem1==0){
+          this.userReg.seepredictiondse(this.credentials).subscribe((app)=>{
+          this.data=app.prediction;
+          });
+      }
+      else
+      {
+          this.userReg.seeprediction(this.credentials).subscribe((app)=>
+          {
+          this.data=app.prediction;
       // console.log(this.data);
   
-    });
-    
-   
-  }
+           });
+
+      }
+
+    }
 
   update()
     {
       this.nav.push(SeeEducationalDetailsPage,{id:this.value});
-    
 
     }
 }

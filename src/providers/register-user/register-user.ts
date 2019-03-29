@@ -106,7 +106,11 @@ private updateData(token) {
     // console.log(userdata);
      return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
   }
-
+  seepredictiondse(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+  }
   public logout(uid):Observable<any>{
     console.log("Id is",uid);
     return this.http.delete(this.url+'/userLogout/'+{uid}+'/');
