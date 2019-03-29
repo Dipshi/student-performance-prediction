@@ -17,6 +17,7 @@ export class LoginPage  {
   credentials;
   public requests:any=[];
   weathers: any;
+  tok:any;
 
   constructor(public storage:Storage,public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,private regUser: RegisterUserProvider) {
     this.menu.swipeEnable(false);
@@ -38,27 +39,27 @@ export class LoginPage  {
     // if(!this.uname.value || !this.password.value ){
     this.regUser.loginUser(this.credentials).subscribe((weather) => {
          this.weathers = weather,
-         this.nav.setRoot(HomePage),
-         this.storage.set('id',this.weathers.id),
-         this.storage.set('username',this.weathers.username),
-         this.storage.set('token',this.weathers.token),
-         
-        //  console.log('logged in user ',this.weathers.id)
-         this.storage.get('username').then((val)=>
-             console.log('logged in user name',val)),
-         this.storage.get('id').then((val1)=>
-             console.log('logged in user id',val1))
+         this.getSessionData(this.weathers),
+
+        //  this.tok=this.weathers.token,
+         this.nav.setRoot(HomePage)
     });
-        //  console.log("This value",this.weathers.id)
-    // }
-    // else{
-    //   alert("Type in credentials");
-    // }
   }
   
  
-  getSessionData(){
-    return this.requests;
+  async getSessionData(to){
+
+      this.tok=to;
+      // console.log("The token value at login page",this.tok);
+       
+      this.storage.set('id',this.tok.id);
+      this.storage.set('username',this.tok.username);
+      this.storage.set('token','jgjfbg');
+      this.storage.get('username').then((val)=>
+          console.log('logged in user name',val));
+      this.storage.get('id').then((val1)=>
+             console.log('logged in user id',val1));
+     
   }
   forgotPass() {
     let forgot = this.forgotCtrl.create({

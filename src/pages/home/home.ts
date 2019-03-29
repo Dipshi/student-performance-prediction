@@ -42,21 +42,11 @@ export class HomePage {
         this.token = val; 
       }
     });
+    console.log("home page",this.token);
   }
 
   ionViewWillEnter() {
-    // this.search.pickup = "Rio de Janeiro, Brazil";
-    // this.search.dropOff = "Same as pickup";
-    this.storage.get('pickup').then((val) => {
-      if (val === null) {
-        this.search.name = "Rio de Janeiro, Brazil"
-      } else {
-        this.search.name = val;
       }
-    }).catch((err) => {
-      console.log(err)
-    });
-  }
 
   // go to result page
   doSearch() {
@@ -113,7 +103,11 @@ export class HomePage {
    
     // this.userReg.logout(this.uid).subscribe(
     //   response=>{
+       this.storage.set('id',null);
+         this.storage.set('username',null);
+         this.storage.set('token',null);
       this.storage.clear();
+     
         alert("Successfully logged out!!!");
         // this.storage.clear();
         this.nav.setRoot(LoginPage);

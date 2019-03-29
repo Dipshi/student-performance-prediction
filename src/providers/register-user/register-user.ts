@@ -66,16 +66,16 @@ updatePersonalDetails(userData):Observable<any>{
     return this.http.post(this.url+'/personalDetails/',userData).map(res => res.json());;
  }
 
-private updateData(token) {
-    this.token = token;
-    this.errors = [];
+// private updateData(token) {
+//     this.token = token;
+//     this.errors = [];
  
-    // decode the token to read the username and expiration timestamp
-    const token_parts = this.token.split(/\./);
-    const token_decoded = JSON.parse(window.atob(token_parts[1]));
-    this.token_expires = new Date(token_decoded.exp * 1000);
-    this.username = token_decoded.username;
-  }
+//     // decode the token to read the username and expiration timestamp
+//     const token_parts = this.token.split(/\./);
+//     const token_decoded = JSON.parse(window.atob(token_parts[1]));
+//     this.token_expires = new Date(token_decoded.exp * 1000);
+//     this.username = token_decoded.username;
+//   }
   loginUser(userData){
     //  const body={FirstName:userData.FirstName,Email:userData.Email,Password:userData.Password};
      return this.http.post(this.url+'/userLogin/',userData).map(res => res.json());
@@ -90,16 +90,16 @@ private updateData(token) {
  
 }
 
- public refreshToken() {
-    this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
-      data => {
-        this.updateData(data['token']);
-      },
-      err => {
-        this.errors = err['error'];
-      }
-    );
-  }
+//  public refreshToken() {
+//     this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
+//       data => {
+//         this.updateData(data['token']);
+//       },
+//       err => {
+//         this.errors = err['error'];
+//       }
+//     );
+//   }
 
   public logout(uid):Observable<any>{
     console.log("Id is",uid);

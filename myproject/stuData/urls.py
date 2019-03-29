@@ -3,7 +3,7 @@ from stuData import views
 
 
 urlpatterns = [
-    path('personalDetails/', views.snippet_list),
-    path('userPersonalDetails/<int:pk>/', views.snippet_detail),
+    path('personalDetails/', views.eduList),
+    path('userPersonalDetails/<int:pk>/', views.eduDetail),
     
 ]

@@ -16,6 +16,7 @@ from rest_framework.authtoken.models import Token
 ## function responsible for authenticating users
 def userLogin(request):
     data = request.data
+    print(data)
     try:
         username = data['username']
         password = data['password']
@@ -56,7 +57,7 @@ def logout( request, pk):
 @api_view(['GET', 'POST']) 
 ## specification of the allowed methods
 # @csrf_exempt
-def snippet_list(request):
+def userRegisteration(request):
     if request.method == 'GET':
         snippets = User.objects.all()
         serializer = UserRegSerializer(snippets, many=True)
