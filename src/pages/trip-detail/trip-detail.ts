@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController,NavParams} from "ionic-angular";
+import { IonicPage, NavController, NavParams ,AlertController} from 'ionic-angular';
 import {TripService} from "../../services/trip-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 import { ViewChild } from '@angular/core';
@@ -10,6 +10,8 @@ import { Response,Http } from '@angular/http';
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
 import { ViewChild } from '@angular/core';
+import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
+
 
 
 @Component({
@@ -52,7 +54,7 @@ export class TripDetailPage {
   test
   public requests:any=[];
   
-  constructor(public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
+  constructor(public forgotCtrl: AlertController,public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
   {
     // set sample data
       this.value=navParams.get('id');
@@ -115,13 +117,18 @@ export class TripDetailPage {
     // console.log(this.credentials);
     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
       this.data=app.prediction;
-      console.log(this.data);
-
-
-   
+      // console.log(this.data);
+  
     });
+    
    
   }
-  
+
+  update()
+    {
+      this.nav.push(SeeEducationalDetailsPage,{id:this.value});
+    
+
+    }
 }
 
