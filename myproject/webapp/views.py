@@ -48,6 +48,8 @@ model,graph=init()
 
 def prediction(request):
     data = request.data
+    # return Response(data=(data))            
+
     ssc=(float)(data['ssc'])
     hsc=(float)(data['hsc'])
     sem1=(float)(data['sem1'])
@@ -58,7 +60,6 @@ def prediction(request):
     gender=data['gender']
     caste=data['caste']
     add_cat=data['admiss_cat']
-    # return Response(data=(data))            
     # conversion
     if ssc>=80:
         ssc=4

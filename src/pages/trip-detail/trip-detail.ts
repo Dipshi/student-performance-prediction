@@ -114,7 +114,7 @@ export class TripDetailPage {
     this.detailsstore();
     // console.log(this.credentials);
     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
-      this.data=app;
+      this.data=app.prediction;
       console.log(this.data);
 
 

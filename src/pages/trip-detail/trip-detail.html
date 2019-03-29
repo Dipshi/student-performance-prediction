@@ -54,7 +54,7 @@
                     <ion-label floating>
                       SSC Result
                     </ion-label>
-                    <ion-input type="numeric"  value={{ssc}}  #Ssc required> </ion-input>
+                    <ion-input type="text"  value={{ssc}}  #Ssc required> </ion-input>
                 </ion-item>
                 <ion-item stacked>
                     <ion-label floating>
@@ -104,6 +104,16 @@
                   </ion-row>
 
                 </ion-grid>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
+                <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
+                <p>Predicted results</p>
+                <span></span>
+              </ion-item>
+              <ion-item>
+                <p>Predicted pointer range is <b>{{data}}</b></p>
               </ion-item>
             </ion-card>
           </div>
