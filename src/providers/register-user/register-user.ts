@@ -30,6 +30,11 @@ key;
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     };
   }
+  seeprediction(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+  }
 
   registerUser(userData):Observable<any>{
     //  const body={username:userData.username,email:userData.email,password:userData.password};

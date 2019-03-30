@@ -21,16 +21,16 @@ from rest_framework.decorators import api_view,permission_classes
 
 
 
-sys.path.append(os.path.abspath('C:/Users/Dipshi/Desktop/Ionic/database/website/model'))
+sys.path.append(os.path.abspath('D:/GitHub/App_student_prediction/ionic3/myproject/model'))
 
 def init(): 
-    json_file = open('C:/Users/Dipshi/Desktop/Ionic/database/website/model/model.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/model.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     #load woeights into new model
-    loaded_model.load_weights("C:/Users/Dipshi/Desktop/Ionic/database/website/model/model.h5")
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/model.h5")
     print("Loaded Model from disk")
 
     #compile and evaluate loaded model
@@ -131,21 +131,31 @@ def prediction(request):
     for column in p[['Gender','Caste','admission_category']].columns:
         p[column] = class_le.fit_transform(p[column].values)
     p = np.expand_dims(p, axis=2)
-
+    remarks=[]
             # x={'gap':gap,'gender':gender,'caste':caste,'ssc':ssc,'hsc':hsc,'sem1':sem1,'sem2':sem2,'sem3':sem3,'sem4':sem4,'add_cat':add_cat}
     with graph.as_default():
         prediction=model.predict_classes(p)
     if prediction==4:
         prediction='8-10'
+        remarks.append("Good to go")
+        remarks.append("Goog to go")
     elif prediction==3:
         prediction='7-7.9'
+        remarks.append("Can do better")
+        remarks.append("Goog to go")
     elif prediction==2:
         prediction='6-6.9'
+        remarks.append("Need to work hard")
+        remarks.append("Goog to go")
     elif prediction==1:
         prediction='4-5.9'
+        remarks.append("Need special guidance")
+        remarks.append("Goog to go")
     else:
         prediction="less than 4"
-    data={'prediction':prediction}
+        remarks.append("Need special guidance")
+        remarks.append("Goog to go")
+    data={'prediction':prediction,'remarks':remarks}
     return Response(data=(data))            
 
 

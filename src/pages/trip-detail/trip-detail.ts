@@ -2,7 +2,6 @@ import {Component} from "@angular/core";
 import { IonicPage, NavController, NavParams ,AlertController} from 'ionic-angular';
 import {TripService} from "../../services/trip-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
-import { ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
@@ -20,6 +19,7 @@ import {SeeEducationalDetailsPage} from "../see-educational-details/see-educatio
 })
 export class TripDetailPage {
   // trip info
+  remarks:any=[];
   public trip: any;
    value;
   weathers:any;
@@ -41,6 +41,7 @@ export class TripDetailPage {
   hsc;
   credentials;
   data;
+  remarksArray;
   @ViewChild('Ssc') Ssc;
   @ViewChild('Hsc') Hsc;
   @ViewChild('Sem1') Sem1;
@@ -117,10 +118,14 @@ export class TripDetailPage {
     // console.log(this.credentials);
     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
       this.data=app.prediction;
-      // console.log(this.data);
-  
+      this.remarks=app.remarks;
+      // console.log(this.remarks);
     });
-    
+  
+for(let i=0; i < 2; i++){ // n is array.length
+   this.remarksArray.push({ a1 : this.remarks[i]  });
+
+}
    
   }
 

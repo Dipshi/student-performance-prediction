@@ -78,8 +78,8 @@ model.fit(X_train,y_train, epochs=50, batch_size=10, verbose=2,validation_data=(
 
 
 scores = model.evaluate(X_test, y_test)
-
-
+ynew = model.predict_proba(y_train)
+print(ynew)
 
 model_json =model.to_json()
 with open('model.json',"w") as json_file:
