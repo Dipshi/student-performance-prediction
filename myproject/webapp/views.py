@@ -137,24 +137,24 @@ def prediction(request):
         prediction=model.predict_classes(p)
     if prediction==4:
         prediction='8-10'
-        remarks.append("Good to go")
-        remarks.append("Goog to go")
+        remarks.append("Good to go.")
+        remarks.append("Continue good work ahead.")
     elif prediction==3:
         prediction='7-7.9'
-        remarks.append("Can do better")
-        remarks.append("Goog to go")
+        remarks.append("Can do better.")
+        remarks.append("Study and work on your weak areas.")
     elif prediction==2:
         prediction='6-6.9'
-        remarks.append("Need to work hard")
-        remarks.append("Goog to go")
+        remarks.append("Need to work hard.")
+        remarks.append("Work harder on your weak areas.")
     elif prediction==1:
         prediction='4-5.9'
-        remarks.append("Need special guidance")
-        remarks.append("Goog to go")
+        remarks.append("Needs guidance.")
+        remarks.append("Work more hard on your weak areas and seek necessary help from teachers.")
     else:
         prediction="less than 4"
-        remarks.append("Need special guidance")
-        remarks.append("Goog to go")
+        remarks.append("Need special guidance.")
+        remarks.append("Need to do a lot of work and studying.")
     data={'prediction':prediction,'remarks':remarks}
     return Response(data=(data))            
 
