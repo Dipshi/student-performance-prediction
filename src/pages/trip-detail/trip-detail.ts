@@ -9,7 +9,6 @@ import { HttpClient } from '@angular/common/http';
 import { Response,Http } from '@angular/http';
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
-import { ViewChild } from '@angular/core';
 import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
 
 
