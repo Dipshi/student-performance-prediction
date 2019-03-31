@@ -112,21 +112,52 @@ export class TripDetailPage {
   }
   seeprediction()
   {
-    this.detailsstore();
-    // console.log(this.credentials);
-      if(this.sem1==0){
+     this.detailsstore();
+      if(this.sem1==0)
+      {
           this.userReg.seepredictiondse(this.credentials).subscribe((app)=>{
           this.data=app.prediction;
           });
       }
       else
       {
+        //predict sem 2 marks 
+        if(this.sem2==0)
+        {
+          this.userReg.sem2prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+          });
+        
+        }
+      // predict sem3 marks
+        else if(this.sem3==0)
+        {
+          this.userReg.sem3prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+          });
+
+        }
+        // predict sem4 marks
+        else if(this.sem4==0)
+        {
+          this.userReg.sem4prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+          });
+
+        }
+        // predict sem5 marks 
+        else
+        {
           this.userReg.seeprediction(this.credentials).subscribe((app)=>
           {
-          this.data=app.prediction;
-      // console.log(this.data);
-  
-           });
+            this.data=app.prediction;  
+          });  
+
+        }
+          
 
       }
 

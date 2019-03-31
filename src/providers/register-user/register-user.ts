@@ -106,6 +106,21 @@ private updateData(token) {
     // console.log(userdata);
      return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
   }
+  sem2prediction(userdata)
+  {
+        return this.http.post(this.url+'/sem2/',userdata).map(res=> res.json());
+
+  }
+  sem3prediction(userdata)
+  {
+        return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+
+  }
+  sem4prediction(userdata)
+  {
+        return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+
+  }
   seepredictiondse(userdata)
   {
     // console.log(userdata);
