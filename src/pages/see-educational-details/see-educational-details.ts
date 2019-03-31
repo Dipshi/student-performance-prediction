@@ -88,12 +88,6 @@ export class SeeEducationalDetailsPage {
   ionViewDidLoad(){
     console.log('ionViewDidLoad SeeEducationalDetailsPage');
     
-    // console.log(this.uid);
-//      this.storage.get('id').then(val=>{
-//         if(val!=null)
-//          this.uid=val
-//       }    
-//     );
      this.storage.get('token').then(val => {
       if (val != null) {
         this.token = val; 

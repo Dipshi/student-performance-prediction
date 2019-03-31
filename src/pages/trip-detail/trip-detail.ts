@@ -22,6 +22,7 @@ export class TripDetailPage {
   remarks:any=[];
   public trip: any;
    value;
+   val;
   weathers:any;
   firstname;
   fathername;
@@ -44,6 +45,8 @@ export class TripDetailPage {
   flag=0;
   index;
   sem;
+  dip;
+  twe;
   @ViewChild('Ssc') Ssc;
   @ViewChild('Hsc') Hsc;
   @ViewChild('Sem1') Sem1;
@@ -92,10 +95,9 @@ export class TripDetailPage {
          this.sem1=this.weathers.Sem1,
          this.sem2=this.weathers.Sem2,
          this.sem3=this.weathers.Sem3,
-         this.sem4=this.weathers.Sem4
-      
-        //  this.Sem1=thi
-
+         this.sem4=this.weathers.Sem4,
+         this.dip=this.weathers.Diploma_score,
+         this.twe=this.weathers.twelve_score
     });
   
   
@@ -127,7 +129,10 @@ export class TripDetailPage {
       
     });
     this.sem=this.semester.value;
-  console.log(this.sem);
+   if(this.dip==0)
+      this.val="HSC";
+  else
+      this.val="DSE";
 this.index=2;
 this.flag=1;
    

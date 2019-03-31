@@ -60,6 +60,7 @@ def prediction(request):
     gender=data['gender']
     caste=data['caste']
     add_cat=data['admiss_cat']
+    sem=data['semester']
     # conversion
     if ssc>=80:
         ssc=4
@@ -93,40 +94,76 @@ def prediction(request):
     else :
         sem1=0
 
-    if sem2>=8:
-        sem2 = 4
-    elif sem2 >=7:
-        sem2 = 3
-    elif sem2 >=6:
-        sem2= 2
-    elif sem2 >=4:
-        sem2 = 1
-    else :
-        sem2=0
-    if sem3>=8:
-        sem3 = 4
-    elif sem3 >=7:
-        sem3 = 3
-    elif sem3 >=6:
-        sem3 = 2
-    elif sem3 >=4:
-        sem3 = 1
-    else :
-        sem3=0
+    if sem=='Sem 5':
+        if sem2>=8:
+            sem2 = 4
+        elif sem2 >=7:
+            sem2 = 3
+        elif sem2 >=6:
+            sem2= 2
+        elif sem2 >=4:
+            sem2 = 1
+        else :
+            sem2=0
+        if sem3>=8:
+            sem3 = 4
+        elif sem3 >=7:
+            sem3 = 3
+        elif sem3 >=6:
+            sem3 = 2
+        elif sem3 >=4:
+            sem3 = 1
+        else :
+            sem3=0
 
-    if sem4>=8:
-        sem4 = 4
-    elif sem4 >=7:
-        sem4 = 3
-    elif sem4 >=6:
-        sem4 = 2
-    elif sem4 >=4:
-        sem4 = 1
-    else :
-        sem4=0
+        if sem4>=8:
+            sem4 = 4
+        elif sem4 >=7:
+            sem4 = 3
+        elif sem4 >=6:
+            sem4 = 2
+        elif sem4 >=4:
+            sem4 = 1
+        else :
+            sem4=0
+         p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2,sem3,sem4]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3','Sem4'])
+    elif sem=="Sem 4":
+        if sem2>=8:
+            sem2 = 4
+        elif sem2 >=7:
+            sem2 = 3
+        elif sem2 >=6:
+            sem2= 2
+        elif sem2 >=4:
+            sem2 = 1
+        else :
+            sem2=0
+        if sem3>=8:
+            sem3 = 4
+        elif sem3 >=7:
+            sem3 = 3
+        elif sem3 >=6:
+            sem3 = 2
+        elif sem3 >=4:
+            sem3 = 1
+        else :
+            sem3=0
+        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2,sem3]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3'])
+
+    elif sem=="Sem3":
+        if sem2>=8:
+            sem2 = 4
+        elif sem2 >=7:
+            sem2 = 3
+        elif sem2 >=6:
+            sem2= 2
+        elif sem2 >=4:
+            sem2 = 1
+        else :
+            sem2=0
+        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2'])
 # storing in dataframe
-    p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2,sem3,sem4]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3','Sem4'])
-            
+   
     class_le = LabelEncoder()
     for column in p[['Gender','Caste','admission_category']].columns:
         p[column] = class_le.fit_transform(p[column].values)
