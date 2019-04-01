@@ -220,7 +220,19 @@ def prediction(request):
     data={'prediction':prediction,'remarks':remarks}
     return Response(data=(data))            
 
-
+@api_view(['GET', 'POST']) 
+def getdata(request):
+    sem = request.data
+    if sem['semester']=='Sem2':
+        # print(data['sem2'])
+        result=sem2(sem)
+    elif sem['semester']=='Sem3':
+        result=sem3(sem)
+    else :
+        result=sem4(sem)
+    data={'prediction':result['prediction'],'remarks':result['remarks']}
+    return Response(data=(data))
+ 
 def conversion(data):
     # data=request.data
     ssc=(float)(data['ssc'])
@@ -297,36 +309,47 @@ def conversion(data):
         sem4 = 1
     else :
         sem4=0
-    marks={'ssc':ssc,'hsc':hsc,'sem1':sem1,'sem2':sem2,'sem3':sem3,'sem4':sem4,'caste':data['caste'],'gap':data['gap'],'gender':data['gender'],'add_cat':add_cat}
+    marks={'ssc':ssc,'hsc':hsc,'sem1':sem1,'sem2':sem2,'sem3':sem3,'sem4':sem4,'caste':data['caste'],'gap':gap,'gender':data['gender'],'add_cat':add_cat}
     # return Response(data=(marks))
     return marks
 
-@api_view(['GET', 'POST']) 
+# @api_view(['GET', 'POST']) 
 
-def sem2(data):
-    # data=request.data
-    m=conversion(data)
+def sem2(data1):
+    # data=data1.data
+    m=conversion(data1)
     p=pd.DataFrame([[0,m['gap'],m['gender'],m['caste'],m['add_cat'],m['ssc'],m['hsc'],m['sem1']]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1'])
             
     class_le = LabelEncoder()
     for column in p[['Gender','Caste','admission_category']].columns:
         p[column] = class_le.fit_transform(p[column].values)
     p = np.expand_dims(p, axis=2)
+    remarks=[]
     with graph1.as_default():
         prediction=model1.predict_classes(p)
     if prediction==4:
         prediction='8-10'
+        remarks.append("Good to go.")
+        remarks.append("Continue good work ahead.")
     elif prediction==3:
         prediction='7-7.9'
+        remarks.append("Can do better.")
+        remarks.append("Study and work on your weak areas.")
     elif prediction==2:
         prediction='6-6.9'
+        remarks.append("Need to work hard.")
+        remarks.append("Work harder on your weak areas.")
     elif prediction==1:
         prediction='4-5.9'
+        remarks.append("Needs guidance.")
+        remarks.append("Work more hard on your weak areas and seek necessary help from teachers.")
     else:
         prediction="less than 4"
-    data={'prediction':prediction}
+        remarks.append("Need special guidance.")
+        remarks.append("Need to do a lot of work and studying.")
+    data={'prediction':prediction,'remarks':remarks}
     # return Response(data=(data))     
-    return prediction
+    return data
 
 
 def sem3(data):
@@ -356,7 +379,7 @@ def sem3(data):
     
 def sem4(data):
     m=conversion(data)
-    p=pd.DataFrame([[0,data['gap'],data['gender'],data['caste'],data['add_cat'],m['ssc'],m['hsc'],m['sem1'],m['sem2'],m['sem3']]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3'])
+    p=pd.DataFrame([[0,m['gap'],m['gender'],m['caste'],m['add_cat'],m['ssc'],m['hsc'],m['sem1'],m['sem2'],m['sem3']]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3'])
             
     class_le = LabelEncoder()
     for column in p[['Gender','Caste','admission_category']].columns:
@@ -377,16 +400,3 @@ def sem4(data):
     data={'prediction':prediction}
     return Response(data=(data))   
 
-@api_view(['GET', 'POST']) 
-def getdata(request):
-    data = request.data
-    if float(data['sem2'])==0:
-        # print(data['sem2'])
-        result=sem2(data)
-    elif float(data['sem3'])==0:
-        result=sem3(data)
-    else :
-        result=sem4(data)
-    
-    return Response({'prediction':result})
- 

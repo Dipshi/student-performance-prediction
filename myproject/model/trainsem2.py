@@ -38,10 +38,10 @@ df.pop('Sem5')
 y=df.pop('Sem2')
 X=df
 
-# smote = SMOTE(ratio='minority')
-# X_sm, y_sm = smote.fit_sample(X, y)
-# X = pd.DataFrame(X_sm)
-# y = pd.DataFrame(y_sm)
+smote = SMOTE(ratio='minority')
+X_sm, y_sm = smote.fit_sample(X, y)
+X = pd.DataFrame(X_sm)
+y = pd.DataFrame(y_sm)
 
 # df=df.drop(df.index[0],inplace=True)
 
@@ -65,7 +65,7 @@ model.add(Dropout(0.2))
 model.add(Conv1D(filters=16, kernel_size=3, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Conv1D(filters=32, kernel_size=3, activation='relu'))
-# model.add(Conv1D(filters=32, kernel_size=3, activation='relu'))
+model.add(Conv1D(filters=32, kernel_size=3, activation='relu'))
 
 model.add(MaxPooling1D(pool_size=2))
 model.add(Flatten())

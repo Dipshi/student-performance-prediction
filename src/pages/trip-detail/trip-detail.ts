@@ -114,6 +114,8 @@ export class TripDetailPage {
       sem4:this.Sem4.value,
       admiss_cat:this.Admiss_cat.value,
       semester:this.semester.value
+      // this.sem=this.semester.value;
+
     };
 
   }
