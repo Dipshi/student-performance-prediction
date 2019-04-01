@@ -65,19 +65,20 @@ model.add(Dropout(0.2))
 model.add(Conv1D(filters=16, kernel_size=3, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Conv1D(filters=32, kernel_size=3, activation='relu'))
-model.add(Conv1D(filters=32, kernel_size=3, activation='relu'))
+# model.add(Conv1D(filters=64, kernel_size=3, activation='relu'))
 
 model.add(MaxPooling1D(pool_size=2))
 model.add(Flatten())
 model.add(Dense(20, activation='relu'))
 model.add(Dropout(0.25))
+# model.add(Dense(50, activation='relu'))
 
 model.add(Dense(10, activation='relu'))
 model.add(Dense(n_outputs, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-model.fit(X_train,y_train, epochs=50, batch_size=10, verbose=2,validation_data=(X_test, y_test))
+model.fit(X_train,y_train, epochs=80, batch_size=10, verbose=2,validation_data=(X_test, y_test))
 
 
 scores = model.evaluate(X_test, y_test)
