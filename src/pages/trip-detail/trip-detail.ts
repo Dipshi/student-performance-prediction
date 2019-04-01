@@ -131,7 +131,7 @@ export class TripDetailPage {
         this.sem=this.semester.value;
         this.flag=1;
         //predict sem 2 marks 
-        if(this.sem==2)
+        if(this.sem=='Sem2')
         {
           this.userReg.sem2prediction(this.credentials).subscribe((app)=>
           {
@@ -142,7 +142,7 @@ export class TripDetailPage {
         
         }
       // predict sem3 marks
-        else if(this.sem==3)
+        else if(this.sem=='Sem3')
         {
           this.userReg.sem3prediction(this.credentials).subscribe((app)=>
           {
@@ -153,7 +153,7 @@ export class TripDetailPage {
 
         }
         // predict sem4 marks
-        else if(this.sem==4)
+        else if(this.sem=='Sem3')
         {
           this.userReg.sem4prediction(this.credentials).subscribe((app)=>
           {
