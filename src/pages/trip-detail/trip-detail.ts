@@ -58,7 +58,7 @@ export class TripDetailPage {
   @ViewChild('Gap') Gap;
   @ViewChild('Gender') Gender;
   @ViewChild('sem') semester;
-  test
+  test;
   public requests:any=[];
   
   constructor(public forgotCtrl: AlertController,public nav: NavController, public tripService: TripService, public navParams: NavParams,private userReg:RegisterUserProvider,private msgService: ApiconnectProvider,public httpClient:HttpClient)
@@ -102,11 +102,9 @@ export class TripDetailPage {
   
   
   } 
+  
+  
   detailsstore()
-  { 
-    
-  }
-  seeprediction()
   {
     // this.detailsstore();
     // console.log(this.credentials);
@@ -126,23 +124,64 @@ export class TripDetailPage {
       admiss_cat:this.Admiss_cat.value,
       semester:this.semester.value
     };
+   }
+   else{
+     this.credentials={
+      gap:this.Gap.value,
+      gender:this.Gender.value,
+      caste:this.Caste.value,
+      hsc:this.Hsc.value,
+      ssc:this.Ssc.value,
+      sem3:this.Sem3.value,
+      sem4:this.Sem4.value,
+      admiss_cat:this.Admiss_cat.value,
+      semester:this.semester.value
+    };
+
+   }
 
   }
   seeprediction()
   {
      this.detailsstore();
-      if(this.sem1==0)//for dse
+      if(this.dip!=0)//for dse
       {
-          this.userReg.seepredictiondse(this.credentials).subscribe((app)=>{
+         if(this.sem=='Sem 3')
+        {
+          this.userReg.seepredictiondsesem3(this.credentials).subscribe((app)=>{
           this.data=app.prediction;
-          });
+          this.remarks=app.remarks;
+          
+        });
+        
+      }
+      else if(this.sem=='Sem 4')
+        {
+          this.userReg.seepredictiondsesem4(this.credentials).subscribe((app)=>{
+          this.data=app.prediction;
+          this.remarks=app.remarks;
+          
+        });
+        
+      }
+     else{
+          this.userReg.seepredictiondsesem5(this.credentials).subscribe((app)=>{
+          this.data=app.prediction;
+          this.remarks=app.remarks;
+          
+        });
+        
+        }
+          
+         this.flag=1;
+        // console.lo/g(this.data);
       }
       else//for Regular students
       {
         this.sem=this.semester.value;
         this.flag=1;
         //predict sem 2 marks 
-        if(this.sem=='Sem2')
+        if(this.sem=='Sem 2')
         {
           this.userReg.sem2prediction(this.credentials).subscribe((app)=>
           {
@@ -153,7 +192,7 @@ export class TripDetailPage {
         
         }
       // predict sem3 marks
-        else if(this.sem=='Sem3')
+        else if(this.sem=='Sem 3')
         {
           this.userReg.sem3prediction(this.credentials).subscribe((app)=>
           {
@@ -164,7 +203,7 @@ export class TripDetailPage {
 
         }
         // predict sem4 marks
-        else if(this.sem=='Sem3')
+        else if(this.sem=='Sem 4')
         {
           this.userReg.sem4prediction(this.credentials).subscribe((app)=>
           {

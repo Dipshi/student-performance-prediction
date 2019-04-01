@@ -21,7 +21,8 @@ from imblearn.over_sampling import SMOTE
 
 
 df=pd.read_csv('MoreDSE5.csv')
-
+df=df.pop('Sem4')
+df=df.pop('Sem5')
 """ Split Data into Training and Testing Sets """
 
 def split_data(X, Y):
@@ -32,7 +33,7 @@ class_le = LabelEncoder()
 for column in df[['Gender','Caste','admission_category']].columns:
     df[column] = class_le.fit_transform(df[column].values)
 
-y=df.pop('Sem5')
+y=df.pop('Sem3')
 X=df
 
 smote = SMOTE(ratio='minority')
@@ -51,7 +52,7 @@ model = Sequential()
 #add model layers
 X_train = np.expand_dims(X_train, axis=2)
 X_test = np.expand_dims(X_test, axis=2)
-n_cols = 9
+n_cols = X_train.shape[1]
 n_steps=X_train.shape[0]
 n_outputs=5
 epochs=10
@@ -82,7 +83,7 @@ scores = model.evaluate(X_test, y_test)
 
 
 model_json =model.to_json()
-with open('modeldse.json',"w") as json_file:
+with open('modeldsesem3.json',"w") as json_file:
     json_file.write(model_json)
-model.save_weights("modeldse.h5")
+model.save_weights("modeldsesem3.h5")
 # train_and_score(x,y)/

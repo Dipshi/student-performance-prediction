@@ -84,22 +84,13 @@ updatePersonalDetails(userData):Observable<any>{
  
 }
 
- public refreshToken() {
-    this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
-      data => {
-        this.updateData(data['token']);
-      },
-      err => {
-        this.errors = err['error'];
-      }
-    );
-  }
+
   //See prediction
-  seeprediction(userdata)
-  {
-    // console.log(userdata);
-     return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
-  }
+  // seeprediction(userdata)
+  // {
+  //   // console.log(userdata);
+  //    return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+  // }
   sem2prediction(userdata)
   {
         return this.http.post(this.url+'/sem2/',userdata).map(res=> res.json());
@@ -116,7 +107,17 @@ updatePersonalDetails(userData):Observable<any>{
         return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
 
   }
-  seepredictiondse(userdata)
+  seepredictiondsesem3(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+  }
+  seepredictiondsesem4(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+  }
+  seepredictiondsesem5(userdata)
   {
     // console.log(userdata);
      return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());

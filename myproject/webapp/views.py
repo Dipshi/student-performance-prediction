@@ -21,16 +21,16 @@ from rest_framework.decorators import api_view,permission_classes
 
 
 
-sys.path.append(os.path.abspath('C:/xampp/htdocs/Ionic/ionic3/myproject/model'))
+sys.path.append(os.path.abspath('D:/GitHub/App_student_prediction/ionic3/myproject/model'))
 
 def init(): 
-    json_file = open('C:/xampp/htdocs/Ionic/ionic3/myproject/model/model.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/model.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     #load woeights into new model
-    loaded_model.load_weights("C:/xampp/htdocs/Ionic/ionic3/myproject/model/model.h5")
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/model.h5")
     print("Loaded Model from disk")
 
     #compile and evaluate loaded model
@@ -43,13 +43,13 @@ def init():
     return loaded_model,graph
 
 def initsem2(): 
-    json_file = open('C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem2.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/sem2.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     #load woeights into new model
-    loaded_model.load_weights("C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem2.h5")
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/sem2.h5")
     print("Loaded Model from disk")
 
     #compile and evaluate loaded model
@@ -62,13 +62,13 @@ def initsem2():
     return loaded_model,graph1
 
 def initsem3(): 
-    json_file = open('C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem3.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/sem3.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     #load woeights into new model
-    loaded_model.load_weights("C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem3.h5")
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/sem3.h5")
     print("Loaded Model from disk")
 
     #compile and evaluate loaded model
@@ -81,13 +81,13 @@ def initsem3():
     return loaded_model,graph2
 
 def initsem4(): 
-    json_file = open('C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem4.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/sem4.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     #load woeights into new model
-    loaded_model.load_weights("C:/xampp/htdocs/Ionic/ionic3/myproject/model/sem4.h5")
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/sem4.h5")
     print("Loaded Model from disk")
 
     #compile and evaluate loaded model

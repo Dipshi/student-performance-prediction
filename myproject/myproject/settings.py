@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'userRegister.apps.UserregisterConfig',
     'studentAcademics.apps.StudentacademicsConfig',
     'stuData.apps.StudataConfig',
+    'predictiondsesem3.apps.Predictiondsesem3Config',
     'webapp.apps.WebappConfig',
     'prediction.apps.PredictionConfig',
     'django.contrib.admin',

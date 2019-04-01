@@ -37,7 +37,7 @@ urlpatterns = [
     path('', include('stuData.urls')),
     path('', include('webapp.urls')),
     path('', include('prediction.urls')),
-
+    path('', include('predictiondsesem3.urls')),
     url(r'^auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', views.obtain_auth_token)
     # url(r'^auth/', include('rest_framework.urls')),
