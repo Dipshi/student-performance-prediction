@@ -90,7 +90,18 @@
                     </ion-label>
                     <ion-input type="text"  value={{sem4}} #Sem4 ></ion-input>
                 </ion-item>
-            
+                 <ion-item>
+                <ion-label floating>
+                  Enter Smester to be predicted:
+                </ion-label>
+                  <ion-select    #sem>
+                      <ion-option >Sem2</ion-option>
+                      <ion-option >Sem3</ion-option>
+                      <ion-option >Sem4</ion-option>
+                      <ion-option >Sem 5</ion-option>
+                  </ion-select>
+              
+            </ion-item>
               </ion-list>
               
               <ion-item>
@@ -107,14 +118,15 @@
                 </ion-grid>
               </ion-item>
             </ion-card>
-            <ion-card>
+            <ion-card *ngIf="flag==1">
               <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
                 <!-- <ion-icon name="search" color="primary" item-left></ion-icon> -->
                 <p>Predicted results</p>
                 <span></span>
               </ion-item>
-              <ion-item>
-                <p>Predicted pointer range is <b>{{data}}</b></p>
+              <ion-item >
+                <p></p>
+                <p>Predicted pointer range for upcoming semester is <b>{{data}}</b></p>
               </ion-item>
             </ion-card>
           </div>
@@ -124,38 +136,48 @@
   </ion-grid>
 
   <!--high light-->
-  <div class="border-bottom" padding>
-    <span ion-text color="dark" class="bold">Remarks</span>
-    <!-- <ul class="highlight">
-      <li *ngFor="let highlight of trip.highlights">
-        <ion-icon name="checkmark" class="text-green"></ion-icon>
-        <span ion-text color="primary"></span>
-      </li>
-    </ul> -->
+   <ion-card *ngIf="flag==1">
+              <ion-item style="background-color: rgb(221, 211, 211)" class="border-bottom">
+                <p>Remarks</p>
+                <span></span>
+              </ion-item>
+              <div class="border-bottom" padding>
+                <!-- <ul class="highlight">-->
+                  <li *ngFor="let rem of remarks; let i=index" >
+                    <ion-icon name="checkmark" class="text-green"></ion-icon>
+                    <span ion-text color="primary">{{remarks[i]}}</span>
+                     <br><br>
+                  </li>
+                  <br><br>
+    
   </div>
+            </ion-card>
+  <!--<ion-card *ngIf="flag==0">
+    <p>click abve button to see more information about your performance</p>
+  </ion-card>-->
 
   <!--booking form-->
-  <div class="booking-form card round" margin>
+  <!--<div class="booking-form card round" margin>
     <div class="border-bottom" padding>
       <h5></h5>
 
-      <!--choose guest-->
+      choose guest
       <ion-grid class="filters" no-padding margin-top>
         <ion-row>
           <ion-col class="adult" width-70>
-            <!--<span ion-text color="primary"><strong>{{ trip.price_adult | currency:'USD':true }}</strong> Adults</span>-->
-            <span ion-text color="primary"><strong></strong> </span>
+            <span ion-text color="primary"><strong>{{ trip.price_adult | currency:'USD':true }}</strong> Adults</span>-->
+           <!-- <span ion-text color="primary"><strong></strong> </span>
           </ion-col>
-          <!--<ion-col width-10 text-center>
+          <ion-col width-10 text-center>
             <ion-icon name="remove-circle" class="text-2x" tappable (click)="minusAdult()" [hidden]="adults < 2"
                       color="secondary"></ion-icon>
           </ion-col>-->
           <!--<ion-col width-10 text-center>{{ adults }}</ion-col>
           <ion-col width-10 text-center>
             <ion-icon name="add-circle" class="text-2x" tappable (click)="plusAdult()" color="secondary"></ion-icon>
-          </ion-col>-->
+          </ion-col>
         </ion-row>
-        <!--<ion-row margin-top>
+        <ion-row margin-top>
           <ion-col width-70>
             <span ion-text color="primary"><strong>{{ trip.price_child | currency:'USD':true }}</strong> Child (0-12 years)</span>
           </ion-col>
@@ -167,27 +189,27 @@
           <ion-col width-10 text-center>
             <ion-icon name="add-circle" class="text-2x" tappable (click)="plusChildren()" color="secondary"></ion-icon>
           </ion-col>
-        </ion-row>-->
+        </ion-row>
       </ion-grid>
     </div>
     <div padding class="form-bottom">
-<!--       <span ion-text color="dark" class="bold">{{ adults }} Adults</span> -->
-      <!--booking button-->
+      <span ion-text color="dark" class="bold">{{ adults }} Adults</span> -->
+      <!--booking button
       <button ion-button class="pull-right" color="secondary" tappable (click)="checkout()">Submit
       </button>
       <div class="clear"></div>
     </div>
   </div>
 
-  <!--description-->
+  description-->
   <!--<div class="border-bottom" padding>
     <span ion-text color="primary" class="bold">DESCRIPTION</span>
     <p ion-text>{{ trip.description }}</p>
   </div>-->
 
-  <!--address-->
+  <!--address
   <div class="border-bottom" padding>
     <span ion-text color="primary" class="bold">COLLEGE</span>
     <p ion-text></p>
-  </div>
+  </div>-->
 </ion-content>

@@ -30,6 +30,11 @@ key;
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     };
   }
+  seeprediction(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+  }
 
   registerUser(userData):Observable<any>{
     //  const body={username:userData.username,email:userData.email,password:userData.password};
@@ -66,16 +71,7 @@ updatePersonalDetails(userData):Observable<any>{
     return this.http.post(this.url+'/personalDetails/',userData).map(res => res.json());;
  }
 
-private updateData(token) {
-    this.token = token;
-    this.errors = [];
- 
-    // decode the token to read the username and expiration timestamp
-    const token_parts = this.token.split(/\./);
-    const token_decoded = JSON.parse(window.atob(token_parts[1]));
-    this.token_expires = new Date(token_decoded.exp * 1000);
-    this.username = token_decoded.username;
-  }
+
   loginUser(userData){
     //  const body={FirstName:userData.FirstName,Email:userData.Email,Password:userData.Password};
      return this.http.post(this.url+'/userLogin/',userData).map(res => res.json());
@@ -114,6 +110,7 @@ private updateData(token) {
   sem3prediction(userdata)
   {
         return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+
 
   }
   sem4prediction(userdata)

@@ -17,7 +17,7 @@ from rest_framework.authtoken.models import Token
 @api_view(['GET', 'POST']) 
 ## specification of the allowed methods
 # @csrf_exempt
-def snippet_list(request):
+def eduList(request):
     if request.method == 'GET':
         snippets = stuData.objects.all()
         serializer = sUserDataSerializer(snippets, many=True)
@@ -33,7 +33,7 @@ def snippet_list(request):
         
 @api_view(['GET', 'PUT', 'DELETE'])
 # @permission_classes(IsAuthenticated,)
-def snippet_detail(request,pk):
+def eduDetail(request,pk):
     try:
         snippet = stuData.objects.get(sid_id=pk)
     except  stuData.DoesNotExist:

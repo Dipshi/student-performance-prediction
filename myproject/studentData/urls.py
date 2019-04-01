@@ -3,7 +3,7 @@ from studentData import views
 
 
 urlpatterns = [
-    path('userDetails/', views.snippet_list),
-    path('userPersonalDetails/<int:pk>/', views.snippet_detail),
+    path('userDetails/', views.studentDetail),
+    path('userPersonalDetails/<int:pk>/', views.studentDetail),
     
 ]

@@ -81,7 +81,7 @@ export class SeeEducationalDetailsPage {
 
   constructor(public forgotCtrl: AlertController,public userReg:RegisterUserProvider,public storage:Storage,public navCtrl: NavController, public navParams: NavParams) { 
              this.value = navParams.get('id');
-             this.keyval = navParams.get('token');
+            //  this.keyval = navParams.get('token');
              
 }
 
@@ -89,16 +89,19 @@ export class SeeEducationalDetailsPage {
     console.log('ionViewDidLoad SeeEducationalDetailsPage');
     
     // console.log(this.uid);
-     this.storage.get('id').then(val=>{
-        if(val!=null)
-         this.uid=val
-      }    
-    );
+//      this.storage.get('id').then(val=>{
+//         if(val!=null)
+//          this.uid=val
+//       }    
+//     );
      this.storage.get('token').then(val => {
       if (val != null) {
         this.token = val; 
       }
+    }).catch((error)=>{
+          console.log("Token not found")
     });
+    console.log(this.token);
     this.getDet();
   }
 

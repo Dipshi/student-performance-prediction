@@ -2,7 +2,6 @@ import {Component} from "@angular/core";
 import { IonicPage, NavController, NavParams ,AlertController} from 'ionic-angular';
 import {TripService} from "../../services/trip-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
-import { ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
@@ -19,6 +18,7 @@ import {SeeEducationalDetailsPage} from "../see-educational-details/see-educatio
 })
 export class TripDetailPage {
   // trip info
+  remarks:any=[];
   public trip: any;
    value;
   weathers:any;
@@ -40,6 +40,9 @@ export class TripDetailPage {
   hsc;
   credentials;
   data;
+  flag=0;
+  index;
+  sem;
   @ViewChild('Ssc') Ssc;
   @ViewChild('Hsc') Hsc;
   @ViewChild('Sem1') Sem1;
@@ -50,6 +53,7 @@ export class TripDetailPage {
   @ViewChild('Caste') Caste;
   @ViewChild('Gap') Gap;
   @ViewChild('Gender') Gender;
+  @ViewChild('sem') semester;
   test
   public requests:any=[];
   
@@ -60,6 +64,7 @@ export class TripDetailPage {
       console.log("current id is ",this.value);    // this.getDetails();
   }
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad ProfilePage');
     this.userReg.getUserDetails(this.value).subscribe((weather) => {
       
@@ -106,7 +111,8 @@ export class TripDetailPage {
       sem2:this.Sem2.value,
       sem3:this.Sem3.value,
       sem4:this.Sem4.value,
-      admiss_cat:this.Admiss_cat.value
+      admiss_cat:this.Admiss_cat.value,
+      semester:this.semester.value
     };
 
   }
@@ -127,6 +133,8 @@ export class TripDetailPage {
           this.userReg.sem2prediction(this.credentials).subscribe((app)=>
           {
             this.data=app.prediction;
+            this.remarks=app.remarks;
+
           });
         
         }
@@ -154,6 +162,8 @@ export class TripDetailPage {
           this.userReg.seeprediction(this.credentials).subscribe((app)=>
           {
             this.data=app.prediction;  
+            this.remarks=app.remarks;
+
           });  
 
         }
@@ -162,6 +172,19 @@ export class TripDetailPage {
       }
 
     }
+//     this.detailsstore();
+//     // console.log(this.credentials);
+//     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
+//       this.data=app.prediction;
+//       this.remarks=app.remarks;
+      
+//     });
+//     this.sem=this.semester.value;
+//   console.log(this.sem);
+// this.index=2;
+// this.flag=1;
+   
+  }
 
   update()
     {

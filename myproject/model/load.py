@@ -6,7 +6,7 @@ from keras.models import model_from_json
 
 
 def init(): 
-    json_file = open('C:/Users/Dipshi/Desktop/Ionic/database/website/model/model.json','r')
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/model.json','r')
     # json_file = open('model.json','r')
     loaded_model_json = json_file.read()
     json_file.close()
