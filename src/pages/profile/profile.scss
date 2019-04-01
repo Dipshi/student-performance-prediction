@@ -1,3 +1,14 @@
-page-profile {
+page-profile,
+.profile{
+    ion-list,
+    .labels
+    {
+        ion-label {
+            color:color($colors,primary);
+       
+           }   
+           
 
+    }
+    
 }

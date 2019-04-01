@@ -84,8 +84,43 @@ updatePersonalDetails(userData):Observable<any>{
  
 }
 
+ public refreshToken() {
+    this.http.post('/api-token-refresh/', JSON.stringify({token: this.token}), this.httpOptions).subscribe(
+      data => {
+        this.updateData(data['token']);
+      },
+      err => {
+        this.errors = err['error'];
+      }
+    );
+  }
+  //See prediction
+  seeprediction(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+  }
+  sem2prediction(userdata)
+  {
+        return this.http.post(this.url+'/sem2/',userdata).map(res=> res.json());
+
+  }
+  sem3prediction(userdata)
+  {
+        return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
 
 
+  }
+  sem4prediction(userdata)
+  {
+        return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
+
+  }
+  seepredictiondse(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+  }
   public logout(uid):Observable<any>{
     console.log("Id is",uid);
     return this.http.delete(this.url+'/userLogout/'+{uid}+'/');

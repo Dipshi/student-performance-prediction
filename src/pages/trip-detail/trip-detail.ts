@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 import { Response,Http } from '@angular/http';
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
-import { ViewChild } from '@angular/core';
 import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
+import { ViewChild } from '@angular/core';
 
 
 
@@ -127,42 +127,74 @@ export class TripDetailPage {
       semester:this.semester.value
     };
 
-     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
-      this.data=app.prediction;
-      this.remarks=app.remarks;
-      
-    });
-      // this.val="HSC";
-   }
-  else{
-    this.credentials={
-      gap:this.Gap.value,
-      gender:this.Gender.value,
-      caste:this.Caste.value,
-      hsc:this.Hsc.value,
-      ssc:this.Ssc.value,
-      sem3:this.Sem3.value,
-      sem4:this.Sem4.value,
-      admiss_cat:this.Admiss_cat.value,
-      semester:this.semester.value
-    };
+  }
+  seeprediction()
+  {
+     this.detailsstore();
+      if(this.sem1==0)//for dse
+      {
+          this.userReg.seepredictiondse(this.credentials).subscribe((app)=>{
+          this.data=app.prediction;
+          });
+      }
+      else//for Regular students
+      {
+        this.sem=this.semester.value;
+        this.flag=1;
+        //predict sem 2 marks 
+        if(this.sem=='Sem2')
+        {
+          this.userReg.sem2prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+            this.remarks=app.remarks;
 
-    this.userReg.seedseprediction(this.credentials).subscribe((app)=>{
-      this.data=app.prediction;
-      this.remarks=app.remarks;
-      
-    });
-      // this.val="DSE";
-  }
-this.index=2;
-this.flag=1;
-   
-  }
+          });
+        
+        }
+      // predict sem3 marks
+        else if(this.sem=='Sem3')
+        {
+          this.userReg.sem3prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+            this.remarks=app.remarks;
+
+          });
+
+        }
+        // predict sem4 marks
+        else if(this.sem=='Sem3')
+        {
+          this.userReg.sem4prediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;
+            this.remarks=app.remarks;
+
+          });
+
+        }
+        // predict sem5 marks 
+        else
+        {
+          this.userReg.seeprediction(this.credentials).subscribe((app)=>
+          {
+            this.data=app.prediction;  
+            this.remarks=app.remarks;
+           
+          });  
+
+        }
+          
+
+      }
+
+    }
+
 
   update()
     {
       this.nav.push(SeeEducationalDetailsPage,{id:this.value});
-    
 
     }
 }

@@ -9,6 +9,8 @@ urlpatterns=[
     # path('',views.post_data),
     # url(r'^$',TemplateView.as_view(template_name='name.html'),name='name')
     path('prediction/',views.prediction),
+    path('sem2/',views.getdata),
+
 
 
 ]
