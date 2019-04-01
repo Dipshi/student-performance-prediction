@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'studentAcademics.apps.StudentacademicsConfig',
     'stuData.apps.StudataConfig',
     'webapp.apps.WebappConfig',
-    # 'prediction.apps.PredictionConfig',
+    'prediction.apps.PredictionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

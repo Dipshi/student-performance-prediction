@@ -19,6 +19,8 @@ from keras.models import model_from_json
 import tensorflow  as tf
 from django.contrib.auth.models import User
 from rest_framework.response import Response
+from rest_framework.decorators import api_view,permission_classes
+
 
 
 
@@ -125,7 +127,8 @@ def prediction(request):
             sem4 = 1
         else :
             sem4=0
-         p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2,sem3,sem4]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3','Sem4'])
+
+        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem1,sem2,sem3,sem4]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1','Sem2','Sem3','Sem4'])
     elif sem=="Sem 4":
         if sem2>=8:
             sem2 = 4

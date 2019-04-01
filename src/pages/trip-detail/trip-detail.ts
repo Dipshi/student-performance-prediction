@@ -104,7 +104,16 @@ export class TripDetailPage {
   } 
   detailsstore()
   { 
-    this.credentials={
+    
+  }
+  seeprediction()
+  {
+    // this.detailsstore();
+    // console.log(this.credentials);
+    
+    this.sem=this.semester.value;
+   if(this.dip==0){
+     this.credentials={
       gap:this.Gap.value,
       gender:this.Gender.value,
       caste:this.Caste.value,
@@ -118,21 +127,33 @@ export class TripDetailPage {
       semester:this.semester.value
     };
 
-  }
-  seeprediction()
-  {
-    this.detailsstore();
-    // console.log(this.credentials);
-    this.userReg.seeprediction(this.credentials).subscribe((app)=>{
+     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
       this.data=app.prediction;
       this.remarks=app.remarks;
       
     });
-    this.sem=this.semester.value;
-   if(this.dip==0)
-      this.val="HSC";
-  else
-      this.val="DSE";
+      // this.val="HSC";
+   }
+  else{
+    this.credentials={
+      gap:this.Gap.value,
+      gender:this.Gender.value,
+      caste:this.Caste.value,
+      hsc:this.Hsc.value,
+      ssc:this.Ssc.value,
+      sem3:this.Sem3.value,
+      sem4:this.Sem4.value,
+      admiss_cat:this.Admiss_cat.value,
+      semester:this.semester.value
+    };
+
+    this.userReg.seedseprediction(this.credentials).subscribe((app)=>{
+      this.data=app.prediction;
+      this.remarks=app.remarks;
+      
+    });
+      // this.val="DSE";
+  }
 this.index=2;
 this.flag=1;
    

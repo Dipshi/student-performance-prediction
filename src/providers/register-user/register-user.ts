@@ -36,6 +36,12 @@ key;
      return this.http.post(this.url+'/prediction/',userdata).map(res=> res.json());
   }
 
+  seedseprediction(userdata)
+  {
+    // console.log(userdata);
+     return this.http.post(this.url+'/dsePrediction/',userdata).map(res=> res.json());
+  }
+
   registerUser(userData):Observable<any>{
     //  const body={username:userData.username,email:userData.email,password:userData.password};
      return this.http.post(this.url+'/userRegister/',userData);
@@ -75,14 +81,6 @@ updatePersonalDetails(userData):Observable<any>{
   loginUser(userData){
     //  const body={FirstName:userData.FirstName,Email:userData.Email,Password:userData.Password};
      return this.http.post(this.url+'/userLogin/',userData).map(res => res.json());
-    // this.http.post(this.url+'/api-token-auth/', JSON.stringify(userData), this.httpOptions).do(
-    //   data => {
-    //     // this.updateData(data['token']);
-    //   },
-    //   err => {
-    //     this.errors = err['error'];
-    //   }
-    // );
  
 }
 
