@@ -210,21 +210,9 @@ def prediction(request):
     data={'prediction':prediction}
     return Response(data=(data))
 
-@api_view(['GET', 'POST']) 
-
-def getdata(request):
-    data = request.data
-    if float(data['sem2'])==0:
-        # print(data['sem2'])
-        result=sem2(data)
-    # elif float(data['sem3'])==0:
-    #     result=sem3(data)
-    # else :
-    #     result=sem4(data)
-    
-    return Response({'prediction':result})
 
 def conversion(data):
+    # data=request.data
     ssc=(float)(data['ssc'])
     hsc=(float)(data['hsc'])
     sem1=(float)(data['sem1'])
@@ -300,11 +288,13 @@ def conversion(data):
     else :
         sem4=0
     marks={'ssc':ssc,'hsc':hsc,'sem1':sem1,'sem2':sem2,'sem3':sem3,'sem4':sem4,'caste':data['caste'],'gap':data['gap'],'gender':data['gender'],'add_cat':add_cat}
-    return Response(data=(marks))
+    # return Response(data=(marks))
+    return marks
 
 @api_view(['GET', 'POST']) 
 
 def sem2(data):
+    # data=request.data
     m=conversion(data)
     p=pd.DataFrame([[0,m['gap'],m['gender'],m['caste'],m['add_cat'],m['ssc'],m['hsc'],m['sem1']]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem1'])
             
@@ -325,7 +315,8 @@ def sem2(data):
     else:
         prediction="less than 4"
     data={'prediction':prediction}
-    return Response(data=(data))      
+    # return Response(data=(data))     
+    return prediction
 
 
 def sem3(data):
@@ -376,4 +367,16 @@ def sem4(data):
     data={'prediction':prediction}
     return Response(data=(data))   
 
+@api_view(['GET', 'POST']) 
+def getdata(request):
+    data = request.data
+    if float(data['sem2'])==0:
+        # print(data['sem2'])
+        result=sem2(data)
+    elif float(data['sem3'])==0:
+        result=sem3(data)
+    else :
+        result=sem4(data)
     
+    return Response({'prediction':result})
+ 
