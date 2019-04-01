@@ -9,6 +9,7 @@ import { Response,Http } from '@angular/http';
 import {ApiconnectProvider} from  "../../providers/apiconnect/apiconnect";
 import {RegisterUserProvider} from  "../../providers/register-user/register-user";
 import {SeeEducationalDetailsPage} from "../see-educational-details/see-educational-details";
+import { ViewChild } from '@angular/core';
 
 
 
@@ -119,16 +120,18 @@ export class TripDetailPage {
   seeprediction()
   {
      this.detailsstore();
-      if(this.sem1==0)
+      if(this.sem1==0)//for dse
       {
           this.userReg.seepredictiondse(this.credentials).subscribe((app)=>{
           this.data=app.prediction;
           });
       }
-      else
+      else//for Regular students
       {
+        this.sem=this.semester.value;
+        this.flag=1;
         //predict sem 2 marks 
-        if(this.sem2==0)
+        if(this.sem==2)
         {
           this.userReg.sem2prediction(this.credentials).subscribe((app)=>
           {
@@ -139,20 +142,24 @@ export class TripDetailPage {
         
         }
       // predict sem3 marks
-        else if(this.sem3==0)
+        else if(this.sem==3)
         {
           this.userReg.sem3prediction(this.credentials).subscribe((app)=>
           {
             this.data=app.prediction;
+            this.remarks=app.remarks;
+
           });
 
         }
         // predict sem4 marks
-        else if(this.sem4==0)
+        else if(this.sem==4)
         {
           this.userReg.sem4prediction(this.credentials).subscribe((app)=>
           {
             this.data=app.prediction;
+            this.remarks=app.remarks;
+
           });
 
         }
@@ -163,7 +170,7 @@ export class TripDetailPage {
           {
             this.data=app.prediction;  
             this.remarks=app.remarks;
-
+           
           });  
 
         }
@@ -172,19 +179,7 @@ export class TripDetailPage {
       }
 
     }
-//     this.detailsstore();
-//     // console.log(this.credentials);
-//     this.userReg.seeprediction(this.credentials).subscribe((app)=>{
-//       this.data=app.prediction;
-//       this.remarks=app.remarks;
-      
-//     });
-//     this.sem=this.semester.value;
-//   console.log(this.sem);
-// this.index=2;
-// this.flag=1;
-   
-  }
+
 
   update()
     {
