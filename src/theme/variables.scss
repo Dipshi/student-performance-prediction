@@ -7,8 +7,9 @@
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 
-$text-color: #4c6df9;
+$text-color: #1432c7;
 $background-color: #fff;
+$label:black;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -24,7 +25,9 @@ $colors: (
   secondary: #5b5ef4,
   danger: #f53d3d,
   light: rgb(253, 199, 117),
-  dark: #0039a2
+  dark: #0039a2,
+  label:black
+  // text:
 );
 
 // App Theme
