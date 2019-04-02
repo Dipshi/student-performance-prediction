@@ -110,12 +110,12 @@ updatePersonalDetails(userData):Observable<any>{
   seepredictiondsesem3(userdata)
   {
     // console.log(userdata);
-     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+     return this.http.post(this.url+'/predictiondsesem3/',userdata).map(res=> res.json());
   }
   seepredictiondsesem4(userdata)
-  {
-    // console.log(userdata);
-     return this.http.post(this.url+'/predictiondse/',userdata).map(res=> res.json());
+  {  
+    console.log(userdata);
+     return this.http.post(this.url+'/predictiondsesem3/',userdata).map(res=> res.json());
   }
   seepredictiondsesem5(userdata)
   {

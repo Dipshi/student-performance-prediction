@@ -23,9 +23,28 @@ from rest_framework.decorators import api_view,permission_classes
 
 
 
-sem="xyz"
 sys.path.append(os.path.abspath('D:/GitHub/App_student_prediction/ionic3/myproject/model'))
 
+
+
+def initsem4(): 
+    json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/modeldsesem4.json','r')
+# json_file = open('model.json','r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    loaded_model = model_from_json(loaded_model_json)
+    #load woeights into new model
+    loaded_model.load_weights("D:/GitHub/App_student_prediction/ionic3/myproject/model/modeldsesem4.h5")
+    print("Loaded Model from disk")
+
+    #compile and evaluate loaded model
+    loaded_model.compile(loss='sparse_categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+    #loss,accuracy = model.evaluate(X_test,y_test)
+    #print('loss:', loss)
+    #print('accuracy:', accuracy)
+    graph = tf.get_default_graph()
+
+    return loaded_model,graph
 def init(): 
     json_file = open('D:/GitHub/App_student_prediction/ionic3/myproject/model/modeldsesem3.json','r')
 # json_file = open('model.json','r')
@@ -45,11 +64,10 @@ def init():
 
     return loaded_model,graph
 
+# # 
+model,graph=initsem4()
+model1,graph1=init()
 
-# 
-if sem=="Sem 5":
-    print("hello")
-model,graph=init()
 # def showDegreeType(sem):
   
 @csrf_exempt
@@ -89,34 +107,10 @@ def prediction(request):
         hsc=1
     else :
         hsc=0 
-# sem conversion
-
-    if sem=='Sem 5':
-        if sem3>=8:
-            sem3 = 4
-        elif sem3 >=7:
-            sem3 = 3
-        elif sem3 >=6:
-            sem3 = 2
-        elif sem3 >=4:
-            sem3 = 1
-        else :
-            sem3=0
-
-        if sem4>=8:
-            sem4 = 4
-        elif sem4 >=7:
-            sem4 = 3
-        elif sem4 >=6:
-            sem4 = 2
-        elif sem4 >=4:
-            sem4 = 1
-        else :
-            sem4=0
-
-        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem3,sem4]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem3','Sem4'])
+# sem conversion   
+    if sem=="Sem 3":
+        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result'])
     elif sem=="Sem 4":
-        
         if sem3>=8:
             sem3 = 4
         elif sem3 >=7:
@@ -128,11 +122,8 @@ def prediction(request):
         else :
             sem3=0
         p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc,sem3]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result','Sem3'])
-
-    elif sem=="Sem3":
-       
-        p=pd.DataFrame([[0,gap,gender,caste,add_cat,ssc,hsc]],columns=['','Gap','Gender','Caste','admission_category','10_Result','12_Result'])
 # storing in dataframe
+        
    
     class_le = LabelEncoder()
     for column in p[['Gender','Caste','admission_category']].columns:
@@ -140,8 +131,13 @@ def prediction(request):
     p = np.expand_dims(p, axis=2)
     remarks=[]
             # x={'gap':gap,'gender':gender,'caste':caste,'ssc':ssc,'hsc':hsc,'sem1':sem1,'sem2':sem2,'sem3':sem3,'sem4':sem4,'add_cat':add_cat}
-    with graph.as_default():
-        prediction=model.predict_classes(p)
+    if sem=="Sem 4":
+
+        with graph.as_default():
+            prediction=model.predict_classes(p)
+    else:
+        with graph.as_default():
+            prediction=model1.predict_classes(p)
     if prediction==4:
         prediction='8-10'
         remarks.append("Good to go.")
@@ -166,7 +162,8 @@ def prediction(request):
     print(data)
     return Response(data=(data))            
 
+# def sem4():
 
 
-def index(request):
-    return HttpResponse("index.html")
+# def index(request):
+#     return HttpResponse("index.html")

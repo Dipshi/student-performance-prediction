@@ -34,14 +34,14 @@ for column in df[['Gender','Caste','admission_category']].columns:
 
 # y=df.pop('Sem5')
 # X=df
-df=df.pop('Sem4')
-df=df.pop('Sem5')
+
+df.pop('Sem5')
 # smote = SMOTE(ratio='minority')
 # X_sm, y_sm = smote.fit_sample(X, y)
 # X = pd.DataFrame(X_sm)
 # y = pd.DataFrame(y_sm)
-y = df['Sem3']
-X = df.loc[:, df.columns != 'Sem3']
+y = df['Sem4']
+X = df.loc[:, df.columns != 'Sem4']
 smote = SMOTE(ratio='minority')
 X_sm, y_sm = smote.fit_sample(X, y)
 X = pd.DataFrame(X_sm)
@@ -96,7 +96,7 @@ scores = model.evaluate(X_test, y_test)
 
 
 model_json =model.to_json()
-with open('modeldsesem3.json',"w") as json_file:
+with open('modeldsesem4.json',"w") as json_file:
     json_file.write(model_json)
-model.save_weights("modeldsesem3.h5")
+model.save_weights("modeldsesem4.h5")
 # train_and_score(x,y)/

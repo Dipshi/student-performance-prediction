@@ -86,11 +86,12 @@ export class TripDetailPage {
         
 
     });
-
+ 
      this.userReg.getEduDetails(this.value).subscribe((weather) => {
       
          this.weathers = weather,
          this.ssc=this.weathers.tenth_score,
+        
          this.hsc=this.weathers.twelve_score,
          this.sem1=this.weathers.Sem1,
          this.sem2=this.weathers.Sem2,
@@ -147,7 +148,8 @@ export class TripDetailPage {
   {
      this.detailsstore();
       if(this.dip!=0)//for dse
-      {
+      { 
+        console.log(this.credentials);
          if(this.sem=='Sem 3')
         {
           this.userReg.seepredictiondsesem3(this.credentials).subscribe((app)=>{
